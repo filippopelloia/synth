@@ -1,0 +1,550 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: #1a1a1a;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+h2{
+  display: inline-block;
+  margin: 5vh 4vh;
+}
+
+h2 a{
+  color: #fff;
+}
+
+
+
+/* HEADER + SETTINGS */
+
+.header{
+  position: absolute;
+  height: 5vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.setting-icon > svg{
+  color: crimson;
+  opacity: 0.6;
+  filter: blur(0.75px);
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+  min-width: 0!important;
+}
+
+.setting-voice{
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  filter: blur(0.75px);
+}
+
+.setting-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4.2vh 0;
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
+  opacity: 0.88!important;
+  background: rgb(0,0,0)!important;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(49,0,0,1) 100%)!important;
+}
+
+.setting-btn{
+  background-color: crimson;
+  padding: 0.75em 1.5em;
+  font-weight: 500;
+  display: block;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  filter: blur(0.75px);
+}
+
+.soundtrack a{
+  color: #000000;
+}
+
+.btn-white, .btn-white a{
+  color: #fff!important;
+}
+
+
+/* FINE HEADER + SETTINGS */
+
+
+.app{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.footer{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5vh;
+}
+
+.donate a{
+  padding: 0.75vh 1.25vh;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 0 0.5px rgba(220, 20, 60, 0.95);
+}
+
+.donate span{
+  font-size: 1.35em;
+}
+
+.footer > h5, .donate a{
+  color: crimson;
+  filter: blur(0.55px);
+  text-shadow: 0 0 5px rgba(220, 20, 60, 0.95);
+}
+
+.footer > h5 span{
+  font-size: 1.9em;
+}
+
+.footer > h5{
+  font-size: 0.55em;
+  text-align: right;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 1px rgba(220, 20, 60, 1);
+  opacity: 0.7;
+}
+
+.unSelect{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.testo-generato{
+  width: 120vh;
+  padding: 1vh;
+  text-align: start;
+}
+
+.mid-container{
+  display: grid;
+  grid-template: auto auto / repeat(1, 1fr);
+}
+
+.mid {
+  border: 5px solid crimson;
+  height: 70vh;
+  width: 120vh;
+  border-radius: 7.5px;
+  background-color: darkgrey;
+  box-sizing: content-box;
+  position: relative;
+  left: 0;
+  top: 0;
+  filter: blur(0.85px);
+  overflow: hidden;
+}
+
+.mid img {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.rettangolo{
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  background-color: crimson;
+  opacity: 0.835;
+  padding: 3vh 2.5vh;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vh;
+}
+
+.rettangolo p{
+  color: #000000;
+  font-size: 1.1em;
+  margin-left: 15.5vh;
+}
+
+.character-image{
+  position: absolute;
+  z-index: 5;
+  left: 2.5vh;
+  top: 3vh;
+  height: calc(100% - 5.5vh);
+  width: 12.5vh;
+  background-color: #000000;
+  filter: blur(0.005px)!important;
+}
+
+.btn-container{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.simply-btn a{
+  position: relative;
+  font-size: 0.95em;
+  font-weight: 500;
+  padding: 0.75em 1.5em;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  filter: blur(0.85px);
+}
+
+.cube{
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  opacity: 0;
+  transition: opacity 0.82009s ease-in;
+}
+
+.cube.fadeIn {
+  opacity: 1;
+}
+
+
+
+/* ======= FADEIN*/
+
+h3.btn, .past, .sub-btn{
+  /* h3.btn, .mid, .past{ */
+  opacity: 0;
+  transition: opacity 0.82009s ease-in;
+}
+
+h3.btn.fadeIn, .past.fadeIn, .sub-btn.fadeIn {
+  /* h3.btn.fadeIn, .mid.fadeIn, .past.fadeIn { */
+  opacity: 1;
+}
+
+/* ======= FINE FADEIN*/
+
+
+
+
+/* ======= ANIMAZ. TESTO PROCEDURALE*/
+
+
+.test{
+  /* Font */
+text-align: left!important;
+font-family: 'Didact Gothic', sans-serif;
+/* white-space: pre-line; */
+/* font-weight: bold; */
+text-transform: uppercase;
+/* letter-spacing: 0.3em; */
+line-height: 5vh;
+filter: blur(1.05px);
+text-transform: uppercase;
+letter-spacing: 0.025em;
+
+/* Colore */
+/* color: #ffad1f; */
+color: crimson;
+
+/* Background */
+/* background: linear-gradient(to right, #000000, #383838); */
+
+/* Spazio tra parole */
+word-spacing: 0.5em;
+
+/* Spazio tra lettere */
+letter-spacing: 0.1em;
+
+/* Bordo */
+/* text-shadow: 0px 0px 6px crimson, 0px 0px 12px crimson, 0px 0px 20px crimson, 0px 0px 40px crimson; */
+}
+
+.test::before{
+  filter: blur(0.025em);
+  content: '';
+}
+
+.test::after{
+  filter: blur(0.025em);
+  content: '';
+}
+
+.go-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showMore{
+  margin: 3.5vh 0;
+  cursor: pointer;
+  display: inline-block;
+  /* width: auto!important; */
+}
+
+.showMore a, .showMore-start{
+  background-color: crimson;
+  color: #000000;
+}
+
+.showMore h5, .showMore a{
+  font-size: 1em;
+  filter: blur(0.9px);
+}
+
+
+
+/* ======= PAST */
+
+.standard-h3{
+  color: crimson;
+  /* filter: blur(1px); */
+  letter-spacing: 0.025em;
+  font-size: 1.15em;
+  font-weight: 500;
+}
+
+.standard-h4{
+  color: crimson;
+  /* filter: blur(1px); */
+  letter-spacing: 0.03em;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.past-container > h4{
+  margin: 0 0 3.5vh 0;
+}
+
+.past-section{
+  margin-bottom: 15vh;
+  border: 2.5px solid crimson;
+  filter: blur(1.05px);
+  width: 120vh;
+  height: 40vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh;
+  gap: 4vh;
+}
+
+.past{
+  height: 45vh;
+  width: 50%;
+  background-color: #1a1a1a;
+  margin-top: 14vh;
+  border: 2.5px solid crimson;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 6vh 3vh;
+  display: grid;
+  grid-template: auto auto / repeat(1, 1fr);
+  align-items: center;
+}
+
+.past:hover{
+  border: 2.5px solid #00CED1;
+}
+
+.selected {
+  border: 2.5px solid #00CED1;
+}
+
+
+h4{
+  font-size: 1.1em;
+  color: crimson;
+  letter-spacing: 0.025em;
+  font-weight: 500;
+}
+
+
+
+/* ======= BTN  */
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+h3.btn, .simply-btn, .donate, .showMore {
+  position: relative;
+  text-decoration: none;
+}
+
+h3.btn::before, .simply-btn::before, .donate::before, .showMore::before {
+  filter: blur(0.1em);
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 2px solid crimson;
+  content: '';
+}
+
+h3.btn::after, .simply-btn::after, .donate::after, .showMore::after  {
+  filter: blur(0.1em);
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border-right: 2px solid crimson;
+  content: '';
+}
+
+h3.btn a, .donate a, .showMore h5, .showMore a {
+  position: relative;
+  /* font-size: 1.15em; */
+  /* line-height: 1.5em; */
+  font-weight: 500;
+  /* padding: 0.75em 1.5em; */
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+h3.btn a, .donate a{
+  color: crimson;
+}
+
+h3.btn a{
+  font-size: 2em;
+  /* z-index: 3; */
+  padding: 0.3em 0.6em;
+  text-shadow: 0 0 10px rgba(220, 20, 60, 0.95);
+}
+
+.sub-btn{
+  position: absolute;
+  /* z-index: 2; */
+  color: crimson;
+  font: 1.2em;
+  font-weight: 500;
+  filter: blur(1px);
+  margin-top: 10.5vh;
+  background-color: #1a1a1a;
+  padding: 0.1em 0.3em;
+  text-shadow: 0 0 2px rgba(220, 20, 60, 0.95);
+}
+
+.showMore h5, .showMore a{
+  padding: 0.75em 1.5em;
+}
+
+h3.btn a{
+  filter: blur(1.2px);
+}
+
+h3.btn a::before, .simply-btn a::before, .donate a::before, .showMore h5::before, .showMore a::before {
+  filter: blur(0.05em);
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom: 2px solid crimson;
+  content: '';
+}
+
+h3.btn a::after, .simply-btn a::after, .donate a::after, .showMore h5::after, .showMore a::after {
+  filter: blur(0.05em);
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-top: 2px solid crimson;
+  content: '';
+}
+
+h3.btn:hover::before {
+  left: 100%;
+  border-color: crimson;
+  animation: tempBlurY 1s forwards ease-out;
+}
+
+h3.btn:hover::after {
+  left: 0;
+  border-color: crimson;
+  animation: tempBlurY 1s forwards ease-out;
+}
+
+h3.btn:hover span {
+  color: crimson;
+  letter-spacing: 0.15em;
+}
+
+h3.btn:hover a::before {
+  top: 100%;
+  border-color: crimson;
+  animation: tempBlurX 1s forwards ease-out;
+}
+
+h3.btn:hover a::after {
+  top: 0;
+  border-color: crimson;
+  animation: tempBlurX 1s forwards ease-out;
+}
+
+@keyframes tempBlurX {
+  0% { filter: blur(0.05em); }
+  50% { filter: blur(10px); }
+  80% { filter: blur(3px); } 
+  100% { filter: blur(0.05em); }
+}
+
+@keyframes tempBlurY {
+  0% { filter: blur(0.1em); }
+  50% { filter: blur(10px); }
+  80% { filter: blur(3px); } 
+  100% { filter: blur(0.1em); }
+}
