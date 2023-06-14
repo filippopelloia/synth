@@ -21,12 +21,14 @@ const dialoghi2 = [
     {id: 8, url: `${foto5}`, character: `${char3}`, content: "TU: \"E' uno scherzo? Non puo essere...\" "},
     {id: 9, url: `${foto5}`, character: `${char2}`, content: "???: \"Ma benvenuto... o meglio, BENTORNATO.\" "},
     {id: 10, url: `${foto5}`, character: `${char2}`, content: "???: \"E' passato un bel pò dalla tua ultima visita qui, caro *NOME*\" "},
-    {id: 11, url: `${foto5}`, character: `${char2}`, content: "???: \"IO MI CHIAMO FILIPPO - Non riconosci questo luogo? Eppure è proprio qui che \" "},
-    {id: 12, url: `${foto5}`, character: `${char2}`, content: "???: \"ABITO A SAN DONA' DI PIAVE Che ci faccio di nuovo sulla Terra? Fino ad un attimo fa ero su Solara!\" "},
-    {id: 13, url: `${foto5}`, character: `${char2}`, content: "???: \"QUESTO E' IL CONTENUTO NUMERO 13\" "},
-    {id: 14, url: `${foto5}`, character: `${char2}`, content: "???: \"QUESTO E' IL CONTENUTO NUMERO 14\" "},
-    
+    {id: 11, url: `${foto5}`, character: `${char2}`, content: "???: \"Hai perso la memoria per caso? Sono l'unico e attuale CEO della MiraiTech sul pianeta Terra.\" "},
+    {id: 12, url: `${foto5}`, character: `${char2}`, content: "???: \"Non riconosci questo luogo? Eppure è proprio qui che ho reso la tua vita un inferno. Dovresti ricordartelo bene...\" "},
+    {id: 13, url: `${foto5}`, character: `${char2}`, content: "???: \"Sarei quasi tentato di squinzagliarti addosso le guardie... dopo ciò che ti sei permesso di fare. Tuttavia...\" "},
+    {id: 14, url: `${foto5}`, character: `${char2}`, content: "???: \"...non potrai mai sfuggire dal tuo destino *NOME*, presto o tardi...\" "},
+    {id: 15, url: `${foto5}`, character: `${char2}`, content: "???: \"GLOCK!!\" "},
 
+
+    {id: 20, url: `${foto5}`, character: `${char2}`, content: "???: \"Che ci faccio di nuovo sulla Terra? Fino ad un attimo fa ero su Solara!\" "},
     {id: 25, url: `${foto6}`, character: `${char3}`, content: "Questo è il contenuto numero 25. Ce l'hai fatta!!!"}
 ]
 

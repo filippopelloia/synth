@@ -220,6 +220,31 @@ h2 a{
   align-items: center;
 }
 
+/* .simply-btn {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.simply-btn.show {
+  opacity: 1;
+} */
+
+.simply-btn {
+  animation: fadeIn 1s ease-in-out 1s forwards; /* Durata 1 secondo, ritardo di 1 secondo, mantiene lo stato finale */
+  opacity: 0; /* Imposta l'opacità iniziale a 0 per nascondere il pulsante */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Opacità iniziale 0 */
+  }
+  to {
+    opacity: 1; /* Opacità finale 1 */
+  }
+}
+
+
+
 .simply-btn a{
   position: relative;
   font-size: 0.95em;

@@ -35,7 +35,6 @@ export default function Mid() {
       if ((dialogIndex === 11 || dialogIndex === 12) && (second.one === true && second.two === true)){
         setDialogIndex(13);
         setSecond(prevSecond => { return {...prevSecond, one: false, two: false }});
-        console.log("CE L'HAI FATTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
       } else {
         setDialogIndex((prevDialogIndex) => prevDialogIndex + 1);
         setIndex(0);
@@ -77,7 +76,7 @@ export default function Mid() {
       setSecond(prevSecond => { return {...prevSecond, two: true }});
     }
 
-    
+
     console.log(second);
     
 
@@ -176,11 +175,11 @@ useEffect(() => {
         </div>}
 
         {(dialogIndex === 10 || (dialogIndex === 12 && (second.one === false && second.two === true))) && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>COME TI CHIAMI?</a>
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>CHI SEI?</a>
         </div>}
 
         {(dialogIndex === 10 || (dialogIndex === 11 && (second.one === true && second.two === false))) && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE ABITI?</a>
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE MI TROVO?</a>
         </div>}
 
       </div>
