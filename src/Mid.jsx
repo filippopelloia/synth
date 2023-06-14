@@ -32,9 +32,16 @@ export default function Mid() {
 
     //FUNZIONE DEFAULT INDEX BUTTON
     function showText() {
-      setDialogIndex((prevDialogIndex) => prevDialogIndex + 1);
-      setIndex(0);
+      if ((dialogIndex === 11 || dialogIndex === 12) && (second.one === true && second.two === true)){
+        setDialogIndex(13);
+        setSecond(prevSecond => { return {...prevSecond, one: false, two: false }});
+        console.log("CE L'HAI FATTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+      } else {
+        setDialogIndex((prevDialogIndex) => prevDialogIndex + 1);
+        setIndex(0);
+      }
     }
+
 
     //FUNZIONE PER INDEX 25
     function showTwentyFive() {
@@ -70,15 +77,7 @@ export default function Mid() {
       setSecond(prevSecond => { return {...prevSecond, two: true }});
     }
 
-    useEffect(() => {
-      if((setDialogIndex === 11 || setDialogIndex === 12) && second.one === true && second.two === true){
-        setDialogIndex(13);
-        setSecond(prevSecond => { return {...prevSecond, one: false, two: false }});
-      }
-      console.log("CE L'HAI FATTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-    }, [second])
-
-
+    
     console.log(second);
     
 
@@ -159,7 +158,7 @@ useEffect(() => {
       {/* <h3 style={{color: 'white'}}>{clicked === 0 ? 'Ciaooooo BOY' : 'Eh no eEHHH?????'}</h3> */}
 
       <div className="btn-container">
-        {(dialogIndex !== 10 && dialogIndex !== 11 && dialogIndex !== 12) && <div className="simply-btn">
+        {((dialogIndex !== 10 && dialogIndex !== 11 && dialogIndex !== 12) || (second.one === true && second.two === true)) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUA</a>
         </div>}
 
@@ -176,11 +175,11 @@ useEffect(() => {
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#">PROVA IL QUARTO TESTO</a>
         </div>}
 
-        {(dialogIndex === 10 || dialogIndex === 12) && <div className="simply-btn">
+        {(dialogIndex === 10 || (dialogIndex === 12 && (second.one === false && second.two === true))) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>COME TI CHIAMI?</a>
         </div>}
 
-        {(dialogIndex === 10 || dialogIndex === 11) && <div className="simply-btn">
+        {(dialogIndex === 10 || (dialogIndex === 11 && (second.one === true && second.two === false))) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE ABITI?</a>
         </div>}
 
