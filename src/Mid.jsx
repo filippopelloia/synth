@@ -14,25 +14,20 @@ export default function Mid() {
   const [dialogImage, setDialogImage] = useState('');
   const [dialogCharacter, setDialogCharacter] = useState('');
 
+  const [second, setSecond] = useState({
+    one: false,
+    two: false
+  })
+
   // const [fadeIn, setFadeIn] = useState(false);
 
   const { clicked } = useContext(PastContext);
 
 
-  console.log(dialogIndex);
-  console.log(dialogImage);
+  // console.log(dialogIndex);
+  // console.log(dialogImage);
 
 
-  //fadeIn EFFECT
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setFadeIn(true);
-  //   }, 400);
-
-  //   return () => clearTimeout(timer);
-
-  // }, []);
-  //FINE EFFECT
 
 
     //FUNZIONE DEFAULT INDEX BUTTON
@@ -64,6 +59,7 @@ export default function Mid() {
       setDialog(risultato[0].content);
       setDialogIndex(prevDialogIndex => prevDialogIndex = 11);
       setIndex(0);
+      setSecond(prevSecond => { return {...prevSecond, one: true }});
     }
 
     function showTwelve(){
@@ -71,10 +67,19 @@ export default function Mid() {
       setDialog(risultato[0].content);
       setDialogIndex(prevDialogIndex => prevDialogIndex = 12);
       setIndex(0);
+      setSecond(prevSecond => { return {...prevSecond, two: true }});
     }
 
+    useEffect(() => {
+      if((setDialogIndex === 11 || setDialogIndex === 12) && second.one === true && second.two === true){
+        setDialogIndex(13);
+        setSecond(prevSecond => { return {...prevSecond, one: false, two: false }});
+      }
+      console.log("CE L'HAI FATTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+    }, [second])
 
-    
+
+    console.log(second);
     
 
   
@@ -83,6 +88,8 @@ export default function Mid() {
       setIndex(0);
     }, [dialog]);
 
+
+    // console.log(second);
 
 
   //PRENDE ED IMMAGAZZINA IL TESTO
@@ -169,21 +176,13 @@ useEffect(() => {
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#">PROVA IL QUARTO TESTO</a>
         </div>}
 
-        {(dialogIndex === 10 && dialogIndex === 12) && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>DOVE SONO?</a>
+        {(dialogIndex === 10 || dialogIndex === 12) && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>COME TI CHIAMI?</a>
         </div>}
 
-        {(dialogIndex === 10 && dialogIndex === 11) && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>CHI SEI?</a>
+        {(dialogIndex === 10 || dialogIndex === 11) && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE ABITI?</a>
         </div>}
-
-        {/* {dialogIndex === 11 && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>CHI SEI?</a>
-        </div>} */}
-
-        {/* {(dialogIndex === 12 && dialogIndex === ) && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>DOVE SONO?</a>
-        </div>} */}
 
       </div>
     </div>
