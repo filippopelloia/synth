@@ -57,6 +57,24 @@ export default function Mid() {
       setDialogIndex(prevDialogIndex => prevDialogIndex = 2);
       setIndex(0);
     }
+
+    //FUNZIONE PER INDEX *INSERISCI INDEX*
+    function showEleven(){
+      const risultato = dialoghi2.filter((oggetto) => oggetto.id === 11);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 11);
+      setIndex(0);
+    }
+
+    function showTwelve(){
+      const risultato = dialoghi2.filter((oggetto) => oggetto.id === 12);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 12);
+      setIndex(0);
+    }
+
+
+    
     
 
   
@@ -134,9 +152,9 @@ useEffect(() => {
       {/* <h3 style={{color: 'white'}}>{clicked === 0 ? 'Ciaooooo BOY' : 'Eh no eEHHH?????'}</h3> */}
 
       <div className="btn-container">
-        <div className="simply-btn">
+        {(dialogIndex !== 10 && dialogIndex !== 11 && dialogIndex !== 12) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUA</a>
-        </div>
+        </div>}
 
 
         {dialogIndex === 1 && <div className="simply-btn">
@@ -150,6 +168,22 @@ useEffect(() => {
         {dialogIndex === 2 && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#">PROVA IL QUARTO TESTO</a>
         </div>}
+
+        {(dialogIndex === 10 && dialogIndex === 12) && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>DOVE SONO?</a>
+        </div>}
+
+        {(dialogIndex === 10 && dialogIndex === 11) && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>CHI SEI?</a>
+        </div>}
+
+        {/* {dialogIndex === 11 && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>CHI SEI?</a>
+        </div>} */}
+
+        {/* {(dialogIndex === 12 && dialogIndex === ) && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>DOVE SONO?</a>
+        </div>} */}
 
       </div>
     </div>
