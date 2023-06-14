@@ -195,7 +195,15 @@ h2 a{
   gap: 2.5vh;
 }
 
-.rettangolo p{
+.text-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.text-container p{
   color: #000000;
   font-size: 1.1em;
   margin-left: 15.5vh;
@@ -229,19 +237,42 @@ h2 a{
   opacity: 1;
 } */
 
+
+/* CODICE FUNZIONANTE */
 .simply-btn {
-  animation: fadeIn 1s ease-in-out 1s forwards; /* Durata 1 secondo, ritardo di 1 secondo, mantiene lo stato finale */
-  opacity: 0; /* Imposta l'opacità iniziale a 0 per nascondere il pulsante */
+  animation: fadeIn 1s ease-in-out 1s forwards; 
+  opacity: 0; 
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Opacità iniziale 0 */
+    opacity: 0; 
   }
   to {
-    opacity: 1; /* Opacità finale 1 */
+    opacity: 1; 
   }
 }
+
+
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+
+
+.simply-btn {
+  opacity: 0;
+}
+
+.simply-btn.animate {
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
 
 
 
@@ -293,13 +324,13 @@ h3.btn.fadeIn, .past.fadeIn, .sub-btn.fadeIn {
 
 .test{
   /* Font */
-text-align: left!important;
+/* text-align: left!important; */
 font-family: 'Didact Gothic', sans-serif;
 /* white-space: pre-line; */
 /* font-weight: bold; */
 text-transform: uppercase;
 /* letter-spacing: 0.3em; */
-line-height: 5vh;
+/* line-height: 5vh; */
 filter: blur(1.05px);
 text-transform: uppercase;
 letter-spacing: 0.025em;
@@ -321,7 +352,7 @@ letter-spacing: 0.1em;
 /* text-shadow: 0px 0px 6px crimson, 0px 0px 12px crimson, 0px 0px 20px crimson, 0px 0px 40px crimson; */
 }
 
-.test::before{
+/* .test::before{
   filter: blur(0.025em);
   content: '';
 }
@@ -329,7 +360,7 @@ letter-spacing: 0.1em;
 .test::after{
   filter: blur(0.025em);
   content: '';
-}
+} */
 
 .go-section{
   display: flex;

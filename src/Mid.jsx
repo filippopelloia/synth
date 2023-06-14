@@ -19,7 +19,11 @@ export default function Mid() {
     two: false
   })
 
-  // const [fadeIn, setFadeIn] = useState(false);
+  const [fadeClass, setFadeClass] = useState('');
+
+
+
+
 
   const { clicked } = useContext(PastContext);
 
@@ -35,10 +39,13 @@ export default function Mid() {
       if ((dialogIndex === 11 || dialogIndex === 12) && (second.one === true && second.two === true)){
         setDialogIndex(13);
         setSecond(prevSecond => { return {...prevSecond, one: false, two: false }});
+        setAnimateButton(true); // Attiva l'animazione del pulsante
       } else {
         setDialogIndex((prevDialogIndex) => prevDialogIndex + 1);
         setIndex(0);
+        setAnimateButton(true); // Attiva l'animazione del pulsante
       }
+      // setAnimateButton(true); // Attiva l'animazione del pulsante
     }
 
 
@@ -149,7 +156,9 @@ useEffect(() => {
           {/* <p className={`${fadeIn ? 'fadeIn' : ''}`}>{text}</p> */}
           {/* <div className="character-image"></div> */}
           <div className="character-image"><img src={dialogCharacter} alt="character image" /></div>
-          <p>{text}</p>
+          <div className="text-container">
+            <p>{text}</p>
+          </div>
         </div>
       </div>
 
@@ -160,7 +169,6 @@ useEffect(() => {
         {((dialogIndex !== 10 && dialogIndex !== 11 && dialogIndex !== 12) || (second.one === true && second.two === true)) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUA</a>
         </div>}
-
 
         {dialogIndex === 1 && <div className="simply-btn">
           <a style={{color: 'crimson'}} href="#" onClick={showTwentyFive}>PROVA IL SECONDO TESTO</a>
