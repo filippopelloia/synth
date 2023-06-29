@@ -62,13 +62,13 @@ export default function Mid() {
       setSecond(prevSecond => { return {...prevSecond, two: true }});
     }
 
-    // function showReturnToEleven(){
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 30);
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 11);
-    //   setIndex(0);
-    //   setSecond(prevSecond => { return {...prevSecond, two: true }});
-    // }
+    function showReturnToEleven(){
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 30);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 11);
+      setIndex(0);
+      setSecond(prevSecond => { return {...prevSecond, two: true }});
+    }
 
 
     console.log(second);
@@ -105,7 +105,7 @@ export default function Mid() {
   }, [dialogIndex]);
 
 
-console.log(dialogIndex);
+console.log("dialogIndex = " + dialogIndex);
 
 
 //ANIMAZIONE
@@ -128,6 +128,13 @@ useEffect(() => {
   //FINE ANIMAZIONE
 
 
+
+  //HIDE CONTINUE BUTTON 
+  const excludedDialogIndexes = [5, 10, 20, 22];
+  const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
+  const isContinuaVisible = isDialogIndexValid || (second.one === true && second.two === true);
+
+
   return (
     <div className="mid-container">
       <div style={{color: 'white'}} className="mid">
@@ -142,8 +149,8 @@ useEffect(() => {
 
 
       <div className="btn-container">
-        {((dialogIndex !== 5 && dialogIndex !== 10 && dialogIndex !== 20 && dialogIndex !== 22) || (second.one === true && second.two === true)) && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUA</a>
+        {isContinuaVisible && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUE</a>
         </div>}
 
         {dialogIndex === 5 && <div className="simply-btn">
@@ -166,9 +173,9 @@ useEffect(() => {
         </div>}
 
         {/* RETURN TO 11 */}
-        {/* {dialogIndex === 22 && <div className="simply-btn">
+        {((dialogIndex === 20 || dialogIndex === 22) && (second.one === true && second.two === true)) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#S" onClick={showReturnToEleven}>RETURN TO 11</a>
-        </div>} */}
+        </div>}
 
 
       </div>
