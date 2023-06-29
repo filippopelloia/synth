@@ -132,7 +132,7 @@ useEffect(() => {
   //HIDE CONTINUE BUTTON 
   const excludedDialogIndexes = [5, 10, 20, 22];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
-  const isContinuaVisible = isDialogIndexValid || (second.one === true && second.two === true);
+  // const isContinuaVisible = isDialogIndexValid || (second.one === true && second.two === true);
 
 
   return (
@@ -149,7 +149,7 @@ useEffect(() => {
 
 
       <div className="btn-container">
-        {isContinuaVisible && <div className="simply-btn">
+        {isDialogIndexValid && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUE</a>
         </div>}
 
