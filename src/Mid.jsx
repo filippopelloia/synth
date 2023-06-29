@@ -2,7 +2,6 @@ import {useState, useEffect, useContext} from 'react'
 import { PastContext } from './PastContext'; // Importa il contesto
 import dialoghi3 from './Data3.jsx';
 
-
 export default function Mid() {
 
   const [dataIndexTotal, setDataIndexTotal] = useState(0)
@@ -20,17 +19,7 @@ export default function Mid() {
   })
 
   const [fadeClass, setFadeClass] = useState('');
-
-
-
-
-
   const { clicked } = useContext(PastContext);
-
-
-  // console.log(dialogIndex);
-  // console.log(dialogImage);
-
 
 
 
@@ -45,7 +34,6 @@ export default function Mid() {
         setIndex(0);
         setAnimateButton(true); // Attiva l'animazione del pulsante
       }
-      // setAnimateButton(true); // Attiva l'animazione del pulsante
     }
 
 
@@ -57,43 +45,34 @@ export default function Mid() {
       setIndex(0);
     }
 
-
-    //FUNZIONE PER INDEX 25
-    // function showTwentyFive() {
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 25);
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 5);
-    //   setIndex(0);
-    // }
-    //ATTENZIONE che id e INDEX sono differenti!!!
-
-    //FUNZIONE PER INDEX 2
-    // function showSecond(){
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 2);
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 2);
-    //   setIndex(0);
-    // }
-
     //FUNZIONE PER INDEX *INSERISCI INDEX*
     function showEleven(){
-      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 11);
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 10);
       setDialog(risultato[0].content);
-      setDialogIndex(prevDialogIndex => prevDialogIndex = 11);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 17);
       setIndex(0);
       setSecond(prevSecond => { return {...prevSecond, one: true }});
     }
 
     function showTwelve(){
-      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 12);
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 10);
       setDialog(risultato[0].content);
-      setDialogIndex(prevDialogIndex => prevDialogIndex = 12);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 21);
       setIndex(0);
       setSecond(prevSecond => { return {...prevSecond, two: true }});
     }
 
+    // function showReturnToEleven(){
+    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 30);
+    //   setDialog(risultato[0].content);
+    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 11);
+    //   setIndex(0);
+    //   setSecond(prevSecond => { return {...prevSecond, two: true }});
+    // }
+
 
     console.log(second);
+    console.log(dialoghi3[17].content);
     
 
   
@@ -126,6 +105,8 @@ export default function Mid() {
   }, [dialogIndex]);
 
 
+console.log(dialogIndex);
+
 
 //ANIMAZIONE
 useEffect(() => {
@@ -144,26 +125,14 @@ useEffect(() => {
   };
 }, [index, dialog]);
 
-
-
   //FINE ANIMAZIONE
-
-
-  console.log(dialogIndex)
-
-
 
 
   return (
     <div className="mid-container">
-
-      {/* <div style={{color: 'white'}} className={`mid ${fadeIn ? 'fadeIn' : ''}`}> */}
       <div style={{color: 'white'}} className="mid">
         <img src={dialogImage} alt="apocalyptic world" />
         <div className="rettangolo">
-          {/* QUI TESTO GENERATO */}
-          {/* <p className={`${fadeIn ? 'fadeIn' : ''}`}>{text}</p> */}
-          {/* <div className="character-image"></div> */}
           <div className="character-image"><img src={dialogCharacter} alt="character image" /></div>
           <div className="text-container">
             <p>{text}</p>
@@ -171,11 +140,9 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* //RUSULTATO DEL PASSATO SCELTO */}
-      {/* <h3 style={{color: 'white'}}>{clicked === 0 ? 'Ciaooooo BOY' : 'Eh no eEHHH?????'}</h3> */}
 
       <div className="btn-container">
-        {((dialogIndex !== 5 && dialogIndex !== 10 && dialogIndex !== 11 && dialogIndex !== 12) || (second.one === true && second.two === true)) && <div className="simply-btn">
+        {((dialogIndex !== 5 && dialogIndex !== 10 && dialogIndex !== 20 && dialogIndex !== 22) || (second.one === true && second.two === true)) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUA</a>
         </div>}
 
@@ -184,14 +151,25 @@ useEffect(() => {
         </div>}
 
         {/* CHI SEI */}
-        {(dialogIndex === 10 || (dialogIndex === 12 && (second.one === false && second.two === true))) && <div className="simply-btn">
+        {(dialogIndex === 10 || (dialogIndex === 22 && (second.one === false && second.two === true))) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>CHI SEI?</a>
         </div>}
 
         {/* DOVE MI TROVO? */}
-        {(dialogIndex === 10 || (dialogIndex === 11 && (second.one === true && second.two === false))) && <div className="simply-btn">
+        {(dialogIndex === 10 || (dialogIndex === 20 && (second.one === true && second.two === false))) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE MI TROVO?</a>
         </div>}
+
+        {/* DAL 25 VADO AVANTI */}
+        {dialogIndex === 25 && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#S" onClick={showText}>CONTINUA a 25</a>
+        </div>}
+
+        {/* RETURN TO 11 */}
+        {/* {dialogIndex === 22 && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#S" onClick={showReturnToEleven}>RETURN TO 11</a>
+        </div>} */}
+
 
       </div>
     </div>
