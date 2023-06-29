@@ -31,10 +31,13 @@ const dialoghi3 = [
     {id: 10, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"Non vedo l'ora. Oggi comunque mi sento particolarmente felice."},
 
     
-    {id: 11, url: `${foto5}`, character: `${char2}`, content: "TU: \"SEI A 11!!!!!!!!!\""},
-    {id: 12, url: `${foto5}`, character: `${char2}`, content: "TU: \"SEI 12222222222222\""},
-    {id: 13, url: `${foto5}`, character: `${char2}`, content: "???: \"Sarei quasi tentato di squinzagliarti addosso le guardie... dopo ciò che ti sei permesso di fare. Tuttavia...\" "},
-    {id: 14, url: `${foto5}`, character: `${char2}`, content: "???: \"...non potrai mai sfuggire dal tuo destino *NOME*, presto o tardi...\" "},
+    {id: 11, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"C\'è altro che posso fare?"},
+    {id: 12, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"Oh, stavo per dimenticare una cosa... Anche questo mese l'affitto del tuo appartamento è stato coperto...\""},
+
+    //GO TO NEWS, CONSIGLI E END DISCUSSION.
+    {id: 13, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"...Però ancora nessuna info su chi abbia pagato. I SOLDI sono arrivati in modo totalmente non-tracciabile nel tuo wallet delle spese.\" "},
+
+    {id: 14, url: `${foto5}`, character: `${char2}`, content: "???: \"SEI AL 14IIIIIIIII\" "},
     {id: 15, url: `${foto5}`, character: `${char2}`, content: "???: \"GLOCK!!\" "},
     {id: 20, url: `${foto5}`, character: `${char2}`, content: "???: \"Che ci faccio di nuovo sulla Terra? Fino ad un attimo fa ero su Solara!\" "},
     // {id: 25, url: `${foto6}`, character: `${char3}`, content: "Questo è il contenuto numero 25. Ce l'hai fatta!!!"},
@@ -47,7 +50,22 @@ const dialoghi3 = [
 
     //FROM 10
     {id: 29, url: `${foto6}`, character: `${char3}`, content: "TU: \"Che posto è questo?\" "},
-    {id: 30, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E\' il tuo appartamento.\" "},
+    {id: 30, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E\' il tuo appartamento. Si trova al 33esimo piano nel blocco 59 del distretto Suragachi.\" "},
+
+    //NEWS
+    {id: 35, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"La Kagayaku Automotive sta riscontrando una serie di reclami con alcuni suoi veicoli di settima generazione distribuiti la scorsa settimana nel territorio di Tsukimachi City.\" "},
+    {id: 36, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Secondo le testimonianze i problemi sono riconducibili alle nuove batterie al Kōrin Lithium…\" "},
+
+    //GO TO VOTATION, SYNTHICOIN OR RETURN
+    {id: 37, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Inoltre il prezzo dell’acqua continua a salire, come anche di EtherByte che è arrivato a toccare la soglia dei 39.200,91 crediti di valore.\" "},
+
+        //SYNTHICOIN
+        {id: 38, url: `${foto6}`, character: `${char3}`, content: "TU: \"che mi dici di SynthCoin? Dici che dovrei investirci qualche spicciolo?\" "},
+        {id: 39, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Il mio protocollo mi vieta di dare consigli finanziari, non posso aiutarti in questo, Mark. Resto a tua completa disposizione per qualsiasi altra cosa… Qualsiasi.\" "},
+    
+    {id: 40, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Il mio protocollo mi vieta di dare consigli finanziari, non posso aiutarti in questo, Mark. Resto a tua completa disposizione per qualsiasi altra cosa… Qualsiasi.\" "},
+    
+        
 ]
 
 

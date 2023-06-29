@@ -25,15 +25,15 @@ export default function Mid() {
 
     //FUNZIONE DEFAULT INDEX BUTTON
     function showText() {
-      if ((dialogIndex === 11 || dialogIndex === 12) && (second.one === true && second.two === true)){
-        setDialogIndex(13);
-        setSecond(prevSecond => { return {...prevSecond, one: false, two: false }});
-        setAnimateButton(true); // Attiva l'animazione del pulsante
-      } else {
+      // if ((dialogIndex === 11 || dialogIndex === 12) && (second.one === true && second.two === true)){
+      //   setDialogIndex(13);
+      //   setSecond(prevSecond => { return {...prevSecond, one: false, two: false }});
+      //   setAnimateButton(true); // Attiva l'animazione del pulsante
+      // } else {
         setDialogIndex((prevDialogIndex) => prevDialogIndex + 1);
         setIndex(0);
         setAnimateButton(true); // Attiva l'animazione del pulsante
-      }
+      // }
     }
 
 
@@ -69,6 +69,42 @@ export default function Mid() {
       setIndex(0);
       setSecond(prevSecond => { return {...prevSecond, two: true }});
     }
+
+
+
+    // ============== BLOCK 2 ==============
+
+    //FUNZIONE NEWS
+    // function showFive() {
+    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
+    //   setDialog(risultato[0].content);
+    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 40);
+    //   setIndex(0);
+    // }
+
+    //RITORNO A NEWS
+    function returnToNews() {
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 39);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 13);
+      setIndex(0);
+    }
+
+    //RITORNO A BLOCK2
+    function returnToBlockTwo() {
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 13);
+      setIndex(0);
+    }
+
+    
+
+
+
+
+
+
 
 
     console.log(second);
@@ -130,7 +166,7 @@ useEffect(() => {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 20, 22];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
   // const isContinuaVisible = isDialogIndexValid || (second.one === true && second.two === true);
 
@@ -174,8 +210,46 @@ useEffect(() => {
 
         {/* RETURN TO 11 */}
         {((dialogIndex === 20 || dialogIndex === 22) && (second.one === true && second.two === true)) && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#S" onClick={showReturnToEleven}>RETURN TO 11</a>
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#S" onClick={showReturnToEleven}>CONTINUE</a>
         </div>}
+
+
+
+        {/*================= BLOCK 2 =================*/}
+
+        {dialogIndex === 13 && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNews}>NOTIZIE</a>
+        </div>}
+
+        {dialogIndex === 13 && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>POSSO CHIEDERTI UNA COSA?</a>
+        </div>}
+
+        {dialogIndex === 13 && <div className="simply-btn">
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>FINE DIALOGO</a>
+        </div>}
+
+
+
+                {/*============= NEWS =============*/}
+
+                {dialogIndex === 25 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>SYNTHICOIN</a>
+                </div>}
+
+                      {dialogIndex === 27 && <div className="simply-btn">
+                        <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToNews}>INDIETRO</a>
+                      </div>}
+
+
+                {dialogIndex === 23 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>VOTAZIONI</a>
+                </div>}
+
+                {dialogIndex === 23 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>INDIETRO</a>
+                </div>}
+
 
 
       </div>
