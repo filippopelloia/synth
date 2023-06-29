@@ -1,6 +1,6 @@
 import {useState, useEffect, useContext} from 'react'
 import { PastContext } from './PastContext'; // Importa il contesto
-import dialoghi2 from './Data2.jsx';
+import dialoghi3 from './Data3.jsx';
 
 
 export default function Mid() {
@@ -49,26 +49,35 @@ export default function Mid() {
     }
 
 
-    //FUNZIONE PER INDEX 25
-    function showTwentyFive() {
-      const risultato = dialoghi2.filter((oggetto) => oggetto.id === 25);
+    //FUNZIONE PER INDEX 5
+    function showFive() {
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 5);
       setDialog(risultato[0].content);
-      setDialogIndex(prevDialogIndex => prevDialogIndex = 5);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 6);
       setIndex(0);
     }
+
+
+    //FUNZIONE PER INDEX 25
+    // function showTwentyFive() {
+    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 25);
+    //   setDialog(risultato[0].content);
+    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 5);
+    //   setIndex(0);
+    // }
     //ATTENZIONE che id e INDEX sono differenti!!!
 
     //FUNZIONE PER INDEX 2
-    function showSecond(){
-      const risultato = dialoghi2.filter((oggetto) => oggetto.id === 2);
-      setDialog(risultato[0].content);
-      setDialogIndex(prevDialogIndex => prevDialogIndex = 2);
-      setIndex(0);
-    }
+    // function showSecond(){
+    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 2);
+    //   setDialog(risultato[0].content);
+    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 2);
+    //   setIndex(0);
+    // }
 
     //FUNZIONE PER INDEX *INSERISCI INDEX*
     function showEleven(){
-      const risultato = dialoghi2.filter((oggetto) => oggetto.id === 11);
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 11);
       setDialog(risultato[0].content);
       setDialogIndex(prevDialogIndex => prevDialogIndex = 11);
       setIndex(0);
@@ -76,7 +85,7 @@ export default function Mid() {
     }
 
     function showTwelve(){
-      const risultato = dialoghi2.filter((oggetto) => oggetto.id === 12);
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 12);
       setDialog(risultato[0].content);
       setDialogIndex(prevDialogIndex => prevDialogIndex = 12);
       setIndex(0);
@@ -99,20 +108,20 @@ export default function Mid() {
 
   //PRENDE ED IMMAGAZZINA IL TESTO
   useEffect(() => {
-    const dialogo = dialoghi2[dialogIndex].content;
+    const dialogo = dialoghi3[dialogIndex].content;
     setBackup(dialogo);
     setDialog(dialogo);
 
     //IMMAGINE DIALOGHI
-    const image = dialoghi2[dialogIndex]?.url;
+    const image = dialoghi3[dialogIndex]?.url;
     setDialogImage(image);
 
     //IMMAGINE PERSONAGGI
-    const character = dialoghi2[dialogIndex]?.character;
+    const character = dialoghi3[dialogIndex]?.character;
     setDialogCharacter(character);
 
     //QUANTITA' DEI CONTENUTI
-    const quantity = dialoghi2.length;
+    const quantity = dialoghi3.length;
     setDataIndexTotal(quantity);
   }, [dialogIndex]);
 
@@ -166,26 +175,20 @@ useEffect(() => {
       {/* <h3 style={{color: 'white'}}>{clicked === 0 ? 'Ciaooooo BOY' : 'Eh no eEHHH?????'}</h3> */}
 
       <div className="btn-container">
-        {((dialogIndex !== 10 && dialogIndex !== 11 && dialogIndex !== 12) || (second.one === true && second.two === true)) && <div className="simply-btn">
+        {((dialogIndex !== 5 && dialogIndex !== 10 && dialogIndex !== 11 && dialogIndex !== 12) || (second.one === true && second.two === true)) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUA</a>
         </div>}
 
-        {dialogIndex === 1 && <div className="simply-btn">
-          <a style={{color: 'crimson'}} href="#" onClick={showTwentyFive}>PROVA IL SECONDO TESTO</a>
-        </div>}
-
         {dialogIndex === 5 && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSecond}>PROVA IL TERZO TESTO</a>
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showFive}>NON RICORDO</a>
         </div>}
 
-        {dialogIndex === 2 && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#">PROVA IL QUARTO TESTO</a>
-        </div>}
-
+        {/* CHI SEI */}
         {(dialogIndex === 10 || (dialogIndex === 12 && (second.one === false && second.two === true))) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>CHI SEI?</a>
         </div>}
 
+        {/* DOVE MI TROVO? */}
         {(dialogIndex === 10 || (dialogIndex === 11 && (second.one === true && second.two === false))) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE MI TROVO?</a>
         </div>}
