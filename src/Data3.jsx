@@ -53,19 +53,31 @@ const dialoghi3 = [
     {id: 30, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E\' il tuo appartamento. Si trova al 33esimo piano nel blocco 59 del distretto Suragachi.\" "},
 
     //NEWS
-    {id: 35, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"La Kagayaku Automotive sta riscontrando una serie di reclami con alcuni suoi veicoli di settima generazione distribuiti la scorsa settimana nel territorio di Tsukimachi City.\" "},
-    {id: 36, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Secondo le testimonianze i problemi sono riconducibili alle nuove batterie al Kōrin Lithium…\" "},
+    {id: 35, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"La Kagayaku Automotive sta riscontrando una serie di reclami per alcuni veicoli di 7th gen distribuiti la scorsa settimana nel territorio di Tsukimachi City. I problemi sembrano riconducibili alle nuove batterie al Kōrin Lithium...\" "},
+    {id: 36, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Oggi e domani saranno in corso le elezioni. L\’attuale governatore Haruki Sato tenta il terzo mandato mentre dall\’altra parte troviamo il magnate Matsuda Takahashi, in corsa per la sua prima carica. Per votare ti basta prendere il tuo axi-pad.\" "},
 
-    //GO TO VOTATION, SYNTHICOIN OR RETURN
-    {id: 37, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Inoltre il prezzo dell’acqua continua a salire, come anche di EtherByte che è arrivato a toccare la soglia dei 39.200,91 crediti di valore.\" "},
+    //GO TO VOTATION, SYNTHICOIN OR RETURN - INDEX 25
+    {id: 37, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Inoltre il prezzo dell\’acqua terrestre continua a salire, come anche di EtherByte che è arrivato a toccare la soglia dei 39.200,91 crediti JLL.\" "},
 
         //SYNTHICOIN
         {id: 38, url: `${foto6}`, character: `${char3}`, content: "TU: \"che mi dici di SynthCoin? Dici che dovrei investirci qualche spicciolo?\" "},
         {id: 39, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Il mio protocollo mi vieta di dare consigli finanziari, non posso aiutarti in questo, Mark. Resto a tua completa disposizione per qualsiasi altra cosa… Qualsiasi.\" "},
     
-    {id: 40, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Il mio protocollo mi vieta di dare consigli finanziari, non posso aiutarti in questo, Mark. Resto a tua completa disposizione per qualsiasi altra cosa… Qualsiasi.\" "},
-    
-        
+    //INDEX 28
+    {id: 40, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Quindi? Come posso aiutarti?\" "},
+    {id: 41, url: `${foto6}`, character: `${char3}`, content: "TU: \"Voglio votare... anche se la politica non mi è mai importata più di tanto. In tutti questi anni non è stato fatto granché per migliorare Tsukimachi City.\" "},
+    {id: 42, url: `${foto6}`, character: `${char3}`, content: "TU: \"D\'altronde se anch'io fossi sindaco non penserei ad estinguere le guerre tra gang o a limitare lo strapotere delle corporazioni. \" "},
+    {id: 43, url: `${foto6}`, character: `${char3}`, content: "TU: \"Piuttosto cercherei di assicurarmi un lotto di terreno in qualche colonia extra-mondo... \" "},
+    {id: 44, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Hai già in mente qualche posto? Dicono che Solara e Nerezar siano magnifiche per ricominciare.\" "},
+    {id: 45, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non mi parlare di Nerezar, per favore Nova... Evitiamo l\'argomento.\" "},
+    {id: 46, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Oh, perdonami Mark, non era mia intenzione...\" "},
+    {id: 47, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\" "},
+
+    //VOTE NOW - INDEX 36
+    {id: 48, url: `${foto6}`, character: `${char3}`, content: "AXI Pad in Avvio..."},
+    {id: 49, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Perfetto, voto inviato. Congratulazioni Mark!\" "},
+    {id: 50, url: `${foto6}`, character: `${char3}`, content: "TU: \"E\' solo un voto Nova, non cambierà questa città marcia.\" "},
+
 ]
 
 

@@ -18,6 +18,11 @@ export default function Mid() {
     two: false
   })
 
+  const [third, setThird] = useState({
+    one: false,
+    two: false
+  })
+
   const [fadeClass, setFadeClass] = useState('');
   const { clicked } = useContext(PastContext);
 
@@ -74,19 +79,20 @@ export default function Mid() {
 
     // ============== BLOCK 2 ==============
 
+
     //FUNZIONE NEWS
-    // function showFive() {
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 40);
-    //   setIndex(0);
-    // }
+    function showNews() {
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 23);
+      setIndex(0);
+    }
 
     //RITORNO A NEWS
     function returnToNews() {
-      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 39);
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 39 || oggetto.id === 50);
       setDialog(risultato[0].content);
-      setDialogIndex(prevDialogIndex => prevDialogIndex = 13);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 28);
       setIndex(0);
     }
 
@@ -98,6 +104,36 @@ export default function Mid() {
       setIndex(0);
     }
 
+    //SHOW SYNTHICOIN
+    function showSynthicoin() {
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 37);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 26);
+      setIndex(0);
+
+      //ADD FALSE --> TRUE
+    }
+
+    //VOTE AFTER SYNTHICOIN
+    function showVoteAfter() {
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 40);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 29);
+      setIndex(0);
+
+      //ADD FALSE --> TRUE
+    }
+
+    //VOTE
+    function showVote() {
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 37);
+      setDialog(risultato[0].content);
+      setDialogIndex(prevDialogIndex => prevDialogIndex = 29);
+      setIndex(0);
+
+      //ADD FALSE --> TRUE
+    }
+
     
 
 
@@ -107,7 +143,7 @@ export default function Mid() {
 
 
 
-    console.log(second);
+    console.log(third);
     console.log(dialoghi3[17].content);
     
 
@@ -166,7 +202,7 @@ useEffect(() => {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 25, 27, 28, 36, 38];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
   // const isContinuaVisible = isDialogIndexValid || (second.one === true && second.two === true);
 
@@ -204,9 +240,9 @@ useEffect(() => {
         </div>}
 
         {/* DAL 25 VADO AVANTI */}
-        {dialogIndex === 25 && <div className="simply-btn">
+        {/* {dialogIndex === 25 && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#S" onClick={showText}>CONTINUA a 25</a>
-        </div>}
+        </div>} */}
 
         {/* RETURN TO 11 */}
         {((dialogIndex === 20 || dialogIndex === 22) && (second.one === true && second.two === true)) && <div className="simply-btn">
@@ -234,21 +270,40 @@ useEffect(() => {
                 {/*============= NEWS =============*/}
 
                 {dialogIndex === 25 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>SYNTHICOIN</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSynthicoin}>SYNTHICOIN</a>
                 </div>}
 
                       {dialogIndex === 27 && <div className="simply-btn">
-                        <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToNews}>INDIETRO</a>
+                        <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToNews}>RETURN TO NEWS SECTION</a>
                       </div>}
 
 
-                {dialogIndex === 23 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>VOTAZIONI</a>
+                {(dialogIndex === 25 || dialogIndex === 28) && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showVoteAfter}>VOTAZIONI</a>
                 </div>}
 
-                {dialogIndex === 23 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>INDIETRO</a>
+                {(dialogIndex === 25 || dialogIndex === 28) && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>RETURN TO BLOCK 2</a>
                 </div>}
+
+                {dialogIndex === 36 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>VOTA PER SINDACO SATO</a>
+                </div>}
+
+                {dialogIndex === 36 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>VOTA PER MATSUDA TAKAHASHI</a>
+                </div>}
+
+
+                {/*===== LIMBO BLOCK 2 =====*/}
+
+                {/* {dialogIndex === 28 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>VOTAZIONI</a>
+                </div>} */}
+
+
+
+
 
 
 
