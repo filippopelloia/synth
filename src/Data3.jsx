@@ -63,8 +63,9 @@ const dialoghi3 = [
         {id: 38, url: `${foto6}`, character: `${char3}`, content: "TU: \"che mi dici di SynthCoin? Dici che dovrei investirci qualche spicciolo?\" "},
         {id: 39, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Il mio protocollo mi vieta di dare consigli finanziari, non posso aiutarti in questo, Mark. Resto a tua completa disposizione per qualsiasi altra cosa… Qualsiasi.\" "},
     
-    //INDEX 28
+    //LIMBO 1 - INDEX 28
     {id: 40, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Quindi? Come posso aiutarti?\" "},
+    
     {id: 41, url: `${foto6}`, character: `${char3}`, content: "TU: \"Voglio votare... anche se la politica non mi è mai importata più di tanto. In tutti questi anni non è stato fatto granché per migliorare Tsukimachi City.\" "},
     {id: 42, url: `${foto6}`, character: `${char3}`, content: "TU: \"D\'altronde se anch'io fossi sindaco non penserei ad estinguere le guerre tra gang o a limitare lo strapotere delle corporazioni. \" "},
     {id: 43, url: `${foto6}`, character: `${char3}`, content: "TU: \"Piuttosto cercherei di assicurarmi un lotto di terreno in qualche colonia extra-mondo... \" "},
