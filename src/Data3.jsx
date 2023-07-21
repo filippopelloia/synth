@@ -24,11 +24,11 @@ const dialoghi3 = [
     {id: 5, url: `${foto5}`, character: `${char3}`, content: "NOVA: \"Hai voglia di parlarmi di cosa hai visto in sogno?\""},
     {id: 6, url: `${foto5}`, character: `${char3}`, content: "TU: \"…non ricordo granché\"  "},
     {id: 7, url: `${foto5}`, character: `${char3}`, content: "NOVA: \"Se vuoi parlarmene.. Qualunque cosa per te MARK.\" "},
-    {id: 8, url: `${foto5}`, character: `${char3}`, content: "NOVA: \"Sai che con l'aggiornamento ARISMA ora posso anche aiutarti ad interpretare i sogni? \" "},
-    {id: 9, url: `${foto5}`, character: `${char2}`, content: "TU: \"Chissà, magari avremo modo di provare questo tuo upgrade.\" "},
+    {id: 8, url: `${foto5}`, character: `${char3}`, content: "NOVA: \"Sai che con l'aggiornamento ARISMA 7.36.1 ora posso anche aiutarti ad interpretare i sogni? \" "},
+    {id: 9, url: `${foto5}`, character: `${char2}`, content: "TU: \"Chissà, magari avrò modo di provare questo tuo upgrade un giorno.\" "},
     
     //GO TO 26 OR 29
-    {id: 10, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"Non vedo l'ora. Oggi comunque mi sento particolarmente felice."},
+    {id: 10, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"Pure io. Oggi comunque mi sento particolarmente felice."},
 
     
     {id: 11, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"C\'è altro che posso fare?"},
@@ -50,7 +50,7 @@ const dialoghi3 = [
 
     //FROM 10
     {id: 29, url: `${foto6}`, character: `${char3}`, content: "TU: \"Che posto è questo?\" "},
-    {id: 30, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E\' il tuo appartamento. Si trova al 33esimo piano nel blocco 59 del distretto Suragachi.\" "},
+    {id: 30, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E\' il tuo appartamento. Si trova al 36esimo piano nel blocco 59 del distretto Suragachi.\" "},
 
     //NEWS
     {id: 35, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"La Kagayaku Automotive sta riscontrando una serie di reclami per alcuni veicoli di 7th gen distribuiti la scorsa settimana nel territorio di Tsukimachi City. I problemi sembrano riconducibili alle nuove batterie al Kōrin Lithium...\" "},
@@ -74,10 +74,17 @@ const dialoghi3 = [
     {id: 46, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Oh, perdonami Mark, non era mia intenzione...\" "},
     {id: 47, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\" "},
 
+    //==============================================
+    //  ATTENTO A INDEX E ID, DUE ELEMENTI DIVERSI
+    //==============================================
+
     //VOTE NOW - INDEX 36
     {id: 48, url: `${foto6}`, character: `${char3}`, content: "AXI Pad in Avvio..."},
     {id: 49, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Perfetto, voto inviato. Congratulazioni Mark!\" "},
     {id: 50, url: `${foto6}`, character: `${char3}`, content: "TU: \"E\' solo un voto Nova, non cambierà questa città marcia.\" "},
+
+    //END DIALOG - INDEX 39
+    {id: 60, url: `${foto6}`, character: `${char3}`, content: "Cosa vuoi fare?"},
 
 ]
 

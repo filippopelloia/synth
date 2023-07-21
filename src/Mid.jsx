@@ -105,6 +105,18 @@ export default function Mid() {
     //   setIndex(0);
     // }
 
+    function endDialog(){
+      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
+      if (risultato.length > 0) {
+        setDialog(risultato[0].content);
+        setDialogIndex(39);
+        setIndex(0);
+      } else {
+        // console.log("ciao QUESTA E LA SECONDA VOLTA");
+        setDialogIndex(39);
+      }
+    }
+
     //RITORNO A NEWS
     function returnToNews() {
 
@@ -265,7 +277,7 @@ useEffect(() => {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 25, 27, 28, 36, 38];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 25, 27, 28, 36, 38, 39];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -324,7 +336,7 @@ useEffect(() => {
         </div>}
 
         {dialogIndex === 13 && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>FINE DIALOGO</a>
+          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={endDialog}>FINE DIALOGO</a>
         </div>}
 
 
@@ -362,6 +374,26 @@ useEffect(() => {
 
                 {dialogIndex === 36 && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={youVoted}>VOTA PER MATSUDA TAKAHASHI</a>
+                </div>}
+
+
+
+                {/*============= END DIALOG =============*/}
+
+                {dialogIndex === 39 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>VAI NEL TETTO</a>
+                </div>}
+
+                {dialogIndex === 39 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>DORMI</a>
+                </div>}
+
+                {dialogIndex === 39 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>MANGIA</a>
+                </div>}
+
+                {dialogIndex ===39 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TORNA DA NOVA</a>
                 </div>}
 
 
