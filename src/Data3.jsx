@@ -86,6 +86,77 @@ const dialoghi3 = [
     //END DIALOG - INDEX 39
     {id: 60, url: `${foto6}`, character: `${char3}`, content: "Cosa vuoi fare?"},
 
+
+    //ADVICE SECTION
+    {id: 65, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho bisogno di un consiglio Nova...\""},
+    {id: 66, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Dimmi pure.\""},
+
+    {id: 67, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho commesso un grave errore...\""},
+    {id: 68, url: `${foto6}`, character: `${char3}`, content: "TU: \"...Non avrei dovuto fare quello che ho fatto.\""},
+    {id: 69, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ci penso continuamente...\""},
+    {id: 70, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ti riferisci alla fuga di notizie e alle conseguenze che ha portato?\""},
+    {id: 71, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
+    {id: 72, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Non devi pensarci Mark, hai fatto la cosa giusta, chiunque l’avrebbe fatto al posto tuo…\""},
+    {id: 73, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"…e se la MiraiTech è disposta ad utilizzare ogni mezzo pur di nascondere le scomode verità, non vedo come possa esser un problema tuo o una tua colpa. \""},
+    {id: 74, url: `${foto6}`, character: `${char3}`, content: "TU: \"Quelle persone non sarebbero morte se avessi abbassato la testa e avessi fatto finta di niente.\""},
+    {id: 75, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E’ probabile… ma cosa hai ottenuto? Ci hai pensato? \""},
+    {id: 76, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Hai dimostrato al Mondo che *FATTI DELLE COLONIE EXTRA-MONDO*.\""},
+    {id: 77, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Per me sei un eroe, il mio eroe.\""},
+    {id: 78, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho ottenuto che la mia vita è a pezzi.\""},
+    {id: 79, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non ho più niente se non te e questo appartamento. La mia carriera è fottuta.\""},
+    {id: 80, url: `${foto6}`, character: `${char3}`, content: "TU: \"Gli unici lavori che potrei ancora fare sono il trivellatore su pianeti di fascia 7 come Eridania Secundus o il mercenario corporativo… ma solo per società concorrenti alla MiraiTech…\""},
+    {id: 81, url: `${foto6}`, character: `${char3}`, content: "TU: \"…e sai bene anche te che fine fanno i mercenari. O impazzisci e ti imbottisci di Quicksilverol o  finisci a sparare su coloni disarmati in una qualche colonia extra-mondo.\""},
+    {id: 82, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...\""},
+    {id: 83, url: `${foto6}`, character: `${char3}`, content: "TU: \"Cambiando discorso, hai recuperato le registrazioni delle telecamere agli ingressi del palazzo come ti avevo chiesto? Ti hanno concesso i permessi per la supervisione dei filmati? \""},
+    {id: 84, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Si, ho ottenuto i filmati e il via libera oggi pomeriggio… che hai in mente di fare?\""},
+    {id: 85, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho una strana sensazione... \""},
+    {id: 86, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Si avvicina a te]"},
+    {id: 87, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Spiegati meglio.\""},
+
+    {id: 88, url: `${foto6}`, character: `${char3}`, content: "TU: \"Qualcuno ha notato agenti corporativi della Shinseki Corporation in abiti civili che facevano strane domande poco lontano da qui.. Diciamo che sono un bel pò fuori dal loro territorio…\""},
+    {id: 89, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Credi che ti stiano cercando?\""},
+    {id: 90, url: `${foto6}`, character: `${char3}`, content: "TU: \"Chi può dirlo…\""},
+    {id: 91, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Supponiamo ti stiano cercando... Perchè ora? Perchè dopo un anno?\""},
+    {id: 92, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non so darti una risposta.\""},
+    {id: 93, url: `${foto6}`, character: `${char3}`, content: "TU: \"Come sono i tuoi sensori perimetrali? Funzionano ancora bene vero?\""},
+    {id: 94, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Assolutamente si, Mark. Funzionalità e affidabilità al 99.967%.\""},
+    {id: 95, url: `${foto6}`, character: `${char3}`, content: "TU: \"Avvisami se qualcuno passa e supera il piano del vecchio incendio.\""},
+    {id: 96, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Intendi il 34esimo piano? \""},
+    {id: 97, url: `${foto6}`, character: `${char3}`, content: "TU: \"Proprio quello.\""},
+    {id: 98, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Va bene Mark, sono in modalità monitoraggio da… ora. \""},
+    {id: 99, url: `${foto6}`, character: `${char3}`, content: "TU: \"Se qualcuno verrà a trovarci lo sapremo in anticipo...\""},
+    {id: 100, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Furbo il mio Mark.\""},
+    {id: 101, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Appoggia una mano sulla tua guancia]"},
+    {id: 102, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ti vedo un pò stanco…\""},
+    {id: 103, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
+    {id: 104, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lascia che mi prenda io cura di te stasera. Lo so che ne hai bisogno… \""},
+    {id: 105, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...E ne ho bisogno pure io.\""},
+
+    {id: 106, url: `${foto6}`, character: `${char3}`, content: "TU: \"Va bene.\""},
+    {id: 107, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Sorride]"},
+    {id: 108, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lo sapevo. Però...\""},
+    {id: 109, url: `${foto6}`, character: `${char3}`, content: "TU: \"…vuoi sincronizzarti con una ragazza come la settimana scorsa?\""},
+    {id: 110, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Tu cosa dici?\""},
+
+    {id: 111, url: `${foto6}`, character: `${char3}`, content: "TU: \"Per me può andare.\""},
+    {id: 112, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ottimo, l'ho avvisata. Tra 20 minuti sarà qui.\""},
+    {id: 113, url: `${foto6}`, character: `${char3}`, content: "[Qualche ora più tardi]"},
+    {id: 114, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Potrei stare per ore qui distesa con te…\""},
+    {id: 115, url: `${foto6}`, character: `${char3}`, content: "TU: [Sorridi]"},
+    {id: 118, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Amo poterti toccare, sentire il tuo corpo tra le mie mani…\""},
+
+
+
+
+
+    {id: 114, url: `${foto6}`, character: `${char3}`, content: "[Apri gli occhi]"},
+    {id: 115, url: `${foto6}`, character: `${char3}`, content: "PAD: [HAI 1 NOTIFICA]"},
+
+    //PAD NOTIFICA
+    {id: 116, url: `${foto6}`, character: `${char3}`, content: "[Ti alzi dal letto e visualizzi la notifica nel PAD]"},
+    {id: 117, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Mmmm\""},
+    {id: 118, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Perchè ti sei svegliato? Distenditi di nuovo con me...\""},
+
 ]
 
 
