@@ -326,6 +326,8 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    //GIRL
+
     function showGirlSyncro(){
       const risultato = dialoghi3.find(item => item.id === 111)
       setDialogIndex(risultato.id);
@@ -356,8 +358,15 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    //END GIRL
+
     function showNotification(){
-      const risultato = dialoghi3.find(item => item.id === 116)
+      const risultato = dialoghi3.find(item => item.id === 124)
+      setDialogIndex(risultato.id);
+    }
+
+    function showGun(){
+      const risultato = dialoghi3.find(item => item.id === 140)
       setDialogIndex(risultato.id);
     }
     
@@ -425,7 +434,7 @@ console.log("dialogIndex = " + dialogIndex);
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 115, 118, 119, 125];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 115, 118, 119, 123, 139];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -591,9 +600,25 @@ console.log("dialogIndex = " + dialogIndex);
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={endGirl}>CONTINUE</a>
                 </div>}
 
-                {dialogIndex === 125 && <div className="simply-btn">
+                {dialogIndex === 123 && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNotification}>VISUALIZZA NOTIFICA</a>
                 </div>}
+
+                {dialogIndex === 139 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>PRENDI PISTOLA</a>
+                </div>}
+
+                {dialogIndex === 139 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>PRENDI FUCILE</a>
+                </div>}
+
+                {dialogIndex === 139 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>NIENTE</a>
+                </div>}
+
+
+
+                
 
       </div>
     </div>

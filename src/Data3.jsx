@@ -26,29 +26,17 @@ const dialoghi3 = [
     {id: 7, url: `${foto5}`, character: `${char3}`, content: "NOVA: \"Se vuoi parlarmene.. Qualunque cosa per te MARK.\" "},
     {id: 8, url: `${foto5}`, character: `${char3}`, content: "NOVA: \"Sai che con l'aggiornamento ARISMA 7.36.1 ora posso anche aiutarti ad interpretare i sogni? \" "},
     {id: 9, url: `${foto5}`, character: `${char2}`, content: "TU: \"Chissà, magari avrò modo di provare questo tuo upgrade un giorno.\" "},
-    
-    //GO TO 26 OR 29
     {id: 10, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"Pure io. Oggi comunque mi sento particolarmente felice."},
-
-    
     {id: 11, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"C\'è altro che posso fare?"},
     {id: 12, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"Oh, stavo per dimenticare una cosa... Anche questo mese l'affitto del tuo appartamento è stato coperto...\""},
-
-    //GO TO NEWS, CONSIGLI E END DISCUSSION.
     {id: 13, url: `${foto5}`, character: `${char2}`, content: "NOVA: \"...Però ancora nessuna info su chi abbia pagato. I SOLDI sono arrivati in modo totalmente non-tracciabile nel tuo wallet delle spese.\" "},
-
-    {id: 14, url: `${foto5}`, character: `${char2}`, content: "???: \"SEI AL 14IIIIIIIII\" "},
-    {id: 15, url: `${foto5}`, character: `${char2}`, content: "???: \"GLOCK!!\" "},
-    {id: 20, url: `${foto5}`, character: `${char2}`, content: "???: \"Che ci faccio di nuovo sulla Terra? Fino ad un attimo fa ero su Solara!\" "},
-    // {id: 25, url: `${foto6}`, character: `${char3}`, content: "Questo è il contenuto numero 25. Ce l'hai fatta!!!"},
-
-    //FROM 10
+    // {id: 14, url: `${foto5}`, character: `${char2}`, content: "???: \"SEI AL 14IIIIIIIII\" "},
+    // {id: 15, url: `${foto5}`, character: `${char2}`, content: "???: \"GLOCK!!\" "},
+    // {id: 20, url: `${foto5}`, character: `${char2}`, content: "???: \"Che ci faccio di nuovo sulla Terra? Fino ad un attimo fa ero su Solara!\" "},
     {id: 25, url: `${foto5}`, character: `${char2}`, content: "TU: \"Parlami di te, Nova. Chi sei realmente?\" "},
     {id: 26, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Sono NOVA, l'intelligenza artificiale XE-AI di punta della MiraiTech… Il mio numero di serie è IA2023-9876-XYZA...\""},
     {id: 27, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Offro una grande quantità di servizi. Posso ordinarti la cena, gestire le chiamate, intrattenerti e molto altro ancora.\""},
     {id: 28, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Devi solo chiedere.\""},
-
-    //FROM 10
     {id: 29, url: `${foto6}`, character: `${char3}`, content: "TU: \"Che posto è questo?\" "},
     {id: 30, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E\' il tuo appartamento. Si trova al 36esimo piano nel blocco 59 del distretto Suragachi.\" "},
 
@@ -73,10 +61,6 @@ const dialoghi3 = [
     {id: 45, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non mi parlare di Nerezar, per favore Nova... Evitiamo l\'argomento.\" "},
     {id: 46, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Oh, perdonami Mark, non era mia intenzione...\" "},
     {id: 47, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\" "},
-
-    //==============================================
-    //  ATTENTO A INDEX E ID, DUE ELEMENTI DIVERSI
-    //==============================================
 
     //VOTE NOW - INDEX 36
     {id: 48, url: `${foto6}`, character: `${char3}`, content: "AXI Pad in Avvio..."},
@@ -112,7 +96,6 @@ const dialoghi3 = [
     {id: 85, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho una strana sensazione... \""},
     {id: 86, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Si avvicina a te]"},
     {id: 87, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Spiegati meglio.\""},
-
     {id: 88, url: `${foto6}`, character: `${char3}`, content: "TU: \"Qualcuno ha notato agenti corporativi della Shinseki Corporation in abiti civili che facevano strane domande poco lontano da qui.. Diciamo che sono un bel pò fuori dal loro territorio…\""},
     {id: 89, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Credi che ti stiano cercando?\""},
     {id: 90, url: `${foto6}`, character: `${char3}`, content: "TU: \"Chi può dirlo…\""},
@@ -143,19 +126,42 @@ const dialoghi3 = [
     {id: 113, url: `${foto6}`, character: `${char3}`, content: "[Qualche ora più tardi]"},
     {id: 114, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Potrei stare per ore qui distesa con te…\""},
     {id: 115, url: `${foto6}`, character: `${char3}`, content: "TU: [Sorridi]"},
+
+    //SE GIRL E' TRUE
     {id: 118, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Amo poterti toccare, sentire il tuo corpo tra le mie mani…\""},
 
+    //SE GIRL E' FALSE
+    {id: 119, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Quanto vorrei sentire il tuo corpo tra le mie mani…\""},
 
-
-
-
-    {id: 114, url: `${foto6}`, character: `${char3}`, content: "[Apri gli occhi]"},
-    {id: 115, url: `${foto6}`, character: `${char3}`, content: "PAD: [HAI 1 NOTIFICA]"},
+    {id: 120, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Vivo per questi momenti con te, Mark.\""},
+    {id: 121, url: `${foto6}`, character: `${char3}`, content: "TU: \"Anch’io Nova.\""},
 
     //PAD NOTIFICA
-    {id: 116, url: `${foto6}`, character: `${char3}`, content: "[Ti alzi dal letto e visualizzi la notifica nel PAD]"},
-    {id: 117, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Mmmm\""},
-    {id: 118, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Perchè ti sei svegliato? Distenditi di nuovo con me...\""},
+    {id: 122, url: `${foto6}`, character: `${char3}`, content: "[BLIP]"},
+    {id: 123, url: `${foto6}`, character: `${char3}`, content: "PAD: [HAI 1 NOTIFICA]"},
+    {id: 124, url: `${foto6}`, character: `${char3}`, content: "[Ti alzi dal letto e visualizzi la notifica nel PAD]"},
+    {id: 125, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Rimani qui con me, ti prego...\""},
+    {id: 126, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
+    {id: 127, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Perchè quell'espressione? Che è successo...?\""},
+    {id: 128, url: `${foto6}`, character: `${char3}`, content: "[Esci dalla stanza e accendi la Tv in soggiorno.]"},
+    {id: 129, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"...Decine di migliaia di documenti secretati della pluri-miliardaria corporazione MiraiTech con sede terrestre a Tsukimachi City sono stati trafugati da una fonte anonima e pubblicati in rete.\""},
+    {id: 130, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"...Al momento i vertici della corporazione non si sono espressi ma è stata indetta una conferenza stampa per domani mattina.\""},
+    {id: 131, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"Questi dati sensibili riguardano presunte operazioni militari indette dalla MiraiTech stessa per soffocare ribellioni sulle colonie di fascia 3, 4, 5 e 9.\""},
+    {id: 132, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"Al momento non è dato sapere l'autenticità di queste migliaia di documenti…\""},
+    {id: 133, url: `${foto6}`, character: `${char3}`, content: "TU: \"E’ la fine per me.\""},
+    {id: 134, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Credi che verranno subito a cercarti? Potrebbe esser stato chiunque.. e tu non hai più accesso ai database satellitari da quando ti hanno cacciato…\""},
+    {id: 135, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sono comunque informazioni di 2 o più anni fa. Io avrei potuto accedere a questi dati. Penseranno subito a me visto che ho già fatto una cosa simile…\""},
+    {id: 136, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Rilevo movimenti al piano 34! Conto 7, 8… 9 persone!\""},
+    {id: 137, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanno arrivando.\""},
+    {id: 138, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ora stanno salendo al piano 35…\""},
+    {id: 139, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
+    {id: 140, url: `${foto6}`, character: `${char3}`, content: "[Rumori fuori dalla porta.]"},
+    {id: 141, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Sono qui!\""},
+    {id: 142, url: `${foto6}`, character: `${char3}`, content: "TU: \"Nova, vai offline. Non ti preoccupare per me!\""},
+    {id: 143, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Sii prudente.\""},
+    {id: 144, url: `${foto6}`, character: `${char3}`, content: "[Porta viene sfondata.]"},
+    {id: 145, url: `${foto6}`, character: `${char3}`, content: "[FINE.]"},
+
 
 ]
 
