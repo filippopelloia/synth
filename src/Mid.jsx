@@ -326,6 +326,11 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    function showNoEntertainment(){
+      const risultato = dialoghi3.find(item => item.id === 150)
+      setDialogIndex(risultato.id);
+    }
+
     //GIRL
 
     function showGirlSyncro(){
@@ -360,6 +365,17 @@ export default function Mid() {
 
     //END GIRL
 
+
+    //TRAPPOLA
+
+    function showTrapped(){
+      const risultato = dialoghi3.find(item => item.id === 120)
+      setDialogIndex(risultato.id);
+    }
+
+    //END TRAPPOLA
+
+
     function showNotification(){
       const risultato = dialoghi3.find(item => item.id === 124)
       setDialogIndex(risultato.id);
@@ -367,6 +383,21 @@ export default function Mid() {
 
     function showGun(){
       const risultato = dialoghi3.find(item => item.id === 140)
+      setDialogIndex(risultato.id);
+    }
+    
+    function showNothing(){
+      const risultato = dialoghi3.find(item => item.id === 147)
+      setDialogIndex(risultato.id);
+    }
+
+    function returnToNinetyThree(){
+      const risultato = dialoghi3.find(item => item.id === 93)
+      setDialogIndex(risultato.id);
+    }
+
+    function showEnd(){
+      const risultato = dialoghi3.find(item => item.id === 128)
       setDialogIndex(risultato.id);
     }
     
@@ -434,7 +465,7 @@ console.log("dialogIndex = " + dialogIndex);
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 115, 118, 119, 123, 139];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -561,19 +592,23 @@ console.log("dialogIndex = " + dialogIndex);
                 {/*============= ADVICE SECTION =============*/}
 
                 {dialogIndex === 66 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showError}>ERRORE</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showError}>HO FATTO UN ERRORE</a>
                 </div>}
 
                 {dialogIndex === 66 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>DORMI</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTrapped}>MI SENTO IN TRAPPOLA</a>
                 </div>}
 
                 {dialogIndex === 87 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSpies}>RACCONTA</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSpies}>RACCONTA CIO' CHE SAI</a>
                 </div>}
 
                 {dialogIndex === 87 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>NON DIRE NULLA</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNothing}>NON DIRE NULLA</a>
+                </div>}
+
+                {dialogIndex === 148 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToNinetyThree}>CONTINUE</a>
                 </div>}
 
                 {dialogIndex === 105 && <div className="simply-btn">
@@ -581,7 +616,7 @@ console.log("dialogIndex = " + dialogIndex);
                 </div>}
 
                 {dialogIndex === 105 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>DECLINA</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNoEntertainment}>DECLINA</a>
                 </div>}
 
                 {dialogIndex === 110 && <div className="simply-btn">
@@ -616,7 +651,12 @@ console.log("dialogIndex = " + dialogIndex);
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>NIENTE</a>
                 </div>}
 
+                {dialogIndex === 159 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEnd}>CONTINUE</a>
+                </div>}
 
+
+                {/*============= TRAPPED SECTION =============*/}
 
                 
 

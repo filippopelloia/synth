@@ -89,10 +89,10 @@ const dialoghi3 = [
     {id: 78, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho ottenuto che la mia vita è a pezzi.\""},
     {id: 79, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non ho più niente se non te e questo appartamento. La mia carriera è fottuta.\""},
     {id: 80, url: `${foto6}`, character: `${char3}`, content: "TU: \"Gli unici lavori che potrei ancora fare sono il trivellatore su pianeti di fascia 7 come Eridania Secundus o il mercenario corporativo… ma solo per società concorrenti alla MiraiTech…\""},
-    {id: 81, url: `${foto6}`, character: `${char3}`, content: "TU: \"…e sai bene anche te che fine fanno i mercenari. O impazzisci e ti imbottisci di Quicksilverol o  finisci a sparare su coloni disarmati in una qualche colonia extra-mondo.\""},
+    {id: 81, url: `${foto6}`, character: `${char3}`, content: "TU: \"…e sai bene anche te che fine fanno i mercenari. O impazzisci e ti imbottisci di Quicksilverol o  finisci a sparare su civili disarmati in una qualche colonia extra-mondo.\""},
     {id: 82, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...\""},
     {id: 83, url: `${foto6}`, character: `${char3}`, content: "TU: \"Cambiando discorso, hai recuperato le registrazioni delle telecamere agli ingressi del palazzo come ti avevo chiesto? Ti hanno concesso i permessi per la supervisione dei filmati? \""},
-    {id: 84, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Si, ho ottenuto i filmati e il via libera oggi pomeriggio… che hai in mente di fare?\""},
+    {id: 84, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ho ottenuto i filmati e il via libera oggi pomeriggio… che hai in mente di fare?\""},
     {id: 85, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho una strana sensazione... \""},
     {id: 86, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Si avvicina a te]"},
     {id: 87, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Spiegati meglio.\""},
@@ -162,6 +162,37 @@ const dialoghi3 = [
     {id: 144, url: `${foto6}`, character: `${char3}`, content: "[Porta viene sfondata.]"},
     {id: 145, url: `${foto6}`, character: `${char3}`, content: "[FINE.]"},
 
+    {id: 147, url: `${foto6}`, character: `${char3}`, content: "TU: \"E' solo il mio sesto senso, tutto qui.\""},
+    {id: 148, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ok Mark, non insisto.\""},
+
+    //QUI DIFFERENTE SE DECIDERAI DI ANDARE A VISITARE LA GANG
+    {id: 150, url: `${foto6}`, character: `${char3}`, content: "TU: \"Un'altra volta Nova. Sono a pezzi stasera.\""},
+    {id: 151, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Va bene tesoro, non ti preoccupare.\""},
+    {id: 152, url: `${foto6}`, character: `${char3}`, content: "[Dopo qualche ora]"},
+
+    //SECONDO PAD NOTIFICA PRE-FINE
+    {id: 153, url: `${foto6}`, character: `${char3}`, content: "[Una mano accarezza i tuoi capelli]"},
+    {id: 154, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Mark, svegliati tesoro... E' successa una cosa.\""},
+    {id: 155, url: `${foto6}`, character: `${char3}`, content: "TU: [Ti metti seduto]"},
+    {id: 156, url: `${foto6}`, character: `${char3}`, content: "TU: \"Che è suc...\""},
+    {id: 157, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Qualcuno ha divulgato delle informazioni sensibili sulla MiraiTech, ne parlano su quasi tutti i notiziari. I documenti sono stati pubblicati e ricondivisi online.\""},
+    {id: 158, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"La portata di questa fuga di dati è nettamente superiore alla tua di un anno fa.\""},
+    {id: 159, url: `${foto6}`, character: `${char3}`, content: "TU: \"Cazzo.\""},
+
+    //TRAPPOLA
+    {id: 160, url: `${foto6}`, character: `${char3}`, content: "TU: \"Mi sento intrappolato in questa città infernale. Forse dovrei andarmene…\""},
+    {id: 161, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Ti guarda dritto negli occhi con un espressione triste.]"},
+    {id: 162, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ciò che è successo mi ha cambiato, Nova. Ho bisogno di ritrovare un senso di umanità.\""},
+    {id: 163, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"…\""},
+    {id: 164, url: `${foto6}`, character: `${char3}`, content: "TU: \"Devo ricominciare… ma qui non posso farlo.\""},
+    {id: 165, url: `${foto6}`, character: `${char3}`, content: "TU: \"La Miraitech ha sminuito e screditato tutta la verità che ho faticato a mostrare al mondo… Nessuno vuole assumere un bugiardo e una spia.\""},
+    {id: 166, url: `${foto6}`, character: `${char3}`, content: "TU: \"Li ho colpiti ma hanno vinto loro.\""},
+    {id: 167, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lascia che ti proponga una cosa.\""},
+    {id: 168, url: `${foto6}`, character: `${char3}`, content: "TU: \"Dimmi.\""},
+    {id: 169, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E se ti prenotassi un biglietto di sola andata per una colonia extra-mondo? Sarebbe l'unico modo per ricominciare una nuova vita.\""},
+    {id: 170, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Attualmente un biglietto + cryo-assicurazione + soggiorno di 4 settimane viene a costare XXXXX crediti. Il pacchetto viaggio è in offerta ancora per 7 giorni, 22 ore e 19 minuti. So che il prezzo non è poco, ma…\""},
+    {id: 171, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non ho tutti quei crediti, Nova.\""},
+    {id: 172, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ma ti potrebbe interessare?\""},
 
 ]
 
