@@ -194,6 +194,35 @@ const dialoghi3 = [
     {id: 171, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non ho tutti quei crediti, Nova.\""},
     {id: 172, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ma ti potrebbe interessare?\""},
 
+    //RISPONDO DI SI (MI INTERESSA ANDARE IN UNA COLONIA)
+    {id: 173, url: `${foto6}`, character: `${char3}`, content: "TU: \"Si, mi interesserebbe. La penso come te, è l'unico modo.\""},
+    {id: 174, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"L'unico problema da risolvere sono i crediti. Nessuno vuole assumerti visto ciò che è successo ma...\""},
+
+    //PERSONAGGIO DIFFERENTE IN BASE AL PASSATO SCELTO (+ DIALOGHI LEGGERMENTE DIVERSI)
+    {id: 175, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Hai mai pensato di chiedere a RogueWisp?\""},
+    {id: 176, url: `${foto6}`, character: `${char3}`, content: "TU: \"Emi Hasagawa?\""},
+    {id: 177, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sai bene cosa comporta domandare qualcosa a lei. Sono fuori dal loro giro da anni… nonostante mi abbiano cresciuto e mi stia nascondendo nel loro distretto.\""},
+    {id: 177, url: `${foto6}`, character: `${char3}`, content: "TU: \"Me lo hanno concesso dopo tutto…\""},
+    {id: 178, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ma…\""},
+    {id: 179, url: `${foto6}`, character: `${char3}`, content: "TU: \"Comunque si, sarebbe l’unica strada percorribile per accumulare crediti, ci ho pensato spesso… ma è una strada molto pericolosa e imprevedibile.\""},
+    {id: 180, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Sarebbe per un valido motivo... Pensaci Mark.\""},
+    {id: 181, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Fallo per te, fallo per la nuova vita che potresti riuscire a costruirti fuori da questo pianeta. \""},
+
+    //SE LO FARAI
+    {id: 183, url: `${foto6}`, character: `${char3}`, content: "TU: \"Va bene, non ho altra scelta.\""},
+    {id: 184, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lo apprezzo Mark, so che ce la puoi fare.\""},
+    {id: 185, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanotte andrò a parlarci...sperando che lei sia in città.\""},
+    {id: 186, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Un modo per comunicare lo troverai, anche se non dovesse esser nei paraggi.\""},
+    {id: 187, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Beh, hai ancora il suo numero nella tua rubrica da quello che vedo nel mio database.\""},
+    {id: 188, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non sbagli affatto.\""},
+
+    //SE NON LO FARAI
+    {id: 190, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ci penserò su... ma non ti prometto nulla.\""},
+    {id: 191, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Ti sorride]"},
+    {id: 192, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lo apprezzo Mark.\""},
+
+    //INDIRZZA AL MENU
+    {id: 194, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Beh? Che hai voglia di fare?\""},
 ]
 
 

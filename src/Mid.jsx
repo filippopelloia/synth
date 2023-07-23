@@ -26,6 +26,11 @@ export default function Mid() {
 
   const [girl, setGirl] = useState()
 
+  const [fourth, setFourth] = useState({
+    one: true,
+    two: true
+  })
+
   const [fadeClass, setFadeClass] = useState('');
   const { clicked } = useContext(PastContext);
 
@@ -53,7 +58,6 @@ export default function Mid() {
 
         setDialogIndex(objectNext.id + 1);
         setIndex(0);
-        // setAnimateButton(true); // Attiva l'animazione del pulsante
     }
 
 
@@ -314,6 +318,7 @@ export default function Mid() {
     function showError(){
       const risultato = dialoghi3.find(item => item.id === 67)
       setDialogIndex(risultato.id);
+      setFourth(prevFourth => { return {...prevFourth, one: false }});
     }
 
     function showSpies(){
@@ -366,14 +371,32 @@ export default function Mid() {
     //END GIRL
 
 
+
     //TRAPPOLA
 
     function showTrapped(){
       const risultato = dialoghi3.find(item => item.id === 120)
       setDialogIndex(risultato.id);
+      setFourth(prevFourth => { return {...prevFourth, two: false }});
+    }
+
+    function showTicket(){
+      const risultato = dialoghi3.find(item => item.id === 173)
+      setDialogIndex(risultato.id);
+    }
+
+    function showDoIt(){
+      const risultato = dialoghi3.find(item => item.id === 183)
+      setDialogIndex(risultato.id);
+    }
+
+    function showMainMenu(){
+      const risultato = dialoghi3.find(item => item.id === 194)
+      setDialogIndex(risultato.id);
     }
 
     //END TRAPPOLA
+
 
 
     function showNotification(){
@@ -465,7 +488,7 @@ console.log("dialogIndex = " + dialogIndex);
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172, 181, 188, 192, 194];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -519,15 +542,15 @@ console.log("dialogIndex = " + dialogIndex);
 
         {/*================= BLOCK 2 =================*/}
 
-        {dialogIndex === 13 && <div className="simply-btn">
+        {(dialogIndex === 13 || dialogIndex === 194) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNews}>NOTIZIE</a>
         </div>}
 
-        {dialogIndex === 13 && <div className="simply-btn">
+        {(dialogIndex === 13 || dialogIndex === 194) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showAdvice}>POSSO CHIEDERTI UNA COSA?</a>
         </div>}
 
-        {dialogIndex === 13 && <div className="simply-btn">
+        {(dialogIndex === 13 || dialogIndex === 194) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={endDialog}>FINE DIALOGO</a>
         </div>}
 
@@ -591,11 +614,11 @@ console.log("dialogIndex = " + dialogIndex);
 
                 {/*============= ADVICE SECTION =============*/}
 
-                {dialogIndex === 66 && <div className="simply-btn">
+                {(dialogIndex === 66 && fourth.one === true) && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showError}>HO FATTO UN ERRORE</a>
                 </div>}
 
-                {dialogIndex === 66 && <div className="simply-btn">
+                {(dialogIndex === 66 && fourth.two === true) && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTrapped}>MI SENTO IN TRAPPOLA</a>
                 </div>}
 
@@ -658,6 +681,25 @@ console.log("dialogIndex = " + dialogIndex);
 
                 {/*============= TRAPPED SECTION =============*/}
 
+                {dialogIndex === 172 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTicket}>SI</a>
+                </div>}
+
+                {dialogIndex === 172 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>NO</a>
+                </div>}
+
+                {dialogIndex === 181 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>CI PENSERO'</a>
+                </div>}
+
+                {dialogIndex === 181 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showDoIt}>LO FARO'</a>
+                </div>}
+
+                {(dialogIndex === 188 || dialogIndex === 192) && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUA</a>
+                </div>}
                 
 
       </div>
