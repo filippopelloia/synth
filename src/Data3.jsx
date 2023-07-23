@@ -68,7 +68,7 @@ const dialoghi3 = [
     {id: 50, url: `${foto6}`, character: `${char3}`, content: "TU: \"E\' solo un voto Nova, non cambierà questa città marcia.\" "},
 
     //END DIALOG - INDEX 39
-    {id: 60, url: `${foto6}`, character: `${char3}`, content: "Cosa vuoi fare?"},
+    // {id: 60, url: `${foto6}`, character: `${char3}`, content: "Cosa vuoi fare?"},
 
 
     //ADVICE SECTION
@@ -198,6 +198,12 @@ const dialoghi3 = [
     {id: 173, url: `${foto6}`, character: `${char3}`, content: "TU: \"Si, mi interesserebbe. La penso come te, è l'unico modo.\""},
     {id: 174, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"L'unico problema da risolvere sono i crediti. Nessuno vuole assumerti visto ciò che è successo ma...\""},
 
+    //RISPONDO DI NO (NON MI INTERESSA ANDARE IN UNA COLONIA) 
+    //================ PENSA A COSA POTREBBE SUCCEDERE O NO =================================================================
+
+    // {id: 200, url: `${foto6}`, character: `${char3}`, content: "TU: \"Si, mi interesserebbe. La penso come te, è l'unico modo.\""},
+    // {id: 201, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"L'unico problema da risolvere sono i crediti. Nessuno vuole assumerti visto ciò che è successo ma...\""},
+
     //PERSONAGGIO DIFFERENTE IN BASE AL PASSATO SCELTO (+ DIALOGHI LEGGERMENTE DIVERSI)
     {id: 175, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Hai mai pensato di chiedere a RogueWisp?\""},
     {id: 176, url: `${foto6}`, character: `${char3}`, content: "TU: \"Emi Hasagawa?\""},
@@ -223,7 +229,57 @@ const dialoghi3 = [
 
     //INDIRZZA AL MENU
     {id: 194, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Beh? Che hai voglia di fare?\""},
+
+    //FINE DIALOGO
+    {id: 240, url: `${foto6}`, character: `${char3}`, content: "[Fine dialogo]"},
+
+    //DORMI
+    {id: 241, url: `${foto6}`, character: `${char3}`, content: "TU: \"Nova, ho sonno... ci vediamo dopo.\""},
+    {id: 242, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Di nuovo? Va bene Mark.\""},
+    {id: 243, url: `${foto6}`, character: `${char3}`, content: "[Ti distendi e sprofondi nel sonno]"},
+
+    //TETTO
+    {id: 245, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ci vediamo dopo Nova, vado di sopra.\""},
+    {id: 246, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"A dopo Mark, io ne approfitto per effettuare alcuni upgrade.\""},
+    {id: 247, url: `${foto6}`, character: `${char3}`, content: "[Dopo qualche minuto]"},
+    {id: 248, url: `${foto6}`, character: `${char3}`, content: "TU: \"Finalmente aria fresca... o quasi.\""},
+    {id: 249, url: `${foto6}`, character: `${char3}`, content: "[Il tetto semivuoto. Dell’immondizia, un tavolo malconcio, alcune sedie scolorite, un vecchio frigo. E’ cosi che hai personalizzato quella terrazza con vista panoramica circondata da grossi e vecchi palazzi con luci al neon...]"},
+    {id: 250, url: `${foto6}`, character: `${char3}`, content: "[...Tutto ciò accompagnato da un traffico frenetico, soffocante smog, violenza dilagante, sirene della polizia e un timido cielo notturno.]"},
+    {id: 251, url: `${foto6}`, character: `${char3}`, content: "[La sera è appena calata e la vita inizia a scorrere più che mai tra le strade di Tsukimachi City.]"},
+    {id: 252, url: `${foto6}`, character: `${char3}`, content: "TU: \"Era da un pò che non venivo qui.\""},
+    {id: 253, url: `${foto6}`, character: `${char3}`, content: "[Raggiungi il bordo del tetto e ti appoggi alla muretta fissando le piccole persone che 49 piani più sotto si riversano nelle strade del distretto.]"},
+    {id: 254, url: `${foto6}`, character: `${char3}`, content: "[Tra l'interminabile caos della città senti anche degli spari provenire da qualche isolato di distanza da dove ti trovi.]"},
+    {id: 255, url: `${foto6}`, character: `${char3}`, content: "TU: \"Tsukimachi City non cambierà mai...\""},
+
+    //PROSEGUIMENTO CASO 1, 2, 3 E NIENTE
+    {id: 300, url: `${foto6}`, character: `${char3}`, content: "TU: \"E’ tutto cosi assurdo.\""},
+    {id: 301, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
+    {id: 302, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho il sangue di quelle persone nelle mie mani...\""},
+    {id: 303, url: `${foto6}`, character: `${char3}`, content: "TU: \"Le bugie governano questo pianeta... e questa città...\""},
+    {id: 304, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non c'è speranza per chi cerca di cambiare le cose... come me.\""},
+    {id: 305, url: `${foto6}`, character: `${char3}`, content: "[Squilla il pad in tasca]"},
+    {id: 306, url: `${foto6}`, character: `${char3}`, content: "[Chiamata in arrivo da NOVA]"},
+    {id: 307, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Hey Mark, è successa una cosa...\""},
+
+    //SE HAI AVVISATO
+    {id: 308, url: `${foto6}`, character: `${char3}`, content: "TU: \"Qualcuno è passato dal piano 34?\""},
+    {id: 309, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"No, il notiziario...\""},
+    {id: 310, url: `${foto6}`, character: `${char3}`, content: "TU: \"Adesso rientro.\""},
+    {id: 311, url: `${foto6}`, character: `${char3}`, content: "[Dopo qualche minuto]"},
+    {id: 312, url: `${foto6}`, character: `${char3}`, content: "TU: \"Che è successo?\""},
+    {id: 313, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Guarda tu stesso Mark. I dati sensibili della MiraiTech sono ovunque online. Come livello di gravità è nettamente superiore a quando hai fatto uscire i documenti.\""},
+    {id: 314, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"centinaia di migliaia di documenti secretati della pluri-miliardaria corporazione MiraiTech con sede terrestre a Tsukimachi City sono stati trafugati da una fonte anonima e pubblicati in rete...\""},
+    {id: 315, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"Al momento i vertici della corporazione non si sono espressi ma è stata indetta una conferenza stampa per domani mattina. Questi dati sensibili riguardano presunte operazioni militari indette dalla MiraiTech stessa per soffocare ribellioni sulle colonie di fascia 3, 4, 5 e 9...\""},
+    {id: 316, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"Al momento non è dato sapere la vera autenticità di queste migliaia di documenti...\""},
+    {id: 317, url: `${foto6}`, character: `${char3}`, content: "TU: \"E’ la fine per me.\""},
+    {id: 318, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Credi che verranno subito a cercarti? Potrebbe esser stato chiunque...\""},
+    {id: 319, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"e tu non hai più accesso ai database satellitari da quando ti hanno cacciato...\""},
+    {id: 320, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sono comunque informazioni di 2 o più anni fa. Io avrei potuto accedere a questi dati.\""},
+    {id: 321, url: `${foto6}`, character: `${char3}`, content: "TU: \"Penseranno subito a me visto che ho già fatto una cosa simile...\""},
 ]
+
+
+//VALUTARE DI TOGLIERE LA POSSIBILITA' DI COLLEGARSI A 139 E DI CAMBIARE CON 140 (COSI NO SCELTA DELLE ARMI).
 
 
 export default dialoghi3;

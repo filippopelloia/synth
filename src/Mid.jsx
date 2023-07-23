@@ -31,6 +31,8 @@ export default function Mid() {
     two: true
   })
 
+  const[avvertimento, setAvvertimento] = useState(false);
+
   const [fadeClass, setFadeClass] = useState('');
   const { clicked } = useContext(PastContext);
 
@@ -99,19 +101,43 @@ export default function Mid() {
       setIndex(0);
     }
 
-    function endDialog(){
-      const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
-      if (risultato.length > 0) {
-        setDialog(risultato[0].content);
 
-        const objectSixty = dialoghi3.find(item => item.id === 60)
-        setDialogIndex(objectSixty);
-        setIndex(0);
-      } else {
-        const objectSixty = dialoghi3.find(item => item.id === 60)
-        setDialogIndex(objectSixty);
-      }
+
+    //================= FINE DIALOGO
+
+    function endDialog(){
+      const risultato = dialoghi3.find(item => item.id === 240);
+      setDialogIndex(risultato.id);
     }
+
+    function showSleep(){
+      const risultato = dialoghi3.find(item => item.id === 241);
+      setDialogIndex(risultato.id);
+    }
+
+    function showWakeUp(){
+      const risultato = dialoghi3.find(item => item.id === 153);
+      setDialogIndex(risultato.id);
+    }
+
+    function showRoof(){
+      const risultato = dialoghi3.find(item => item.id === 245);
+      setDialogIndex(risultato.id);
+    }
+
+    function showDontTake(){
+      const risultato = dialoghi3.find(item => item.id === 300);
+      setDialogIndex(risultato.id);
+    }
+
+    function showEndFromRoof(){
+      const risultato = dialoghi3.find(item => item.id === 139);
+      setDialogIndex(risultato.id);
+    }
+
+    //================= FINE FINE DIALOGO
+    
+
 
     //RITORNO A NEWS
     function returnToNews() {
@@ -252,6 +278,12 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    function showAvvertimento(){
+      const risultato = dialoghi3.find(item => item.id === 98)
+      setDialogIndex(risultato.id);
+      setAvvertimento(prevAvvertimento => !prevAvvertimento);
+    }
+
     function returnToNinetyThree(){
       const risultato = dialoghi3.find(item => item.id === 93)
       setDialogIndex(risultato.id);
@@ -277,7 +309,7 @@ export default function Mid() {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172, 181, 188, 192, 194];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 243, 255, 307, 321];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -373,25 +405,6 @@ export default function Mid() {
                 </div>}
 
 
-                {/*============= END DIALOG =============*/}
-
-                {dialogIndex === 59 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>VAI NEL TETTO</a>
-                </div>}
-
-                {dialogIndex === 59 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>DORMI</a>
-                </div>}
-
-                {dialogIndex === 59 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>MANGIA</a>
-                </div>}
-
-                {dialogIndex ===59 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TORNA DA NOVA</a>
-                </div>}
-
-
                 {/*============= ADVICE SECTION =============*/}
 
                 {(dialogIndex === 66 && fourth.one === true) && <div className="simply-btn">
@@ -408,6 +421,11 @@ export default function Mid() {
 
                 {dialogIndex === 87 && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNothing}>NON DIRE NULLA</a>
+                </div>}
+
+                {/* AGG./MODIFICA STATE PER DIRE SE HAI AVVISATO NOVA O NO DI MONITORARE PIANO 34 */}
+                {dialogIndex === 97 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showAvvertimento}>CONTINUE</a>
                 </div>}
 
                 {dialogIndex === 148 && <div className="simply-btn">
@@ -479,6 +497,49 @@ export default function Mid() {
 
                 {(dialogIndex === 188 || dialogIndex === 192) && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUA</a>
+                </div>}
+
+
+                {/*============= END DIALOG =============*/}
+
+                {dialogIndex === 240 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoof}>VAI NEL TETTO</a>
+                </div>}
+
+                {dialogIndex === 240 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSleep}>DORMI</a>
+                </div>}
+
+                {dialogIndex === 240 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>MANGIA</a>
+                </div>}
+
+                {dialogIndex === 240 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TORNA DA NOVA</a>
+                </div>}
+
+                {dialogIndex === 243 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showWakeUp}>DORMI</a>
+                </div>}
+                
+                {dialogIndex === 255 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>FUMA</a>
+                </div>}
+
+                {dialogIndex === 255 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>PRENDI DA BERE</a>
+                </div>}
+
+                {dialogIndex === 255 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TORNA GIU</a>
+                </div>}
+
+                {dialogIndex === 255 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showDontTake}>NIENTE</a>
+                </div>}
+
+                {dialogIndex === 321 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEndFromRoof}>CONTINUE</a>
                 </div>}
                 
       </div>
