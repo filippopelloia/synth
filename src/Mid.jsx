@@ -63,86 +63,41 @@ export default function Mid() {
 
     //FUNZIONE PER INDEX 5
     function showFive() {
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id === 5);
-      // setDialog(risultato[0].content);
-      // setDialogIndex(prevDialogIndex => prevDialogIndex = 6);
-      // setIndex(0);
       showText(6);
     }
 
-    // console.log(dialogIndex);
 
     //FUNZIONE PER INDEX *INSERISCI INDEX*
     function showEleven(){
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id === 10);
-
       const objectTwentyFive = dialoghi3.find((oggetto) => oggetto.id === 25);
-      // const objectTwentyFive = dialoghi3.find(())
-      // setDialog(objectEleven.content);
       setDialogIndex(objectTwentyFive.id);
       setIndex(0);
       setSecond(prevSecond => { return {...prevSecond, one: true }});
-      // showText(17);
-      // setSecond(prevSecond => ({ ...prevSecond, one: true }));
     }
 
     function showTwelve(){
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id === 10);
       const objectTwentyNine = dialoghi3.find((oggetto) => oggetto.id === 29);
-      // setDialog(risultato[0].content);
       setDialogIndex(objectTwentyNine.id);
       setIndex(0);
       setSecond(prevSecond => { return {...prevSecond, two: true }});
-      // showText(21);
-      // setSecond(prevSecond => ({ ...prevSecond, two: true }));
     }
 
     function showReturnToEleven(){
       const objectEleven = dialoghi3.find((oggetto) => oggetto.id === 11);
-      // setDialog(risultato[0].content);
       setDialogIndex(objectEleven.id);
       setIndex(0);
-      // setSecond(prevSecond => { return {...prevSecond, two: true }});
     }
 
 
 
     // ============== BLOCK 2 ==============
 
-
-    //APPUNTO: CONSIDERA DI CANCELLARE O MODIFICARE LA PRIMA PARTE DI IF DI ALCUNE FUNZIONI. SOSPETTO CHE NON SERVANO A NULLA.
-    //SOSPETTO CHE VENGA ESEGUITO SOLO IL CODICE DELL'ELSE.
-
-
     //FUNZIONE NEWS
     function showNews() {
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
-      // if (risultato.length > 0) {
-      //   setDialog(risultato[0].content);
-      //   setDialogIndex(23);
-      //   setIndex(0);
-      // } else {
-      //   // console.log("ciao QUESTA E LA SECONDA VOLTA");
-      //   setDialogIndex(23);
-      // }
-      // showText(23);
-
       const objectThirtyFive = dialoghi3.find((oggetto) => oggetto.id === 35);
-      // const objectTwentyFive = dialoghi3.find(())
-      // setDialog(objectEleven.content);
       setDialogIndex(objectThirtyFive.id);
       setIndex(0);
-      // setSecond(prevSecond => { return {...prevSecond, one: true }});
-
     }
-
-    //BACKUP SHOWNEWS
-    // function showNews() {
-    //   let risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 23);
-    //   setIndex(0);
-    // }
 
     function endDialog(){
       const risultato = dialoghi3.filter((oggetto) => oggetto.id === 13);
@@ -153,7 +108,6 @@ export default function Mid() {
         setDialogIndex(objectSixty);
         setIndex(0);
       } else {
-        // console.log("ciao QUESTA E LA SECONDA VOLTA");
         const objectSixty = dialoghi3.find(item => item.id === 60)
         setDialogIndex(objectSixty);
       }
@@ -161,148 +115,32 @@ export default function Mid() {
 
     //RITORNO A NEWS
     function returnToNews() {
-
-      // const excludedDialog = [39, 50];
-      // const DialogIndexValid = !excludedDialog.includes(dialogIndex);
-
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id = DialogIndexValid);
-      // setDialog(risultato[0].content);
-      // setDialogIndex(prevDialogIndex => prevDialogIndex = 28);
-      // setIndex(0);
       const risultato = dialoghi3.find(item => item.id === 40);
       setDialogIndex(risultato.id);
     }
 
     //RITORNO A BLOCK2
     function returnToBlockTwo() {
-
-      // const excludedDialog = [13, 40];
-      // const DialogIndexValid = !excludedDialog.includes(dialogIndex);
-
-      // const risultato = dialoghi3.find((oggetto) => oggetto.id === DialogIndexValid);
       const risultato = dialoghi3.find((oggetto) => oggetto.id === 13);
       setDialog(risultato.id);
       setDialogIndex(prevDialogIndex => prevDialogIndex = 13);
       setIndex(0);
     }
 
-    //SHOW SYNTHICOIN
-    // function showSynthicoin() {
-
-    //   const excludedDialog = [37, 40];
-    //   const DialogIndexValid = !excludedDialog.includes(dialogIndex);
-
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === DialogIndexValid);
-    //   if (risultato.length > 0) {
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(26);
-    //   setIndex(0);
-
-    //   //ADD FALSE --> TRUE
-    //   setThird(prevThird => { return {...prevThird, one: true }});
-
-    //   } else {
-    //     setDialogIndex(26);
-    //     setThird(prevThird => { return {...prevThird, one: true }});
-    //   }
-    // }
-
     function showSynthicoin() {
-
-      // const excludedDialog = [37, 40];
-      // const DialogIndexValid = !excludedDialog.includes(dialogIndex);
-
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id === DialogIndexValid);
-      // if (risultato.length > 0) {
-      // setDialog(risultato[0].content);
-      // setDialogIndex(26);
-      // setIndex(0);
-
-      // //ADD FALSE --> TRUE
-      // setThird(prevThird => { return {...prevThird, one: true }});
-
-      // } else {
-      //   setDialogIndex(26);
-      //   setThird(prevThird => { return {...prevThird, one: true }});
-      // }
       const risultato = dialoghi3.find(item => item.id === 38);
       setDialogIndex(risultato.id);
       setThird(prevThird => { return {...prevThird, one: true }});
     }
 
-
-
-    //VOTE AFTER SYNTHICOIN
-    // function showVote() {
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 37);
-    //   if (risultato.length > 0) {
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(29);
-    //   setIndex(0);
-
-    //   //ADD FALSE --> TRUE
-    //   setThird(prevThird => { return {...prevThird, two: true }});
-
-    //   } else {
-    //     setDialogIndex(29);
-    //     setThird(prevThird => { return {...prevThird, two: true }});
-    //   }
-    // }
-
     function showVote() {
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id === 37);
-      // if (risultato.length > 0) {
-      // setDialog(risultato[0].content);
-      // setDialogIndex(29);
-      // setIndex(0);
-
-      // //ADD FALSE --> TRUE
-      // setThird(prevThird => { return {...prevThird, two: true }});
-
-      // } else {
-      //   setDialogIndex(29);
-      //   setThird(prevThird => { return {...prevThird, two: true }});
-      // }
       const risultato = dialoghi3.find(item => item.id === 41);
       setDialogIndex(risultato.id);
       setThird(prevThird => { return {...prevThird, two: true }});
     }
 
-    //VOTE
-    // function showVoteAfter() {
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 37);
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 29);
-    //   setIndex(0);
-
-    //   //TWO FALSE --> TRUE
-    //   setThird(prevThird => { return {...prevThird, two: true }});
-    // }
-
-    //SYNTHICOIN AFTER VOTE
-    // function showSynthicoinAfter() {
-    //   const risultato = dialoghi3.filter((oggetto) => oggetto.id === 40);
-    //   console.log("THIS IS RISULTATO " + risultato);
-    //   setDialog(risultato[0].content);
-    //   setDialogIndex(prevDialogIndex => prevDialogIndex = 26);
-    //   setIndex(0);
-
-    //   //ONE FALSE --> TRUE
-    //   setThird(prevThird => { return {...prevThird, one: true }});
-    // }
-
     //YOU VOTED
     function youVoted() {
-      // const risultato = dialoghi3.filter((oggetto) => oggetto.id === 48);
-      // if (risultato.length > 0) {
-      // setDialog(risultato[0].content);
-      // setDialogIndex(37);
-      // setIndex(0);
-
-      // //ADD FALSE --> TRUE
-      // } else {
-      //   setDialogIndex(37);
-      // }
       const risultato = dialoghi3.find((oggetto) => oggetto.id === 49);
       setDialogIndex(risultato.id);
     }
@@ -336,7 +174,7 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
-    //GIRL
+    //================= GIRL
 
     function showGirlSyncro(){
       const risultato = dialoghi3.find(item => item.id === 111)
@@ -427,72 +265,20 @@ export default function Mid() {
     //================= END ADVICE SECTION
 
 
-    // console.log(third);
-    // console.log(dialoghi3[29].content);
-    // console.log(dialoghi3[26].content);
-    
-
-  
-    //AZZERA L'INDICE DEL TESTO OGNI VOLTA CHE IL TESTO CAMBIA
-    // useEffect(() => {
-    //   setIndex(0);
-    // }, [dialog]);
-
-
 
   //PRENDE ED IMMAGAZZINA IL TESTO
   useEffect(() => {
-    // const dialogo = dialoghi3[dialogIndex].content;
     const getContent = dialoghi3.find(item => item.id === dialogIndex);
     setBackup(getContent?.content);
     setDialog(getContent?.content);
-
-    //IMMAGINE DIALOGHI
-    // const image = dialoghi3[dialogIndex]?.url;
-    // setDialogImage(image);
-
-    //IMMAGINE PERSONAGGI
-    // const character = dialoghi3[dialogIndex]?.character;
-    // setDialogCharacter(character);
-
-    //QUANTITA' DEI CONTENUTI
-    // const quantity = dialoghi3.length;
-    // setDataIndexTotal(quantity);
   }, [dialogIndex]);
 
-
-console.log("dialogIndex = " + dialogIndex);
-
-
-//ANIMAZIONE
-// useEffect(() => {
-//   let testo = dialog;
-//   let intervalId = null;
-
-//   if (index < dialog.length) {
-//     intervalId = setInterval(() => {
-//       setText(testo.substring(0, index + 1));
-//       setIndex((prevIndex) => prevIndex + 1);
-//     }, 10); //SETTA VELOCITà
-//   }
-
-//   return () => {
-//     clearInterval(intervalId);
-//   };
-// }, [index, dialog]);
-
-  //FINE ANIMAZIONE
-
   console.log(dialogIndex);
-
 
 
   //HIDE CONTINUE BUTTON 
   const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172, 181, 188, 192, 194];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
-
-
-
 
 
   
@@ -527,11 +313,6 @@ console.log("dialogIndex = " + dialogIndex);
         {(dialogIndex === 10 || (dialogIndex === 28 && (second.one === true && second.two === false))) && <div className="simply-btn">
           <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE MI TROVO?</a>
         </div>}
-
-        {/* DAL 25 VADO AVANTI */}
-        {/* {dialogIndex === 25 && <div className="simply-btn">
-          <a style={{backgroundColor: 'crimson', color: 'black'}} href="#S" onClick={showText}>CONTINUA a 25</a>
-        </div>} */}
 
         {/* RETURN TO 11 */}
         {((dialogIndex === 28 || dialogIndex === 30) && (second.one === true && second.two === true)) && <div className="simply-btn">
@@ -590,7 +371,6 @@ console.log("dialogIndex = " + dialogIndex);
                 {dialogIndex === 48 && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={youVoted}>VOTA PER MATSUDA TAKAHASHI</a>
                 </div>}
-
 
 
                 {/*============= END DIALOG =============*/}
@@ -701,7 +481,6 @@ console.log("dialogIndex = " + dialogIndex);
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUA</a>
                 </div>}
                 
-
       </div>
     </div>
   )
