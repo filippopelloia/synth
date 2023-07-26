@@ -120,6 +120,11 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    function showReturnToNova(){
+      const risultato = dialoghi3.find(item => item.id === 194);
+      setDialogIndex(risultato.id);
+    }
+
     function showRoof(){
       const risultato = dialoghi3.find(item => item.id === 245);
       setDialogIndex(risultato.id);
@@ -152,6 +157,16 @@ export default function Mid() {
 
     function showReturnAdvice(){
       const risultato = dialoghi3.find(item => item.id === 310);
+      setDialogIndex(risultato.id);
+    }
+
+    function showThirtySix(){
+      const risultato = dialoghi3.find(item => item.id === 136);
+      setDialogIndex(risultato.id);
+    }
+
+    function showFourty(){
+      const risultato = dialoghi3.find(item => item.id === 140);
       setDialogIndex(risultato.id);
     }
 
@@ -259,7 +274,7 @@ export default function Mid() {
     //TRAPPOLA
 
     function showTrapped(){
-      const risultato = dialoghi3.find(item => item.id === 120)
+      const risultato = dialoghi3.find(item => item.id === 160)
       setDialogIndex(risultato.id);
       setFourth(prevFourth => { return {...prevFourth, two: false }});
     }
@@ -269,8 +284,18 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    function showNoTicket(){
+      const risultato = dialoghi3.find(item => item.id === 333)
+      setDialogIndex(risultato.id);
+    }
+
     function showDoIt(){
       const risultato = dialoghi3.find(item => item.id === 183)
+      setDialogIndex(risultato.id);
+    }
+
+    function showThinkIt(){
+      const risultato = dialoghi3.find(item => item.id === 190)
       setDialogIndex(risultato.id);
     }
 
@@ -329,9 +354,11 @@ export default function Mid() {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 243, 255, 307, 321, 326, 331];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 135, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 244, 255, 307, 321, 326, 331, 344];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
+
+  console.log(avvertimento);
 
   
   return (
@@ -504,11 +531,11 @@ export default function Mid() {
                 </div>}
 
                 {dialogIndex === 172 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>NO</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNoTicket}>NO</a>
                 </div>}
 
                 {dialogIndex === 181 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>CI PENSERO'</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showThinkIt}>CI PENSERO'</a>
                 </div>}
 
                 {dialogIndex === 181 && <div className="simply-btn">
@@ -535,11 +562,11 @@ export default function Mid() {
                 </div>}
 
                 {dialogIndex === 240 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TORNA DA NOVA</a>
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnToNova}>TORNA DA NOVA</a>
                 </div>}
 
-                {dialogIndex === 243 && <div className="simply-btn">
-                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showWakeUp}>DORMI</a>
+                {dialogIndex === 244 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showWakeUp}>CONTINUA</a>
                 </div>}
                 
                 {dialogIndex === 255 && <div className="simply-btn">
@@ -576,6 +603,18 @@ export default function Mid() {
 
                 {dialogIndex === 331 && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnAdvice}>CONTINUE</a>
+                </div>}
+
+                {(dialogIndex === 135 && avvertimento) && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showThirtySix}>CONTINUE</a>
+                </div>}
+
+                {(dialogIndex === 135 && !avvertimento) && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showFourty}>CONTINUE</a>
+                </div>}
+
+                {dialogIndex === 344 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUE</a>
                 </div>}
                 
       </div>

@@ -190,12 +190,12 @@ const dialoghi3 = [
     {id: 167, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lascia che ti proponga una cosa.\""},
     {id: 168, url: `${foto6}`, character: `${char3}`, content: "TU: \"Dimmi.\""},
     {id: 169, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E se ti prenotassi un biglietto di sola andata per una colonia extra-mondo? Sarebbe l'unico modo per ricominciare una nuova vita.\""},
-    {id: 170, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Attualmente un biglietto + cryo-assicurazione + soggiorno di 4 settimane viene a costare XXXXX crediti. Il pacchetto viaggio è in offerta ancora per 7 giorni, 22 ore e 19 minuti. So che il prezzo non è poco, ma…\""},
+    {id: 170, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Attualmente un biglietto + cryo-assicurazione viene a costare XXXXX crediti. Il pacchetto viaggio è in offerta ancora per 7 giorni, 22 ore e 19 minuti. So che il prezzo non è poco, ma…\""},
     {id: 171, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non ho tutti quei crediti, Nova.\""},
     {id: 172, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ma ti potrebbe interessare?\""},
 
     //RISPONDO DI SI (MI INTERESSA ANDARE IN UNA COLONIA)
-    {id: 173, url: `${foto6}`, character: `${char3}`, content: "TU: \"Si, mi interesserebbe. La penso come te, è l'unico modo.\""},
+    {id: 173, url: `${foto6}`, character: `${char3}`, content: "TU: \"Si... E la penso come te, è l'unico modo.\""},
     {id: 174, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"L'unico problema da risolvere sono i crediti. Nessuno vuole assumerti visto ciò che è successo ma...\""},
 
     //RISPONDO DI NO (NON MI INTERESSA ANDARE IN UNA COLONIA) 
@@ -237,6 +237,7 @@ const dialoghi3 = [
     {id: 241, url: `${foto6}`, character: `${char3}`, content: "TU: \"Nova, ho sonno... ci vediamo dopo.\""},
     {id: 242, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Di nuovo? Va bene Mark.\""},
     {id: 243, url: `${foto6}`, character: `${char3}`, content: "[Ti distendi e sprofondi nel sonno]"},
+    {id: 244, url: `${foto6}`, character: `${char3}`, content: "[Dopo qualche ora]"},
 
     //TETTO
     {id: 245, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ci vediamo dopo Nova, vado di sopra.\""},
@@ -285,6 +286,20 @@ const dialoghi3 = [
     //SE NON HAI AVVISATO
     {id: 330, url: `${foto6}`, character: `${char3}`, content: "TU: \"Che è successo?\""},
     {id: 331, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Il notiziario...\""},
+
+    //RISPONDO DI NO (NON MI INTERESSA ANDARE IN UNA COLONIA) (SEZIONE PASSATO MULTIPLO)
+    {id: 333, url: `${foto6}`, character: `${char3}`, content: "TU: \"No... Ho un'altra soluzione in testa.\""},
+    {id: 334, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Cioè?\""},
+    {id: 335, url: `${foto6}`, character: `${char3}`, content: "[Il tuo sguardo si perde nel panorama fuori la finestra]"},
+    {id: 336, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ricordi quando ti parlavo dei [NOME GANG IN BASE AL PASSATO SCELTO]?\""},
+    {id: 337, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Si... Se non sbaglio quelli con cui sei cresciuto dopo aver perso tua madre all'età di 8 anni...\""},
+    {id: 338, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Li stessi per cui hai lavorato per 15 anni prima di uscirne e cambiare vita.\""},
+    {id: 339, url: `${foto6}`, character: `${char3}`, content: "TU: \"Vedo che ricordi bene.\""},
+    {id: 340, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanotte andrò da loro. Vedremo che avranno qualche lavoretto per me.\""},
+    {id: 341, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Cerca di stare attento Mark, non dimenticare chi sono i [NOME GANG]. \""},
+    {id: 342, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Al momento sono tornati alla ribalta dopo alcuni grossi colpi ai danni delle due corporazioni invischiate nel traffico di esseri umani verso le nuove colonie di fascia 8.\""},
+    {id: 343, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Nonostante gli anni passati restano una delle gang più pericolose della città... e con parecchi nemici.\""},
+    {id: 344, url: `${foto6}`, character: `${char3}`, content: "TU: \"Lo so bene Nova, non cambieranno mai...\""},
 ]
 
 
