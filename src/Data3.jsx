@@ -276,6 +276,15 @@ const dialoghi3 = [
     {id: 319, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"e tu non hai più accesso ai database satellitari da quando ti hanno cacciato...\""},
     {id: 320, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sono comunque informazioni di 2 o più anni fa. Io avrei potuto accedere a questi dati.\""},
     {id: 321, url: `${foto6}`, character: `${char3}`, content: "TU: \"Penseranno subito a me visto che ho già fatto una cosa simile...\""},
+    
+    //SEMPRE SE HAI AVVISATO (PART 2)
+    {id: 324, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Hey, rilevo movimenti al piano 34! Conto 7, 8... 9 persone!\""},
+    {id: 325, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
+    {id: 326, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Stanno salendo al piano 35... Ora!\""},
+
+    //SE NON HAI AVVISATO
+    {id: 330, url: `${foto6}`, character: `${char3}`, content: "TU: \"Che è successo?\""},
+    {id: 331, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Il notiziario...\""},
 ]
 
 

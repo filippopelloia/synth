@@ -135,6 +135,26 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    function showNotAdvice(){
+      const risultato = dialoghi3.find(item => item.id === 330);
+      setDialogIndex(risultato.id);
+    }
+
+    function showGoAhead(){
+      const risultato = dialoghi3.find(item => item.id === 324);
+      setDialogIndex(risultato.id);
+    }
+
+    function showNotGoAhead(){
+      const risultato = dialoghi3.find(item => item.id === 140);
+      setDialogIndex(risultato.id);
+    }
+
+    function showReturnAdvice(){
+      const risultato = dialoghi3.find(item => item.id === 310);
+      setDialogIndex(risultato.id);
+    }
+
     //================= FINE FINE DIALOGO
     
 
@@ -309,7 +329,7 @@ export default function Mid() {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 243, 255, 307, 321];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 243, 255, 307, 321, 326, 331];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -538,8 +558,24 @@ export default function Mid() {
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showDontTake}>NIENTE</a>
                 </div>}
 
-                {dialogIndex === 321 && <div className="simply-btn">
+                {dialogIndex === 326 && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEndFromRoof}>CONTINUE</a>
+                </div>}
+
+                {dialogIndex === 307 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNotAdvice}>CONTINUE</a>
+                </div>}
+
+                {(dialogIndex === 321 && avvertimento) && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGoAhead}>CONTINUE</a>
+                </div>}
+
+                {(dialogIndex === 321 && !avvertimento) && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNotGoAhead}>CONTINUE</a>
+                </div>}
+
+                {dialogIndex === 331 && <div className="simply-btn">
+                  <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnAdvice}>CONTINUE</a>
                 </div>}
                 
       </div>
