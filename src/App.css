@@ -53,7 +53,7 @@ h2 a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 4.2vh 0;
+  margin: 4.2vh 0 2vh 0;
 }
 
 .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop{
@@ -286,6 +286,7 @@ h2 a{
   text-transform: uppercase;
   letter-spacing: 0.015em;
   filter: blur(0.85px);
+  color: #000000;
 }
 
 .cube{
@@ -593,4 +594,18 @@ h3.btn:hover a::after {
   50% { filter: blur(10px); }
   80% { filter: blur(3px); } 
   100% { filter: blur(0.1em); }
+}
+
+/* .end-page{
+  background-color: #fff;
+} */
+
+.end-page{
+  text-align: center;
+}
+
+.end-page > p{
+  color: crimson;
+  margin: 2vh 0;
+  font-size: 0.75em;
 }

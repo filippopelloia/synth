@@ -1,5 +1,6 @@
 import {useState, useEffect, useContext} from 'react'
 import { PastContext } from './PastContext'; // Importa il contesto
+import {Link} from 'react-router-dom'
 import dialoghi3 from './Data3.jsx';
 
 export default function Mid() {
@@ -615,6 +616,10 @@ export default function Mid() {
 
                 {dialogIndex === 344 && <div className="simply-btn">
                   <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUE</a>
+                </div>}
+
+                {dialogIndex === 145 && <div className="simply-btn">
+                  <button className='simply-btn' style={{backgroundColor: 'crimson', color: 'black'}}><Link to="/the_end">CONTINUE</Link></button>
                 </div>}
                 
       </div>

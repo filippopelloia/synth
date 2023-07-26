@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Home from './Home.jsx'
 import Start from './Start.jsx'
 import Past from './Past.jsx'
 import Mid from './Mid.jsx'
 import Settings from './Settings.jsx'
+import End from './End.jsx'
 
 import { PastProvider } from './PastContext';
 
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/start" element={<Start/>}/>
             <Route path="past" element={<Past/>}/>
             <Route path="/mid" element={<Mid/>}/>
+            <Route path="/the_end" element={<End/>}/>
           </Routes>
           </PastProvider>
         </Router>   
