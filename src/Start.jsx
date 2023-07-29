@@ -85,19 +85,19 @@ useEffect(() => {
   return (
     <div className="testo-generato">
       <p className="test">{text}</p>
-      {/* <p className="test"><pre>{text}</pre></p> */}
 
+      <div className='btn-section'>
+        {backup === text && (
+          <>
+            {dataIndexTotal === dialogIndex + 1 && (
+              <div className="showMore"><Link to="/past">CHOOSE YOUR PAST</Link></div>
+            )}
 
-      {backup === text && (
-      <>
-        {dataIndexTotal === dialogIndex + 1 && (
-          <div className="showMore"><Link to="/past">CHOOSE YOUR PAST</Link></div>
+            {/* LIMITE DI COMPARSA DEL BUTTON CONTINUE */}
+            {dialogIndex < 7 && <div className="showMore showMore-start" onClick={showText}><h5>CONTINUE</h5></div>}
+          </>
         )}
-
-        {/* LIMITE DI COMPARSA DEL BUTTON CONTINUE */}
-        {dialogIndex < 7 && <div className="showMore showMore-start" onClick={showText}><h5>CONTINUE</h5></div>}
-      </>
-    )}
+      </div>
 
     </div>
   );

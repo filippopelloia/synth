@@ -10,9 +10,9 @@ import char2 from './assets/image5.jpg'
 import char3 from './assets/image11.jpg'
 
 
-//==============================================
-//  ATTENTO A INDEX E ID, DUE ELEMENTI DIVERSI
-//==============================================
+//==================================
+//  PAY ATTENTION TO INDEX AND ID
+//==================================
 
 
 const dialoghi3 = [

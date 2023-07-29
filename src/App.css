@@ -120,7 +120,7 @@ h2 a{
 
 .footer > h5, .donate a{
   color: crimson;
-  filter: blur(0.55px);
+  filter: blur(0.35px);
   text-shadow: 0 0 5px rgba(220, 20, 60, 0.95);
 }
 
@@ -132,7 +132,8 @@ h2 a{
   font-size: 0.55em;
   text-align: right;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.55vh;
+  word-spacing: 0.6875vh;
   text-shadow: 0 0 1px rgba(220, 20, 60, 1);
   opacity: 0.7;
 }
@@ -152,11 +153,12 @@ h2 a{
 .mid-container{
   display: grid;
   grid-template: auto auto / repeat(1, 1fr);
+  margin-top: 2.5vh;
 }
 
 .mid {
   border: 5px solid crimson;
-  height: 70vh;
+  height: 77vh;
   width: 120vh;
   border-radius: 7.5px;
   background-color: darkgrey;
@@ -164,8 +166,9 @@ h2 a{
   position: relative;
   left: 0;
   top: 0;
-  filter: blur(0.85px);
+  opacity: 0.835;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.95);
 }
 
 .mid img {
@@ -176,18 +179,17 @@ h2 a{
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 60vh;
 }
 
 .rettangolo{
   position: absolute;
-  z-index: 4;
+  z-index: 3;
   left: 0;
   bottom: 0;
-  height: 120px;
+  height: 17vh;
   width: 100%;
   background-color: crimson;
-  opacity: 0.835;
   padding: 3vh 2.5vh;
   text-align: start;
   display: flex;
@@ -201,6 +203,8 @@ h2 a{
   align-items: center;
   overflow: hidden;
   width: 100%;
+  opacity: 0.835;
+  filter: blur(0.75px);
 }
 
 
@@ -218,25 +222,16 @@ h2 a{
   height: calc(100% - 5.5vh);
   width: 12.5vh;
   background-color: #000000;
-  filter: blur(0.005px)!important;
+  /* filter: blur(0.005px)!important; */
 }
 
-.btn-container{
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.character-image img{
+  height: auto;
+  display: block;
+  filter: none!important;
+  opacity: 1!important;
 }
 
-/* .simply-btn {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-
-.simply-btn.show {
-  opacity: 1;
-} */
 
 
 /* CODICE FUNZIONANTE */
@@ -285,7 +280,8 @@ h2 a{
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.015em;
-  filter: blur(0.85px);
+  filter: blur(0.75px);
+  opacity: 0.835;
   color: #000000;
 }
 
@@ -324,37 +320,26 @@ h3.btn.fadeIn, .past.fadeIn, .sub-btn.fadeIn {
 /* ======= ANIMAZ. TESTO PROCEDURALE*/
 
 
-.test{
-  /* Font */
+.test, .end-page p{
 font-family: 'Didact Gothic', sans-serif;
 text-transform: uppercase;
-filter: blur(1.05px);
+filter: blur(0.75px);
 text-transform: uppercase;
-letter-spacing: 0.025em;
-
-/* Colore */
 color: crimson;
-
-/* Background */
-
-/* Spazio tra parole */
-word-spacing: 0.5em;
-
-/* Spazio tra lettere */
-letter-spacing: 0.1em;
-
-/* Bordo */
 }
 
-/* .test::before{
-  filter: blur(0.025em);
-  content: '';
+.test{
+  letter-spacing: 0.025em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  line-height: 4.2vh;
 }
 
-.test::after{
-  filter: blur(0.025em);
-  content: '';
-} */
+/* BTN CONTAINERS */
+.btn-section, .go-section, .btn-container{
+  width: 100%;
+  height: 14vh;
+}
 
 .go-section{
   display: flex;
@@ -362,11 +347,18 @@ letter-spacing: 0.1em;
   align-items: center;
 }
 
+.btn-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* END BTN CONTAINERS */
+
 .showMore{
   margin: 3.5vh 0;
   cursor: pointer;
   display: inline-block;
-  /* width: auto!important; */
 }
 
 .showMore a, .showMore-start{
@@ -376,7 +368,7 @@ letter-spacing: 0.1em;
 
 .showMore h5, .showMore a{
   font-size: 1em;
-  filter: blur(0.9px);
+  filter: blur(0.7px);
 }
 
 
@@ -385,7 +377,6 @@ letter-spacing: 0.1em;
 
 .standard-h3{
   color: crimson;
-  /* filter: blur(1px); */
   letter-spacing: 0.025em;
   font-size: 1.15em;
   font-weight: 500;
@@ -393,7 +384,6 @@ letter-spacing: 0.1em;
 
 .standard-h4{
   color: crimson;
-  /* filter: blur(1px); */
   letter-spacing: 0.03em;
   font-size: 0.9em;
   font-weight: 500;
@@ -406,7 +396,7 @@ letter-spacing: 0.1em;
 .past-section{
   margin-bottom: 15vh;
   border: 2.5px solid crimson;
-  filter: blur(1.05px);
+  filter: blur(0.75px);
   width: 120vh;
   height: 40vh;
   border-radius: 15px;
@@ -505,21 +495,18 @@ h3.btn a, .donate a{
 
 h3.btn a{
   font-size: 2em;
-  /* z-index: 3; */
   padding: 0.3em 0.6em;
   text-shadow: 0 0 10px rgba(220, 20, 60, 0.95);
 }
 
 .sub-btn{
   position: absolute;
-  /* z-index: 2; */
   color: crimson;
   font: 1.2em;
   font-weight: 500;
-  filter: blur(1px);
+  filter: blur(0.75px);
   margin-top: 10.5vh;
   background-color: #1a1a1a;
-  padding: 0.1em 0.3em;
   text-shadow: 0 0 2px rgba(220, 20, 60, 0.95);
 }
 
@@ -528,7 +515,7 @@ h3.btn a{
 }
 
 h3.btn a{
-  filter: blur(1.2px);
+  filter: blur(0.75px);
 }
 
 h3.btn a::before, .simply-btn a::before, .donate a::before, .showMore h5::before, .showMore a::before {
@@ -596,10 +583,6 @@ h3.btn:hover a::after {
   100% { filter: blur(0.1em); }
 }
 
-/* .end-page{
-  background-color: #fff;
-} */
-
 .end-page{
   text-align: center;
 }
@@ -608,4 +591,83 @@ h3.btn:hover a::after {
   color: crimson;
   margin: 2vh 0;
   font-size: 0.75em;
+  letter-spacing: 0.75vh;
+  word-spacing: 1vh;
+}
+
+
+/* COUNTDOWN */
+.countdown-section{
+  text-align: center;
+}
+
+.countdown-title, .countdown, .hide h4{
+  color: crimson;
+  filter: blur(0.75px);
+  font-weight: 100;
+}
+
+.countdown-title{
+  font-size: 1em;
+  opacity: 0.835;
+  letter-spacing: 1vh;
+  word-spacing: 1.25vh;
+}
+
+.countdown{
+  margin-top: 5vh;
+  font-size: 2em;
+  opacity: 0.6;
+  letter-spacing: 3vh;
+  word-spacing: 2.5vh;
+}
+
+/* HIDE */
+.hide{
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  padding: 0 10vh;
+}
+
+.hide h4{
+  text-align: center;
+  line-height: 4.1vh;
+  font-size: 0.9em;
+  opacity: 0.835;
+  letter-spacing: 0.9vh;
+  word-spacing: 1.22vh;
+}
+
+@media only screen and (max-width: 1200px){
+  .hide{
+    display: flex;
+  }
+
+  .app {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 480px){
+
+  .hide{
+    padding: 0 6.5vh;
+  }
+
+  .hide h4{
+    line-height: 3vh;
+    font-size: 0.6em;
+    opacity: 0.95;
+    letter-spacing: 0.6vh;
+    word-spacing: 0.75vh;
+  }
+
 }

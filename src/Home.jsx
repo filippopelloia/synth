@@ -1,38 +1,46 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
-import Start from './Start.jsx'
-
 
 export default function Home() {
+  const targetDate = new Date('2023-08-15T01:00:00');
+  const currentTime = new Date();
+  const initialTime = Math.floor((targetDate - currentTime) / 1000);
+  const [remainingTime, setRemainingTime] = useState(initialTime);
 
-  const [fadeIn, setFadeIn] = useState(false);
-  const [start, setStart] = useState(true)
+  useEffect(() => {
+    // If the countdown is still ongoing, set up the interval to update the time
+    if (remainingTime > 0) {
+      const interval = setInterval(() => {
+        setRemainingTime(prevTime => prevTime - 1);
+      }, 1000); // Update the remaining time every 1 second
 
-    //fadeIn EFFECT
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setFadeIn(true);
-      }, 800);
-  
-      return () => clearTimeout(timer);
-  
-    }, []);
-    //FINE EFFECT
-
-
-    function startGame(){
-      setStart(prevStart => prevStart = false)
+      // Clean up the interval when the component is unmounted or the countdown ends
+      return () => clearInterval(interval);
     }
-  
+  }, [remainingTime]);
 
-
+  const formatTime = (timeInSeconds) => {
+    const days = Math.floor(timeInSeconds / (24 * 60 * 60));
+    const hours = Math.floor((timeInSeconds % (24 * 60 * 60)) / (60 * 60));
+    const minutes = Math.floor((timeInSeconds % (60 * 60)) / 60);
+    const seconds = timeInSeconds % 60;
+    return `${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  };
 
   return (
-    <div className="app">
-      <h3 className={`btn ${fadeIn ? 'fadeIn' : ''}`} onClick={startGame}>
-        <Link to="/start">合成音</Link>
-      </h3>
-      <div className={`sub-btn ${fadeIn ? 'fadeIn' : ''}`}>SYNTH</div>
+    <>
+    <div className='showMore'><Link to="/start">START</Link></div>
+    <div className='countdown-section'>
+      <h4 className='countdown-title'>SYNTH DEMO</h4>
+      {remainingTime > 0 ? (
+        <h3 className='countdown'>{formatTime(remainingTime)}</h3>
+      ) : (
+        <>
+          <h4>COUNTDOWN FINISHED!</h4>
+          <h4><Link to="">START</Link></h4>
+        </>
+      )}
     </div>
-  )
+    </>
+  );
 }

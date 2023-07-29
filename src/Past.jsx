@@ -5,7 +5,6 @@ import { PastContext } from './PastContext'; // Importa il contesto
 export default function Past() {
     const [firstFadeIn, setFirstFadeIn] = useState(false);
     const [secondFadeIn, setSecondFadeIn] = useState(false);
-    // const [clicked, setClicked] = useState(null)
 
     const { clicked, setClicked } = useContext(PastContext);
 
