@@ -380,6 +380,7 @@ color: crimson;
   letter-spacing: 0.025em;
   font-size: 1.15em;
   font-weight: 500;
+  margin-bottom: 1.6vh;
 }
 
 .standard-h4{
@@ -387,14 +388,15 @@ color: crimson;
   letter-spacing: 0.03em;
   font-size: 0.9em;
   font-weight: 500;
+  margin-bottom: 4vh;
 }
 
 .past-container > h4{
-  margin: 0 0 3.5vh 0;
+  margin: 0 0 5.5vh 0;
 }
 
 .past-section{
-  margin-bottom: 15vh;
+  margin-bottom: 20vh;
   border: 2.5px solid crimson;
   filter: blur(0.75px);
   width: 120vh;
@@ -408,7 +410,7 @@ color: crimson;
 }
 
 .past{
-  height: 45vh;
+  height: 60vh;
   width: 50%;
   background-color: #1a1a1a;
   margin-top: 14vh;

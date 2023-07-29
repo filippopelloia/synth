@@ -35,23 +35,16 @@ export default function Settings() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          {/* <Typography id="modal-modal-title" variant="h6" component="h2">
-          Listen to Music While Browsing:
-          </Typography> */}
           <div className="setting-row">
             <h5 className="setting-voice" style={{color: 'white'}}>Soundtrack</h5>
-            {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography> */}
-            <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><a href="https://www.youtube.com/watch?v=W5KJsQMKbwM" target='_blank'>Play Music from Youtube</a></div>
+            <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><a href="https://www.youtube.com/watch?v=W5KJsQMKbwM" target='_blank'>PLAY MUSIC FROM YouTube</a></div>
           </div>
           <div className='setting-row'>
             <h5 className="setting-voice" style={{color: 'white'}}>Restart the Game</h5>
-            {/* <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson'}}><a href="http://localhost:5173/">Reset</a></div> */}
             <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><Reset/></div>
           </div>
           <div className='setting-row' style={{justifyContent: 'center'}}>
-            <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}} onClick={handleClose}>Close</div>
+            <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}} onClick={handleClose}>CLOSE</div>
           </div>
         </Box>
       </Modal>

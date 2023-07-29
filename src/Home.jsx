@@ -29,16 +29,12 @@ export default function Home() {
 
   return (
     <>
-    <div className='showMore'><Link to="/start">START</Link></div>
     <div className='countdown-section'>
       <h4 className='countdown-title'>SYNTH DEMO</h4>
       {remainingTime > 0 ? (
         <h3 className='countdown'>{formatTime(remainingTime)}</h3>
       ) : (
-        <>
-          <h4>COUNTDOWN FINISHED!</h4>
-          <h4><Link to="">START</Link></h4>
-        </>
+        <div className='showMore'><Link to="/start">START</Link></div>
       )}
     </div>
     </>

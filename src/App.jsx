@@ -9,7 +9,6 @@ import Mid from './Mid.jsx'
 // import Settings from './Settings.jsx'
 import End from './End.jsx'
 import Begin from './Begin.jsx'
-import Begin2 from './Begin2.jsx'
 import Hide from './Hide.jsx';
 
 import { PastProvider } from './PastContext';
@@ -19,18 +18,14 @@ export default function App() {
 
   return (
     <>
-    {/* <div className='header'>
-      <Settings />
-    </div> */}
     <Hide/>
-    
+
     <div className="app">
       <PastProvider>
         <Router>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/begin" element={<Begin/>}/>
-            <Route path="/begin2" element={<Begin2/>}/>
             <Route path="/start" element={<Start/>}/>
             <Route path="past" element={<Past/>}/>
             <Route path="/mid" element={<Mid/>}/>

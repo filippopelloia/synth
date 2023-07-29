@@ -300,6 +300,13 @@ const dialoghi3 = [
     {id: 342, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Al momento sono tornati alla ribalta dopo alcuni grossi colpi ai danni delle due corporazioni invischiate nel traffico di esseri umani verso le nuove colonie di fascia 8.\""},
     {id: 343, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Nonostante gli anni passati restano una delle gang più pericolose della città... e con parecchi nemici.\""},
     {id: 344, url: `${foto6}`, character: `${char3}`, content: "TU: \"Lo so bene Nova, non cambieranno mai...\""},
+
+    //YOU EAT
+    {id: 346, url: `${foto6}`, character: `${char3}`, content: "[You go to the kitchen and open the fridge.]"},
+    {id: 347, url: `${foto6}`, character: `${char3}`, content: "[There is some leftover veal-flavored synth ramen]"},
+    {id: 348, url: `${foto6}`, character: `${char3}`, content: "[The smell seems unobtrusive.]"},
+    {id: 349, url: `${foto6}`, character: `${char3}`, content: "[You eat it... It was good.]"},
+
 ]
 
 

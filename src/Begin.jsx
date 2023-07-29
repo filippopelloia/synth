@@ -1,35 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
+// import Start from './Start.jsx'
+import Settings from './Settings.jsx'
+
 
 export default function Begin() {
-  const initialTime = 0.1 * 60; // 5 minutes in seconds
-  const [remainingTime, setRemainingTime] = useState(initialTime);
 
-  useEffect(() => {
-    // If the countdown is still ongoing, set up the interval to update the time
-    if (remainingTime > 0) {
-      const interval = setInterval(() => {
-        setRemainingTime(prevTime => prevTime - 1);
-      }, 1000); // Update the remaining time every 1 second
+  const [fadeIn, setFadeIn] = useState(false);
+  const [start, setStart] = useState(true)
 
-      // Clean up the interval when the component is unmounted or the countdown ends
-      return () => clearInterval(interval);
+    //fadeIn EFFECT
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setFadeIn(true);
+      }, 800);
+  
+      return () => clearTimeout(timer);
+  
+    }, []);
+    //FINE EFFECT
+
+
+    function startGame(){
+      setStart(prevStart => prevStart = false)
     }
-  }, [remainingTime]);
+  
 
-  const formatTime = (timeInSeconds) => {
-    const minutes = Math.floor(timeInSeconds / 60);
-    const seconds = timeInSeconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-  };
+
 
   return (
-    <div>
-      <h1>Countdown Timer</h1>
-      {remainingTime > 0 ? (
-        <h2>{formatTime(remainingTime)}</h2>
-      ) : (
-        <h2>Countdown Finished!</h2>
-      )}
-    </div>
-  );
+    <>
+      <div className='header'>
+        <Settings />
+      </div>
+      
+      <div className="app">
+        <h3 className={`btn ${fadeIn ? 'fadeIn' : ''}`} onClick={startGame}>
+          <Link to="/start">合成音</Link>
+        </h3>
+        <div className={`sub-btn ${fadeIn ? 'fadeIn' : ''}`}>SYNTH</div>
+      </div>
+    </>
+  )
 }

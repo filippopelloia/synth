@@ -15,7 +15,7 @@ export default function FadeInContext(props) {
     return () => clearTimeout(timer);
 
   }, []);
-  //FINE EFFECT
+  //END EFFECT
     
 
 

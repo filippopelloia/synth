@@ -356,7 +356,7 @@ export default function Mid() {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 135, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 244, 255, 307, 321, 326, 331, 344];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 135, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 244, 255, 307, 321, 326, 331, 344, 349];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -387,17 +387,17 @@ export default function Mid() {
           </div>}
 
           {dialogIndex === 5 && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showFive}>NON RICORDO</a>
+            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showFive}>I DON'T REMEMBER</a>
           </div>}
 
           {/* CHI SEI */}
           {(dialogIndex === 10 || (dialogIndex === 30 && (second.one === false && second.two === true))) && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>CHI SEI?</a>
+            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEleven}>WHO ARE YOU?</a>
           </div>}
 
           {/* DOVE MI TROVO? */}
           {(dialogIndex === 10 || (dialogIndex === 28 && (second.one === true && second.two === false))) && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>DOVE MI TROVO?</a>
+            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTwelve}>WHERE AM I?</a>
           </div>}
 
           {/* RETURN TO 11 */}
@@ -410,15 +410,15 @@ export default function Mid() {
           {/*================= BLOCK 2 =================*/}
 
           {(dialogIndex === 13 || dialogIndex === 194) && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNews}>NOTIZIE</a>
+            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNews}>NEWS</a>
           </div>}
 
           {(dialogIndex === 13 || dialogIndex === 194) && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showAdvice}>POSSO CHIEDERTI UNA COSA?</a>
+            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showAdvice}>MAY I ASK YOU A QUESTION?</a>
           </div>}
 
           {(dialogIndex === 13 || dialogIndex === 194) && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={endDialog}>FINE DIALOGO</a>
+            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={endDialog}>END DIALOG</a>
           </div>}
 
 
@@ -435,46 +435,46 @@ export default function Mid() {
 
 
                   {dialogIndex === 37 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showVote}>VOTAZIONI</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showVote}>VOTE</a>
                   </div>}
 
                   {(dialogIndex === 39 && (third.one === true && third.two === false)) && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showVote}>VOTAZIONI AFTER</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showVote}>VOTE</a>
                   </div>}
 
                   {(dialogIndex === 38 && (third.one === false && third.two === true)) && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSynthicoin}>SYNTHICOIN AFTER</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSynthicoin}>SYNTHICOIN</a>
                   </div>}
 
                   {(dialogIndex === 37 || dialogIndex === 40) && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>RETURN TO BLOCK 2</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnToBlockTwo}>RETURN</a>
                   </div>}
 
                   {dialogIndex === 48 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={youVoted}>VOTA PER SINDACO SATO</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={youVoted}>VOTE FOR MAYOR SATO</a>
                   </div>}
 
                   {dialogIndex === 48 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={youVoted}>VOTA PER MATSUDA TAKAHASHI</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={youVoted}>VOTE FOR MATSUDA TAKAHASHI</a>
                   </div>}
 
 
                   {/*============= ADVICE SECTION =============*/}
 
                   {(dialogIndex === 66 && fourth.one === true) && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showError}>HO FATTO UN ERRORE</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showError}>I MADE A MISTAKE</a>
                   </div>}
 
                   {(dialogIndex === 66 && fourth.two === true) && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTrapped}>MI SENTO IN TRAPPOLA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTrapped}>I FEEL TRAPPED</a>
                   </div>}
 
                   {dialogIndex === 87 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSpies}>RACCONTA CIO' CHE SAI</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSpies}>TELL HER WHAT YOU KNOW</a>
                   </div>}
 
                   {dialogIndex === 87 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNothing}>NON DIRE NULLA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNothing}>DON'T TELL</a>
                   </div>}
 
                   {/* AGG./MODIFICA STATE PER DIRE SE HAI AVVISATO NOVA O NO DI MONITORARE PIANO 34 */}
@@ -487,15 +487,15 @@ export default function Mid() {
                   </div>}
 
                   {dialogIndex === 105 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEntertainment}>VA BENE</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showEntertainment}>OK</a>
                   </div>}
 
                   {dialogIndex === 105 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNoEntertainment}>DECLINA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNoEntertainment}>DECLINE</a>
                   </div>}
 
                   {dialogIndex === 110 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGirlSyncro}>SINCRONIZZAZIONE</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGirlSyncro}>SYNCHRONIZATION</a>
                   </div>}
 
                   {dialogIndex === 110 && <div className="simply-btn">
@@ -511,15 +511,15 @@ export default function Mid() {
                   </div>}
 
                   {dialogIndex === 123 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNotification}>VISUALIZZA NOTIFICA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showNotification}>VIEW NOTIFICATION</a>
                   </div>}
 
                   {dialogIndex === 139 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>PRENDI PISTOLA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>TAKE THE GUN</a>
                   </div>}
 
                   {dialogIndex === 139 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>PRENDI FUCILE</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showGun}>TAKE THE RIFLE</a>
                   </div>}
 
                   {dialogIndex === 139 && <div className="simply-btn">
@@ -534,7 +534,7 @@ export default function Mid() {
                   {/*============= TRAPPED SECTION =============*/}
 
                   {dialogIndex === 172 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTicket}>SI</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showTicket}>YES</a>
                   </div>}
 
                   {dialogIndex === 172 && <div className="simply-btn">
@@ -542,54 +542,54 @@ export default function Mid() {
                   </div>}
 
                   {dialogIndex === 181 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showThinkIt}>CI PENSERO'</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showThinkIt}>I'LL THINK ABOUT IT</a>
                   </div>}
 
                   {dialogIndex === 181 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showDoIt}>LO FARO'</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showDoIt}>I'LL DO IT</a>
                   </div>}
 
                   {(dialogIndex === 188 || dialogIndex === 192) && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUE</a>
                   </div>}
 
 
                   {/*============= END DIALOG =============*/}
 
                   {dialogIndex === 240 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoof}>VAI NEL TETTO</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoof}>GO TO THE ROOF</a>
                   </div>}
 
                   {dialogIndex === 240 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSleep}>DORMI</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showSleep}>GO TO SLEEP</a>
                   </div>}
 
                   {dialogIndex === 240 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>MANGIA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>EAT</a>
                   </div>}
 
                   {dialogIndex === 240 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnToNova}>TORNA DA NOVA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnToNova}>RETURN TO NOVA</a>
                   </div>}
 
                   {dialogIndex === 244 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showWakeUp}>CONTINUA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showWakeUp}>CONTINUE</a>
                   </div>}
                   
                   {dialogIndex === 255 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>FUMA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>SMOKE</a>
                   </div>}
 
                   {dialogIndex === 255 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>PRENDI DA BERE</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TAKE SOMETHING TO DRINK</a>
                   </div>}
 
                   {dialogIndex === 255 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TORNA GIU</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>RETURN TO THE APARTMENT</a>
                   </div>}
 
                   {dialogIndex === 255 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showDontTake}>NIENTE</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showDontTake}>NOTHING</a>
                   </div>}
 
                   {dialogIndex === 326 && <div className="simply-btn">
@@ -627,6 +627,12 @@ export default function Mid() {
                   {dialogIndex === 145 && <div className="simply-btn">
                     <button className='simply-btn' style={{backgroundColor: 'crimson', color: 'black'}}><Link to="/the_end">CONTINUE</Link></button>
                   </div>}
+
+                  {dialogIndex === 349 && <div className="simply-btn">
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={endDialog}>CONTINUE</a>
+                  </div>}
+
+
                   
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import dialoghi from './Data.jsx';
+import dialogs from './Data.jsx';
 import {Link} from 'react-router-dom'
 
 
@@ -8,45 +8,41 @@ const SkyrimText = () => {
   const [backup, setBackup] = useState('')
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
-  const [dialog, setDialog] = useState('');  //TESTI IMMAGAZZINATI
-  const [dialogIndex, setDialogIndex] = useState(0); //INDICE DEI TESTI
+  const [dialog, setDialog] = useState('');  
+  const [dialogIndex, setDialogIndex] = useState(0); //TEXT INDEXES
 
-
-  console.log(dialogIndex)
-
-  //FUNZIONE BUTTON
+  //FUNCTION BUTTON
   function showText() {
     setDialogIndex((prevDialogIndex) => prevDialogIndex + 1);
     setIndex(0);
   }
 
-
-  //AZZERA L'INDICE DEL TESTO OGNI VOLTA CHE IL TESTO CAMBIA
+  //SET INDEX TO 0 EVERYTIME THE TEXT CHANGES
   useEffect(() => {
     setIndex(0);
   }, [dialog]);
 
 
 
-  //PRENDE ED IMMAGAZZINA IL TESTO
+  //GET AND SAVE TEXT
   useEffect(() => {
-    const dialogo = dialoghi[dialogIndex].content;
+    const dialogo = dialogs[dialogIndex].content;
     setBackup(dialogo);
     setDialog(dialogo);
 
-    //QUANTITA' DEI CONTENUTI
-    const quantity = dialoghi.length;
+    //CONTENT QUANTITY
+    const quantity = dialogs.length;
     setDataIndexTotal(quantity);
   }, [dialogIndex]);
 
 
 
-//ANIMAZIONE
+//ANIMATION
 useEffect(() => {
-  let testo = dialog;
+  let text = dialog;
 
   const intervalId = setInterval(() => {
-    setText(testo.substring(0, index + 1));
+    setText(text.substring(0, index + 1));
     setIndex((prevIndex) => prevIndex + 1);
   }, 10);
 
@@ -57,17 +53,17 @@ useEffect(() => {
   return () => clearInterval(intervalId);
 }, [index, dialog]);
 
-  //FINE ANIMAZIONE
+  //END ANIMATION
 
 
 
 
-  //IMPEDISCE CARICAMENTO
+  //STOP REFRESH
 
   useEffect(() => {
     const handleBeforeUnload = (e) => {
       e.preventDefault();
-      e.returnValue = ''; // Richiesto per Chrome
+      e.returnValue = ''; //REQUIRED BY CHROME
     };
 
     window.addEventListener('beforeunload', handleBeforeUnload);
@@ -77,8 +73,7 @@ useEffect(() => {
     };
   }, []);
 
-  //FINE IMPEDIMENTO
-
+  //END
 
 
 

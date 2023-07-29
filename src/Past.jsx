@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react'
 import {Link} from 'react-router-dom'
-import { PastContext } from './PastContext'; // Importa il contesto
+import { PastContext } from './PastContext'; 
 
 export default function Past() {
     const [firstFadeIn, setFirstFadeIn] = useState(false);
@@ -22,7 +22,7 @@ export default function Past() {
     return () => clearTimeout(timer);
 
   }, []);
-  //FINE EFFECT
+  //END EFFECT
 
 
 
@@ -35,14 +35,11 @@ export default function Past() {
     return () => clearTimeout(timer);
 
   }, []);
-  //FINE EFFECT
+  //END EFFECT
 
-
-  console.log(firstFadeIn)
 
 
   return (
-    // <PastProvider value={{ clicked, setClicked }}>
     <div className="past-container">
         <h4 className="standard-h4" style={{textAlign: 'center', filter: 'blur(0.85px)'}}>CHOOSE YOUR PAST</h4>
 
@@ -52,14 +49,14 @@ export default function Past() {
                 onClick={() => getClicked(0)}
             >
                 <h3 className="standard-h3">BOY OF THE ROAD</h3>
-                <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h4>
+                <h4>You grew up among the fiercest gangs of Tsukimachi City. As a teenager, you sought refuge in one of them, gaining experience with firearms, heists, and cyberHacking. <br/><br/>One day, weary of the violence and darkness around your existance, you decided to turn the page and forge a new life. <br/><br/>The friendships you formed during those years helped you do so, allowing you to live like an ordinary person. However... </h4>
             </div>
             <div
                 className={`past ${clicked === 1 ? 'selected' : ''} ${secondFadeIn ? 'fadeIn' : ''}`}
                 onClick={() => getClicked(1)}
             >
                 <h3 className="standard-h3">SON OF THE CORPORATIONS</h3>
-                <h4>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h4>
+                <h4>You were raised among the most powerful families of Tsukimachi City, and you have never known the words 'hunger' or 'poverty.' Like almost everyone in this city, you have gained some experience in defending yourself with common weapons.<br/><br/> However, one day, you decided to turn the page and not follow the corporate life like the people around you. <br/><br/>The friendships you had formed helped you break away from the circle and lead a normal life, until...</h4>
             </div>
         </div>
 
