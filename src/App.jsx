@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -15,6 +15,32 @@ import { PastProvider } from './PastContext';
 
 export default function App() {
   const [showHeader, setShowHeader] = useState(true);
+
+
+  //ENABLE REFRESH
+  const handleKeyDown = (event) => {
+    if (event.key === 'F5') {
+      event.preventDefault();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown);
+    // Rimuovi l'ascoltatore dell'evento keydown quando il componente viene smontato
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+  //END ENABLE REFRESH
+
+  //DISABLE DEVELOPER MODE
+  document.onkeydown = function (event) {
+    if (event.keyCode === 123) {
+      return false;
+    }
+  };
+  //END DISABLE DEVELOPER MODE
+
 
   return (
     <>
