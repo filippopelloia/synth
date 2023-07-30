@@ -381,7 +381,8 @@ color: crimson;
   letter-spacing: 0.025em;
   font-size: 1.15em;
   font-weight: 500;
-  margin-bottom: 1.6vh;
+  /* margin-bottom: 1.6vh; */
+  margin-bottom: 2.5%;
 }
 
 .standard-h4{
@@ -505,10 +506,10 @@ h3.btn a{
 .sub-btn{
   position: absolute;
   color: crimson;
-  font: 1.2em;
+  font-size: 1em;
   font-weight: 500;
   filter: blur(0.75px);
-  margin-top: 10.5vh;
+  margin-top: 46%;
   background-color: #1a1a1a;
   text-shadow: 0 0 2px rgba(220, 20, 60, 0.95);
 }

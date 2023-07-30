@@ -20,10 +20,10 @@ const dialoghi3 = [
     {id: 1, url: `${foto2}`, character: `${char3}`, content: "YOU: ... ..."},
     {id: 2, url: `${foto3}`, character: `${char3}`,content: "YOU: ... ... ..."},
     {id: 3, url: `${foto4}`, character: `${char3}`, content: "YOU: \"Ah... my head...\""},
-    {id: 4, url: `${foto5}`, character: `${char3}`, content: "VEX: \"Hey, Mark, did you sleep well? Your heartbeat was quite fast in the last few minutes.\""},
+    {id: 4, url: `${foto5}`, character: `${char3}`, content: "VEX: \"Hey, Asher, did you sleep well? Your heartbeat was quite fast in the last few minutes.\""},
     {id: 5, url: `${foto5}`, character: `${char3}`, content: "VEX: \"Do you feel like telling me about what you saw in your dream?\""},
     {id: 6, url: `${foto5}`, character: `${char3}`, content: "YOU: \"...I don't remember much.\""},
-    {id: 7, url: `${foto5}`, character: `${char3}`, content: "VEX: \"If you want to talk about it... Anything for you, Mark.\""},
+    {id: 7, url: `${foto5}`, character: `${char3}`, content: "VEX: \"If you want to talk about it... Anything for you, Asher.\""},
     {id: 8, url: `${foto5}`, character: `${char3}`, content: "VEX: \"You know, with the ARISMA 7.36.1 update, I can now even help you interpret dreams.\""},
     {id: 9, url: `${foto5}`, character: `${char2}`, content: "YOU: \"Who knows, maybe I'll have a chance to try out this upgrade of yours someday.\""},
     {id: 10, url: `${foto5}`, character: `${char2}`, content: "VEX: \"Me too. By the way, I feel particularly happy today."},
@@ -49,7 +49,7 @@ const dialoghi3 = [
     
     // SynthiCoin
     {id: 38, url: `${foto6}`, character: `${char3}`, content: "YOU: \"What do you think about SynthiCoin? Do you think I should invest some money in it?\""},
-    {id: 39, url: `${foto6}`, character: `${char3}`, content: "VEX: \"My protocol prohibits me from giving financial advice; I can't help you with that, Mark. I'm here for anything else you need... Anything.\""},
+    {id: 39, url: `${foto6}`, character: `${char3}`, content: "VEX: \"My protocol prohibits me from giving financial advice; I can't help you with that, Asher. I'm here for anything else you need... Anything.\""},
     
     // Limbo 1 - Index 28
     {id: 40, url: `${foto6}`, character: `${char3}`, content: "VEX: \"So? How can I assist you?\""},
@@ -58,12 +58,12 @@ const dialoghi3 = [
     {id: 43, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Instead, I would try to secure a plot of land in some extra-world colony...\""},
     {id: 44, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Do you already have some places in mind? They say Solara and Nerezar are magnificent for starting over.\""},
     {id: 45, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Please, don't talk to me about Nerezar, Vex... Let's avoid that topic.\""},
-    {id: 46, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Oh, I'm sorry, Mark. It wasn't my intention...\""},
+    {id: 46, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Oh, I'm sorry, Asher. It wasn't my intention...\""},
     {id: 47, url: `${foto6}`, character: `${char3}`, content: "YOU: \"...\""},
     
     // Vote Now - Index 36
     {id: 48, url: `${foto6}`, character: `${char3}`, content: "[AXI Pad Booting Up...]"},
-    {id: 49, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Perfect, vote sent. Congratulations, Mark!\""},
+    {id: 49, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Perfect, vote sent. Congratulations, Asher!\""},
     {id: 50, url: `${foto6}`, character: `${char3}`, content: "YOU: \"It's just one vote, Vex. It won't change this corrupt city.\""},
     
     // Advice Section
@@ -75,7 +75,7 @@ const dialoghi3 = [
     {id: 69, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I think about it constantly...\""},
     {id: 70, url: `${foto6}`, character: `${char3}`, content: "VEX: \"You're referring to the leak and the consequences it brought?\""},
     {id: 71, url: `${foto6}`, character: `${char3}`, content: "YOU: \"...\""},
-    {id: 72, url: `${foto6}`, character: `${char3}`, content: "VEX: \"You don't have to think about it, Mark. You did the right thing; anyone would have done the same in your place...\""},
+    {id: 72, url: `${foto6}`, character: `${char3}`, content: "VEX: \"You don't have to think about it, Asher. You did the right thing; anyone would have done the same in your place...\""},
     {id: 73, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...and if MiraiTech is willing to use any means to hide uncomfortable truths, I don't see how it can be your problem or your fault.\""},
     {id: 74, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Those people wouldn't have died if I had turned a blind eye and pretended nothing happened.\""},
     {id: 75, url: `${foto6}`, character: `${char3}`, content: "VEX: \"That's possible... but what did you achieve? Have you thought about that?\""},
@@ -97,13 +97,13 @@ const dialoghi3 = [
     {id: 91, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Suppose they are looking for you... Why now? Why after a year?\""},
     {id: 92, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I can't give you an answer.\""},
     {id: 93, url: `${foto6}`, character: `${char3}`, content: "YOU: \"How are your perimeter sensors? They're still working well, right?\""},
-    {id: 94, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Absolutely, Mark. Functionality and reliability at 99.967%.\""},
+    {id: 94, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Absolutely, Asher. Functionality and reliability at 99.967%.\""},
     {id: 95, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Let me know if anyone passes and goes past the 34th-floor level.\""},
     {id: 96, url: `${foto6}`, character: `${char3}`, content: "VEX: \"You mean the 34th floor?\""},
     {id: 97, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Exactly that.\""},
-    {id: 98, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Okay, Mark, I'm in monitoring mode from... now.\""},
+    {id: 98, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Okay, Asher, I'm in monitoring mode from... now.\""},
     {id: 99, url: `${foto6}`, character: `${char3}`, content: "YOU: \"If anyone comes to visit us, we'll know in advance...\""},
-    {id: 100, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Clever, my Mark.\""},
+    {id: 100, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Clever, my Asher.\""},
     {id: 101, url: `${foto6}`, character: `${char3}`, content: "VEX: [Places a hand on your cheek]"},
     {id: 102, url: `${foto6}`, character: `${char3}`, content: "VEX: \"You look a bit tired...\""},
     {id: 103, url: `${foto6}`, character: `${char3}`, content: "YOU: \"...\""},
@@ -130,7 +130,7 @@ const dialoghi3 = [
     // IF GIRL IS FALSE
     {id: 119, url: `${foto6}`, character: `${char3}`, content: "VEX: \"How much I wish to feel your body in my hands...\""},
 
-    {id: 120, url: `${foto6}`, character: `${char3}`, content: "VEX: \"I live for these moments with you, Mark.\""},
+    {id: 120, url: `${foto6}`, character: `${char3}`, content: "VEX: \"I live for these moments with you, Asher.\""},
     {id: 121, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Me too, Vex.\""},
 
 
@@ -161,7 +161,7 @@ const dialoghi3 = [
     {id: 145, url: `${foto6}`, character: `${char3}`, content: "[END.]"},
 
     {id: 147, url: `${foto6}`, character: `${char3}`, content: "YOU: \"It's just my sixth sense, that's all.\""},
-    {id: 148, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Okay Mark, I won't insist.\""},
+    {id: 148, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Okay Asher, I won't insist.\""},
 
     //DIFFERENT HERE IF YOU DECIDE TO VISIT THE GANG
     {id: 150, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Another time, Vex. I'm shattered tonight.\""},
@@ -170,7 +170,7 @@ const dialoghi3 = [
 
     //SECOND PAD NOTIFICATION BEFORE THE END
     {id: 153, url: `${foto6}`, character: `${char3}`, content: "[A hand caresses your hair]"},
-    {id: 154, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Mark, wake up darling... Something happened.\""},
+    {id: 154, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Asher, wake up darling... Something happened.\""},
     {id: 155, url: `${foto6}`, character: `${char3}`, content: "YOU: [You sit up]"},
     {id: 156, url: `${foto6}`, character: `${char3}`, content: "YOU: \"What happe...\""},
     {id: 157, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Someone leaked sensitive information about MiraiTech. They're talking about it on almost all the news channels. The documents have been published and shared online.\""},
@@ -204,12 +204,12 @@ const dialoghi3 = [
     {id: 177, url: `${foto6}`, character: `${char3}`, content: "YOU: \"You know well what it entails to ask something of her. I've been out of the Neon Vipers' circle for years... even though they raised me and I'm hiding in their district.\""},
     {id: 178, url: `${foto6}`, character: `${char3}`, content: "VEX: \"But...\""},
     {id: 179, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Yes, it would be the only viable way to earn credits. I've thought about it often... but it's a very dangerous and unpredictable path.\""},
-    {id: 180, url: `${foto6}`, character: `${char3}`, content: "VEX: \"It would be for a good reason... Think about it, Mark.\""},
+    {id: 180, url: `${foto6}`, character: `${char3}`, content: "VEX: \"It would be for a good reason... Think about it, Asher.\""},
     {id: 181, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Do it for yourself, do it for the new life you could build outside of this planet.\""},
 
     // IF YOU DO IT
     {id: 183, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Alright, I have no other choice.\""},
-    {id: 184, url: `${foto6}`, character: `${char3}`, content: "VEX: \"I appreciate it, Mark. I know you can do it.\""},
+    {id: 184, url: `${foto6}`, character: `${char3}`, content: "VEX: \"I appreciate it, Asher. I know you can do it.\""},
     {id: 185, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Tonight, I'll go to the Neon Vipers... hoping that Emi is in town.\""},
     {id: 186, url: `${foto6}`, character: `${char3}`, content: "VEX: \"You'll find a way to communicate, even if she's not around.\""},
     {id: 187, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...Well, you still have her number in your contacts, from what I see in my database.\""},
@@ -218,7 +218,7 @@ const dialoghi3 = [
     // IF YOU DON'T DO IT
     {id: 190, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I'll think about it... but I can't promise anything.\""},
     {id: 191, url: `${foto6}`, character: `${char3}`, content: "VEX: [Smiles at you]"},
-    {id: 192, url: `${foto6}`, character: `${char3}`, content: "VEX: \"I appreciate it, Mark.\""},
+    {id: 192, url: `${foto6}`, character: `${char3}`, content: "VEX: \"I appreciate it, Asher.\""},
 
     // DIRECT TO MENU
     {id: 194, url: `${foto6}`, character: `${char3}`, content: "VEX: \"So? What do you feel like doing?\""},
@@ -228,14 +228,14 @@ const dialoghi3 = [
 
     // SLEEP
     {id: 241, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Vex, I'm tired... See you later.\""},
-    {id: 242, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Again? Alright, Mark.\""},
+    {id: 242, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Again? Alright, Asher.\""},
     {id: 243, url: `${foto6}`, character: `${char3}`, content: "[You lie down and fall asleep]"},
     {id: 244, url: `${foto6}`, character: `${char3}`, content: "[After a few hours]"},
 
 
     //TETTO (Roof)
     {id: 245, url: `${foto6}`, character: `${char3}`, content: "YOU: \"See you later, Vex. I'm heading upstairs.\""},
-    {id: 246, url: `${foto6}`, character: `${char3}`, content: "VEX: \"See you later, Mark. I'll take this opportunity to do some upgrades.\""},
+    {id: 246, url: `${foto6}`, character: `${char3}`, content: "VEX: \"See you later, Asher. I'll take this opportunity to do some upgrades.\""},
     {id: 247, url: `${foto6}`, character: `${char3}`, content: "[After a few minutes]"},
     {id: 248, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Finally, fresh air... well, almost.\""},
     {id: 249, url: `${foto6}`, character: `${char3}`, content: "[The semi-empty roof. Garbage, a battered table, some faded chairs, an old fridge. That's how you've personalized that terrace with a panoramic view surrounded by large, old neon-lit buildings...]"},
@@ -255,7 +255,7 @@ const dialoghi3 = [
     {id: 304, url: `${foto6}`, character: `${char3}`, content: "YOU: \"There's no hope for those who try to change things... like me.\""},
     {id: 305, url: `${foto6}`, character: `${char3}`, content: "[Your pad in your pocket rings]"},
     {id: 306, url: `${foto6}`, character: `${char3}`, content: "[Incoming call from Vex]"},
-    {id: 307, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Hey Mark, something happened...\""},
+    {id: 307, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Hey Asher, something happened...\""},
 
 
     //IF YOU WARNED
@@ -264,7 +264,7 @@ const dialoghi3 = [
     {id: 310, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I'll be right back.\""},
     {id: 311, url: `${foto6}`, character: `${char3}`, content: "[After a few minutes]"},
     {id: 312, url: `${foto6}`, character: `${char3}`, content: "YOU: \"What happened?\""},
-    {id: 313, url: `${foto6}`, character: `${char3}`, content: "VEX: \"See for yourself, Mark. Sensitive data from MiraiTech is all over the internet. The gravity level of this is much higher than when you leaked those documents.\""},
+    {id: 313, url: `${foto6}`, character: `${char3}`, content: "VEX: \"See for yourself, Asher. Sensitive data from MiraiTech is all over the internet. The gravity level of this is much higher than when you leaked those documents.\""},
     {id: 314, url: `${foto6}`, character: `${char3}`, content: "NEWS: \"Hundreds of thousands of classified documents from the multi-billionaire corporation MiraiTech, with its terrestrial headquarters in Tsukimachi City, have been stolen by an anonymous source and leaked online...\""},
     {id: 315, url: `${foto6}`, character: `${char3}`, content: "NEWS: \"The corporation's executives have not yet made a statement, but a press conference has been scheduled for tomorrow morning. These sensitive data concern alleged military operations ordered by MiraiTech itself to suppress rebellions in colonies 3, 4, 5, and 9...\""},
     {id: 316, url: `${foto6}`, character: `${char3}`, content: "NEWS: \"At the moment, the authenticity of these thousands of documents is uncertain...\""},
@@ -298,7 +298,7 @@ const dialoghi3 = [
     {id: 338, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...The same ones you worked for 15 years before leaving and changing your life.\""},
     {id: 339, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I see you remember well.\""},
     {id: 340, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Tonight, I'm going to see them. Let's see if they have any jobs for me.\""},
-    {id: 341, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Be careful, Mark. Remember who the Neon Vipers are.\""},
+    {id: 341, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Be careful, Asher. Remember who the Neon Vipers are.\""},
     {id: 342, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Recently, they've made a comeback after some big hits against the two corporations involved in trafficking humans to the new tier 8 colonies.\""},
     {id: 343, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Despite the years that have passed, they remain one of the most dangerous gangs in the city... with quite a few enemies.\""},
     {id: 344, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I know well, Vex, they'll never change...\""},
@@ -329,7 +329,7 @@ const dialoghi3 = [
     {id: 364, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...The same ones you worked for 15 years before leaving and changing your life.\""},
     {id: 365, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I see you remember well.\""},
     {id: 366, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Tomorrow morning, I'll go see Maximillian at the headquarters. I'm sure he has some job for me.\""},
-    {id: 367, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Be careful, Mark. Remember who TechNex Corp is.\""},
+    {id: 367, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Be careful, Asher. Remember who TechNex Corp is.\""},
     {id: 368, url: `${foto6}`, character: `${char3}`, content: "VEX: \"In the last 4 months, the corporation has significantly increased its power and influence in the city. At the moment, they still have a monopoly in the contractor sector and in the extra-world military transport sector, and they are expanding into the class SAI 9 implant weapons field.\""},
     {id: 369, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Moreover, it's said that TechNex Corp. is among the main financiers of Mayor Sato's campaign... but I can't verify this information.\""},
     {id: 370, url: `${foto6}`, character: `${char3}`, content: "YOU: \"I know well who TechNex Corp is... and who Maximillian Wolfe is...\""},
