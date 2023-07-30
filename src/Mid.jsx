@@ -94,7 +94,7 @@ export default function Mid() {
 
 
     console.log(`You have chosen: ${clicked}`);
-    
+
 
     // ============== BLOCK 2 ==============
 
@@ -209,6 +209,59 @@ export default function Mid() {
       const risultato = dialoghi3.find((oggetto) => oggetto.id === 49);
       setDialogIndex(risultato.id);
     }
+
+
+    //================= ROAD and CORPORATE SECTION
+
+    function showRoad1() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 175);
+      setDialogIndex(risultato.id);
+    }
+
+    function showRoad2() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 336);
+      setDialogIndex(risultato.id);
+    }
+
+    function showRoadName() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 185);
+      setDialogIndex(risultato.id);
+    }
+
+    function showCorporate1() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 352);
+      setDialogIndex(risultato.id);
+    }
+
+    function showCorporate2() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 362);
+      setDialogIndex(risultato.id);
+    }
+
+    function showCorporateName() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 360);
+      setDialogIndex(risultato.id);
+    }
+
+    function exitCorporateName() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 186);
+      setDialogIndex(risultato.id);
+    }
+
+    function exitCorporate1() {
+      const risultato = dialoghi3.find((oggetto) => oggetto.id === 178);
+      setDialogIndex(risultato.id);
+    }
+
+    // function exitCorporate2() {
+    //   const risultato = dialoghi3.find((oggetto) => oggetto.id === 178);
+    //   setDialogIndex(risultato.id);
+    // }
+
+
+
+
+    //================= END ROAD and CORPORATE SECTION
 
 
     //================= ADVICE SECTION
@@ -358,7 +411,7 @@ export default function Mid() {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 135, 139, 145, 148, 159, 172, 181, 188, 192, 194, 240, 244, 255, 307, 321, 326, 331, 344, 349];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 135, 139, 145, 148, 159, 172, 174, 181, 184, 188, 192, 194, 240, 244, 255, 307, 321, 326, 331, 335, 344, 349, 358, 360, 370];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -633,6 +686,49 @@ export default function Mid() {
                   {dialogIndex === 349 && <div className="simply-btn">
                     <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={endDialog}>CONTINUE</a>
                   </div>}
+
+
+                  {/* ROAD or CORPORATE 1 */}
+
+                    {/* ROAD */}
+                    {(dialogIndex === 174 && (clicked === 0)) && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoad1}>CONTINUE</a>
+                    </div>}
+
+                    {/* CORPORATE */}
+                    {(dialogIndex === 174 && (clicked === 0)) && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showCorporate1}>CONTINUE</a>
+                    </div>}
+
+                    {dialogIndex === 358 && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={exitCorporate1}>CONTINUE</a>
+                    </div>}
+
+                    {(dialogIndex === 184 && (clicked === 0)) && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoadName}>CONTINUE</a>
+                    </div>}
+
+                    {(dialogIndex === 184 && (clicked === 1)) && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showCorporateName}>CONTINUE</a>
+                    </div>}
+
+                    {dialogIndex === 360 && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={exitCorporateName}>CONTINUE</a>
+                    </div>}
+
+                    {(dialogIndex === 335 && (clicked === 0)) && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoad2}>CONTINUE</a>
+                    </div>}
+
+                    {(dialogIndex === 335 && (clicked === 1)) && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showCorporate2}>CONTINUE</a>
+                    </div>}
+
+                    {dialogIndex === 370 && <div className="simply-btn">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUE</a>
+                    </div>}
+
+
 
 
                   

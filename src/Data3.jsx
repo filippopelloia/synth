@@ -204,6 +204,8 @@ const dialoghi3 = [
 
     //==================DIIFFERENZIAZIONE IN BASE AL PASSATO SCELTO =================================================================
 
+    //ROAD 1
+
     {id: 175, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Hai mai pensato di chiedere a RogueWisp?\""},
     {id: 176, url: `${foto6}`, character: `${char3}`, content: "TU: \"Emi Hasagawa?\""},
     {id: 177, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sai bene cosa comporta domandare qualcosa a lei. Sono fuori dal giro dei Neon Vipers da anni… nonostante mi abbiano cresciuto e mi stia nascondendo nel loro distretto.\""},
@@ -291,11 +293,11 @@ const dialoghi3 = [
     {id: 334, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Cioè?\""},
     {id: 335, url: `${foto6}`, character: `${char3}`, content: "[Il tuo sguardo si perde nel panorama fuori la finestra]"},
 
-        //================ PENSA A COSA POTREBBE SUCCEDERE O NO =================================================================
 
-    {id: 336, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ricordi quando ti parlavo dei [NOME GANG IN BASE AL PASSATO SCELTO]?\""},
-    {id: 337, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Si... Se non sbaglio quelli con cui sei cresciuto dopo aver perso tua madre all'età di 8 anni...\""},
-    {id: 338, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Li stessi per cui hai lavorato per 15 anni prima di uscirne e cambiare vita.\""},
+    //ROAD 2
+    {id: 336, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ricordi quando ti parlavo dei Neon Vipers?\""},
+    {id: 337, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Si... Se non sbaglio quelli con cui sei cresciuto dopo aver perso tua madre all'età di 8 anni...\""},
+    {id: 338, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...Li stessi per cui hai lavorato per 15 anni prima di uscirne e cambiare vita.\""},
     {id: 339, url: `${foto6}`, character: `${char3}`, content: "TU: \"Vedo che ricordi bene.\""},
     {id: 340, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanotte andrò da loro. Vedremo che avranno qualche lavoretto per me.\""},
 
@@ -311,6 +313,30 @@ const dialoghi3 = [
     {id: 347, url: `${foto6}`, character: `${char3}`, content: "[There is some leftover veal-flavored synth ramen]"},
     {id: 348, url: `${foto6}`, character: `${char3}`, content: "[The smell seems unobtrusive.]"},
     {id: 349, url: `${foto6}`, character: `${char3}`, content: "[You eat it... It was good.]"},
+
+
+    //CORPORATE 1
+    {id: 352, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...Hai mai pensato di chiedere al Marchese Nero?\""},
+    {id: 353, url: `${foto6}`, character: `${char3}`, content: "TU: \"Intendi Maximillian Wolfe?\""},
+    {id: 354, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sai bene cosa comporta domandare qualcosa a lui. Se chiedi un grosso favore ad un corporativo di alto livello della TechNex Corp...\""},
+    {id: 355, url: `${foto6}`, character: `${char3}`, content: "TU: \"Verrei trascinato nuovamente in quel mondo da cui sono scappato.\""},
+    {id: 356, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non nego che mi abbia aiutato a scomparire dopo la fuga di notizie... e mi è costato molto caro. Credo lo abbia fatto anche perchè un tempo eravamo come fratelli...\""},
+    {id: 357, url: `${foto6}`, character: `${char3}`, content: "VEX: \"In fin dei conti è la sua famiglia che ti ha cresciuto... Mi sembra naturale che ti abbia aiutato.\""},
+    {id: 358, url: `${foto6}`, character: `${char3}`, content: "TU: \"E' molto pericoloso interagire con il mondo delle corporazioni... Sai bene anche te che tipo di affari hanno alcune di loro.\""},
+
+    {id: 360, url: `${foto6}`, character: `${char3}`, content: "TU: \"Domani andrò alla TechNex Corp...sperando che Maximillian sia in città.\""},
+
+
+    //CORPORATE 2
+    {id: 362, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ricordi quando ti parlavo della TechNex Corp. e della famiglia Wolfe?\""},
+    {id: 363, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Si... Se non sbaglio quelli con cui sei cresciuto dopo aver perso tua madre all'età di 8 anni...\""},
+    {id: 364, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...Li stessi per cui hai lavorato per 15 anni prima di uscirne e cambiare vita.\""},
+    {id: 365, url: `${foto6}`, character: `${char3}`, content: "TU: \"Vedo che ricordi bene.\""},
+    {id: 366, url: `${foto6}`, character: `${char3}`, content: "TU: \"Domani mattina andrò da Maximillian alla sede centrale. Sono sicuro che ha qualche lavoretto per me.\""},
+    {id: 367, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Cerca di stare attento Mark, non dimenticare chi è la TechNex Corp. \""},
+    {id: 368, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Negli ultimi 4 mesi la corporazione ha aumentato molto il suo potere ed influenza sulla città. Al momento hanno ancora il monopolio nel settore dei contractor e nel settore dei trasporti militare extra-mondo e si stanno espandendo nel campo delle armi ad innesto di classe SAI 9.\""},
+    {id: 369, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Inoltre si dice che la TechNex Corp. sia tra i principali finanziatori della campagna del sindaco Sato... ma questa informazione non la posso verificare.\""},
+    {id: 370, url: `${foto6}`, character: `${char3}`, content: "TU: \"So bene chi è la TechNex Corp... e chi è Maximillian Wolfe...\""},
 
 ]
 
