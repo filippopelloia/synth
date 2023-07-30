@@ -99,8 +99,8 @@ h2 a{
   left: 0;
   bottom: 0;
   display: flex;
-  justify-content: end;
-  /* justify-content: space-between; */
+  /* justify-content: end; */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1.5vh;

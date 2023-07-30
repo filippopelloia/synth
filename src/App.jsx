@@ -10,6 +10,7 @@ import Mid from './Mid.jsx'
 import End from './End.jsx'
 import Begin from './Begin.jsx'
 import Hide from './Hide.jsx';
+import Fullscreen from './Fullscreen.jsx';
 
 import { PastProvider } from './PastContext';
 
@@ -35,6 +36,7 @@ export default function App() {
       </PastProvider>
     </div>
     <div className="footer">
+          <Fullscreen/>
           {/* <h6 className="donate"><a href="https://ko-fi.com/?gad=1" target="_blank"><span>ドナ・オラ</span> <br/>SUPPORT US</a></h6> */}
           {/* <h5 className='unSelect'>PRE<br/>ALPHA <br/>VERSION <br/> <span>バージョン0.1.0</span></h5> */}
           <h5 className='unSelect'>バージョン 0.1.1</h5>
