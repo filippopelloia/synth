@@ -93,6 +93,8 @@ export default function Mid() {
     }
 
 
+    console.log(`You have chosen: ${clicked}`);
+    
 
     // ============== BLOCK 2 ==============
 

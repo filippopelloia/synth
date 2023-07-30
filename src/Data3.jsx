@@ -67,10 +67,6 @@ const dialoghi3 = [
     {id: 49, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Perfetto, voto inviato. Congratulazioni Mark!\" "},
     {id: 50, url: `${foto6}`, character: `${char3}`, content: "TU: \"E\' solo un voto Nova, non cambierà questa città marcia.\" "},
 
-    //END DIALOG - INDEX 39
-    // {id: 60, url: `${foto6}`, character: `${char3}`, content: "Cosa vuoi fare?"},
-
-
     //ADVICE SECTION
     {id: 65, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho bisogno di un consiglio Nova...\""},
     {id: 66, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Dimmi pure.\""},
@@ -81,14 +77,14 @@ const dialoghi3 = [
     {id: 70, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ti riferisci alla fuga di notizie e alle conseguenze che ha portato?\""},
     {id: 71, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
     {id: 72, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Non devi pensarci Mark, hai fatto la cosa giusta, chiunque l’avrebbe fatto al posto tuo…\""},
-    {id: 73, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"…e se la MiraiTech è disposta ad utilizzare ogni mezzo pur di nascondere le scomode verità, non vedo come possa esser un problema tuo o una tua colpa. \""},
+    {id: 73, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...e se la MiraiTech è disposta ad utilizzare ogni mezzo pur di nascondere le scomode verità, non vedo come possa esser un problema tuo o una tua colpa. \""},
     {id: 74, url: `${foto6}`, character: `${char3}`, content: "TU: \"Quelle persone non sarebbero morte se avessi abbassato la testa e avessi fatto finta di niente.\""},
     {id: 75, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E’ probabile… ma cosa hai ottenuto? Ci hai pensato? \""},
-    {id: 76, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Hai dimostrato al Mondo che *FATTI DELLE COLONIE EXTRA-MONDO*.\""},
-    {id: 77, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Per me sei un eroe, il mio eroe.\""},
+    {id: 76, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Hai dimostrato al Mondo ciò che la MiraiTech faceva in quelle colonie.\""},
+    {id: 77, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Per me sei un eroe... il mio eroe.\""},
     {id: 78, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ho ottenuto che la mia vita è a pezzi.\""},
     {id: 79, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non ho più niente se non te e questo appartamento. La mia carriera è fottuta.\""},
-    {id: 80, url: `${foto6}`, character: `${char3}`, content: "TU: \"Gli unici lavori che potrei ancora fare sono il trivellatore su pianeti di fascia 7 come Eridania Secundus o il mercenario corporativo… ma solo per società concorrenti alla MiraiTech…\""},
+    {id: 80, url: `${foto6}`, character: `${char3}`, content: "TU: \"Gli unici lavori che potrei ancora fare sono il trivellatore su pianeti di fascia 7 come Eridania Secundus o il mercenario corporativo… ma solo per società concorrenti alla MiraiTech...\""},
     {id: 81, url: `${foto6}`, character: `${char3}`, content: "TU: \"…e sai bene anche te che fine fanno i mercenari. O impazzisci e ti imbottisci di Quicksilverol o  finisci a sparare su civili disarmati in una qualche colonia extra-mondo.\""},
     {id: 82, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...\""},
     {id: 83, url: `${foto6}`, character: `${char3}`, content: "TU: \"Cambiando discorso, hai recuperato le registrazioni delle telecamere agli ingressi del palazzo come ti avevo chiesto? Ti hanno concesso i permessi per la supervisione dei filmati? \""},
@@ -110,9 +106,9 @@ const dialoghi3 = [
     {id: 99, url: `${foto6}`, character: `${char3}`, content: "TU: \"Se qualcuno verrà a trovarci lo sapremo in anticipo...\""},
     {id: 100, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Furbo il mio Mark.\""},
     {id: 101, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Appoggia una mano sulla tua guancia]"},
-    {id: 102, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ti vedo un pò stanco…\""},
+    {id: 102, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ti vedo un pò stanco...\""},
     {id: 103, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
-    {id: 104, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lascia che mi prenda io cura di te stasera. Lo so che ne hai bisogno… \""},
+    {id: 104, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lascia che mi prenda io cura di te stasera. Lo so che ne hai bisogno...\""},
     {id: 105, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...E ne ho bisogno pure io.\""},
 
     {id: 106, url: `${foto6}`, character: `${char3}`, content: "TU: \"Va bene.\""},
@@ -124,14 +120,14 @@ const dialoghi3 = [
     {id: 111, url: `${foto6}`, character: `${char3}`, content: "TU: \"Per me può andare.\""},
     {id: 112, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ottimo, l'ho avvisata. Tra 20 minuti sarà qui.\""},
     {id: 113, url: `${foto6}`, character: `${char3}`, content: "[Qualche ora più tardi]"},
-    {id: 114, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Potrei stare per ore qui distesa con te…\""},
+    {id: 114, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Potrei stare per ore qui distesa con te...\""},
     {id: 115, url: `${foto6}`, character: `${char3}`, content: "TU: [Sorridi]"},
 
     //SE GIRL E' TRUE
-    {id: 118, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Amo poterti toccare, sentire il tuo corpo tra le mie mani…\""},
+    {id: 118, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Amo poterti toccare, sentire il tuo corpo tra le mie mani...\""},
 
     //SE GIRL E' FALSE
-    {id: 119, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Quanto vorrei sentire il tuo corpo tra le mie mani…\""},
+    {id: 119, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Quanto vorrei sentire il tuo corpo tra le mie mani...\""},
 
     {id: 120, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Vivo per questi momenti con te, Mark.\""},
     {id: 121, url: `${foto6}`, character: `${char3}`, content: "TU: \"Anch’io Nova.\""},
@@ -147,13 +143,13 @@ const dialoghi3 = [
     {id: 129, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"...Decine di migliaia di documenti secretati della pluri-miliardaria corporazione MiraiTech con sede terrestre a Tsukimachi City sono stati trafugati da una fonte anonima e pubblicati in rete.\""},
     {id: 130, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"...Al momento i vertici della corporazione non si sono espressi ma è stata indetta una conferenza stampa per domani mattina.\""},
     {id: 131, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"Questi dati sensibili riguardano presunte operazioni militari indette dalla MiraiTech stessa per soffocare ribellioni sulle colonie di fascia 3, 4, 5 e 9.\""},
-    {id: 132, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"Al momento non è dato sapere l'autenticità di queste migliaia di documenti…\""},
+    {id: 132, url: `${foto6}`, character: `${char3}`, content: "NOTIZIARIO: \"Al momento non è dato sapere l'autenticità di queste migliaia di documenti...\""},
     {id: 133, url: `${foto6}`, character: `${char3}`, content: "TU: \"E’ la fine per me.\""},
-    {id: 134, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Credi che verranno subito a cercarti? Potrebbe esser stato chiunque.. e tu non hai più accesso ai database satellitari da quando ti hanno cacciato…\""},
-    {id: 135, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sono comunque informazioni di 2 o più anni fa. Io avrei potuto accedere a questi dati. Penseranno subito a me visto che ho già fatto una cosa simile…\""},
+    {id: 134, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Credi che verranno subito a cercarti? Potrebbe esser stato chiunque.. e tu non hai più accesso ai database satellitari da quando ti hanno cacciato...\""},
+    {id: 135, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sono comunque informazioni di 2 o più anni fa. Io avrei potuto accedere a questi dati. Penseranno subito a me visto che ho già fatto una cosa simile...\""},
     {id: 136, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Rilevo movimenti al piano 34! Conto 7, 8… 9 persone!\""},
     {id: 137, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanno arrivando.\""},
-    {id: 138, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ora stanno salendo al piano 35…\""},
+    {id: 138, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ora stanno salendo al piano 35...\""},
     {id: 139, url: `${foto6}`, character: `${char3}`, content: "TU: \"...\""},
     {id: 140, url: `${foto6}`, character: `${char3}`, content: "[Rumori fuori dalla porta.]"},
     {id: 141, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Sono qui!\""},
@@ -180,17 +176,17 @@ const dialoghi3 = [
     {id: 159, url: `${foto6}`, character: `${char3}`, content: "TU: \"Cazzo.\""},
 
     //TRAPPOLA
-    {id: 160, url: `${foto6}`, character: `${char3}`, content: "TU: \"Mi sento intrappolato in questa città infernale. Forse dovrei andarmene…\""},
+    {id: 160, url: `${foto6}`, character: `${char3}`, content: "TU: \"Mi sento intrappolato in questa città infernale. Forse dovrei andarmene...\""},
     {id: 161, url: `${foto6}`, character: `${char3}`, content: "NOVA: [Ti guarda dritto negli occhi con un espressione triste.]"},
     {id: 162, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ciò che è successo mi ha cambiato, Nova. Ho bisogno di ritrovare un senso di umanità.\""},
-    {id: 163, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"…\""},
+    {id: 163, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...\""},
     {id: 164, url: `${foto6}`, character: `${char3}`, content: "TU: \"Devo ricominciare… ma qui non posso farlo.\""},
     {id: 165, url: `${foto6}`, character: `${char3}`, content: "TU: \"La Miraitech ha sminuito e screditato tutta la verità che ho faticato a mostrare al mondo… Nessuno vuole assumere un bugiardo e una spia.\""},
     {id: 166, url: `${foto6}`, character: `${char3}`, content: "TU: \"Li ho colpiti ma hanno vinto loro.\""},
     {id: 167, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lascia che ti proponga una cosa.\""},
     {id: 168, url: `${foto6}`, character: `${char3}`, content: "TU: \"Dimmi.\""},
     {id: 169, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"E se ti prenotassi un biglietto di sola andata per una colonia extra-mondo? Sarebbe l'unico modo per ricominciare una nuova vita.\""},
-    {id: 170, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Attualmente un biglietto + cryo-assicurazione viene a costare XXXXX crediti. Il pacchetto viaggio è in offerta ancora per 7 giorni, 22 ore e 19 minuti. So che il prezzo non è poco, ma…\""},
+    {id: 170, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Attualmente un biglietto + cryo-assicurazione viene a costare XXXXX crediti. Il pacchetto viaggio è in offerta ancora per 7 giorni, 22 ore e 19 minuti. So che il prezzo non è poco, ma...\""},
     {id: 171, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non ho tutti quei crediti, Nova.\""},
     {id: 172, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ma ti potrebbe interessare?\""},
 
@@ -205,19 +201,22 @@ const dialoghi3 = [
     // {id: 201, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"L'unico problema da risolvere sono i crediti. Nessuno vuole assumerti visto ciò che è successo ma...\""},
 
     //PERSONAGGIO DIFFERENTE IN BASE AL PASSATO SCELTO (+ DIALOGHI LEGGERMENTE DIVERSI)
+
+    //==================DIIFFERENZIAZIONE IN BASE AL PASSATO SCELTO =================================================================
+
     {id: 175, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Hai mai pensato di chiedere a RogueWisp?\""},
     {id: 176, url: `${foto6}`, character: `${char3}`, content: "TU: \"Emi Hasagawa?\""},
-    {id: 177, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sai bene cosa comporta domandare qualcosa a lei. Sono fuori dal loro giro da anni… nonostante mi abbiano cresciuto e mi stia nascondendo nel loro distretto.\""},
+    {id: 177, url: `${foto6}`, character: `${char3}`, content: "TU: \"Sai bene cosa comporta domandare qualcosa a lei. Sono fuori dal giro dei Neon Vipers da anni… nonostante mi abbiano cresciuto e mi stia nascondendo nel loro distretto.\""},
     {id: 177, url: `${foto6}`, character: `${char3}`, content: "TU: \"Me lo hanno concesso dopo tutto…\""},
-    {id: 178, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ma…\""},
-    {id: 179, url: `${foto6}`, character: `${char3}`, content: "TU: \"Comunque si, sarebbe l’unica strada percorribile per accumulare crediti, ci ho pensato spesso… ma è una strada molto pericolosa e imprevedibile.\""},
+    {id: 178, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Ma...\""},
+    {id: 179, url: `${foto6}`, character: `${char3}`, content: "TU: \"Comunque si, sarebbe l’unica strada percorribile per accumulare crediti, ci ho pensato spesso... ma è una strada molto pericolosa e imprevedibile.\""},
     {id: 180, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Sarebbe per un valido motivo... Pensaci Mark.\""},
     {id: 181, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Fallo per te, fallo per la nuova vita che potresti riuscire a costruirti fuori da questo pianeta. \""},
 
     //SE LO FARAI
     {id: 183, url: `${foto6}`, character: `${char3}`, content: "TU: \"Va bene, non ho altra scelta.\""},
     {id: 184, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Lo apprezzo Mark, so che ce la puoi fare.\""},
-    {id: 185, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanotte andrò a parlarci...sperando che lei sia in città.\""},
+    {id: 185, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanotte andrò dai Neon Vipers...sperando che Emi sia in città.\""},
     {id: 186, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Un modo per comunicare lo troverai, anche se non dovesse esser nei paraggi.\""},
     {id: 187, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Beh, hai ancora il suo numero nella tua rubrica da quello che vedo nel mio database.\""},
     {id: 188, url: `${foto6}`, character: `${char3}`, content: "TU: \"Non sbagli affatto.\""},
@@ -291,11 +290,17 @@ const dialoghi3 = [
     {id: 333, url: `${foto6}`, character: `${char3}`, content: "TU: \"No... Ho un'altra soluzione in testa.\""},
     {id: 334, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Cioè?\""},
     {id: 335, url: `${foto6}`, character: `${char3}`, content: "[Il tuo sguardo si perde nel panorama fuori la finestra]"},
+
+        //================ PENSA A COSA POTREBBE SUCCEDERE O NO =================================================================
+
     {id: 336, url: `${foto6}`, character: `${char3}`, content: "TU: \"Ricordi quando ti parlavo dei [NOME GANG IN BASE AL PASSATO SCELTO]?\""},
     {id: 337, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Si... Se non sbaglio quelli con cui sei cresciuto dopo aver perso tua madre all'età di 8 anni...\""},
     {id: 338, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"...Li stessi per cui hai lavorato per 15 anni prima di uscirne e cambiare vita.\""},
     {id: 339, url: `${foto6}`, character: `${char3}`, content: "TU: \"Vedo che ricordi bene.\""},
     {id: 340, url: `${foto6}`, character: `${char3}`, content: "TU: \"Stanotte andrò da loro. Vedremo che avranno qualche lavoretto per me.\""},
+
+        //================ PENSA A COSA POTREBBE SUCCEDERE O NO =================================================================
+
     {id: 341, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Cerca di stare attento Mark, non dimenticare chi sono i [NOME GANG]. \""},
     {id: 342, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Al momento sono tornati alla ribalta dopo alcuni grossi colpi ai danni delle due corporazioni invischiate nel traffico di esseri umani verso le nuove colonie di fascia 8.\""},
     {id: 343, url: `${foto6}`, character: `${char3}`, content: "NOVA: \"Nonostante gli anni passati restano una delle gang più pericolose della città... e con parecchi nemici.\""},
