@@ -6,7 +6,6 @@ import Home from './Home.jsx'
 import Start from './Start.jsx'
 import Past from './Past.jsx'
 import Mid from './Mid.jsx'
-// import Settings from './Settings.jsx'
 import End from './End.jsx'
 import Begin from './Begin.jsx'
 import Hide from './Hide.jsx';
