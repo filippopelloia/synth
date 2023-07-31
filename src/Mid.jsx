@@ -3,6 +3,7 @@ import { PastContext } from './PastContext'; // Importa il contesto
 import {Link} from 'react-router-dom'
 import dialoghi3 from './Data3.jsx';
 import Settings from './Settings.jsx';
+import Reset from './Reset.jsx'
 
 export default function Mid() {
 
@@ -426,7 +427,10 @@ export default function Mid() {
   return (
     <>
       {clicked === null ? 
-      <div className='cover'></div> :    //METTI RESET BUTTON
+      <div className='cover'>
+        <h5>YOU TRIED TO CHEAT. I SAW YOU.</h5>
+        <div className="setting-btn"><Reset/></div>
+      </div> :    
       <>
       <div className='header'>
         <Settings />

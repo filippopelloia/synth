@@ -674,14 +674,22 @@ h3.btn:hover a::after {
     word-spacing: 0.75vh;
   }
 
-  .cover{
-    height: 100vh;
-    width: 100%;
-    background-color: #00CED1;
-    /* position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 999; */
-  }
+}
 
+.cover > h5{
+  margin-bottom: 5vh;
+  opacity: 0.835;
+  font-size: 0.8em;
+  letter-spacing: 0.75vh;
+  word-spacing: 0.93vh;
+  filter: blur(0.5px);
+  color: #fff;
+}
+
+.cover > .setting-btn{
+  background-color: crimson;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
