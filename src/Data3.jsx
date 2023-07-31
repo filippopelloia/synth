@@ -116,7 +116,7 @@ const dialoghi3 = [
     {id: 109, url: `${foto6}`, character: `${char3}`, content: "YOU: \"...do you want to sync with a girl like last week?\""},
     {id: 110, url: `${foto6}`, character: `${char3}`, content: "VEX: \"What do you think?\""},
     
-    {id: 111, url: `${foto6}`, character: `${char3}`, content: "YOU: \"It's fine with me.\""},
+    {id: 111, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Let's do it.\""},
     {id: 112, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Great, I've notified her. She'll be here in 20 minutes.\""},
     {id: 113, url: `${foto6}`, character: `${char3}`, content: "[A few hours later]"},
     {id: 114, url: `${foto6}`, character: `${char3}`, content: "VEX: \"I could lie here with you for hours...\""},
@@ -170,7 +170,7 @@ const dialoghi3 = [
 
     //SECOND PAD NOTIFICATION BEFORE THE END
     {id: 153, url: `${foto6}`, character: `${char3}`, content: "[A hand caresses your hair]"},
-    {id: 154, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Asher, wake up darling... Something happened.\""},
+    {id: 154, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Asher, wake up my dear... Something happened.\""},
     {id: 155, url: `${foto6}`, character: `${char3}`, content: "YOU: [You sit up]"},
     {id: 156, url: `${foto6}`, character: `${char3}`, content: "YOU: \"What happe...\""},
     {id: 157, url: `${foto6}`, character: `${char3}`, content: "VEX: \"Someone leaked sensitive information about MiraiTech. They're talking about it on almost all the news channels. The documents have been published and shared online.\""},
@@ -196,7 +196,7 @@ const dialoghi3 = [
 
     // RESPOND YES (I'M INTERESTED IN GOING TO A COLONY)
     {id: 173, url: `${foto6}`, character: `${char3}`, content: "YOU: \"Yes... And I agree with you, it's the only way.\""},
-    {id: 174, url: `${foto6}`, character: `${char3}`, content: "VEX: \"The only problem to solve is the credits. No one wants to hire you after what happened, but...\""},
+    {id: 174, url: `${foto6}`, character: `${char3}`, content: "VEX: \"The only problem to solve is the amount of credits. No one wants to hire you after what happened, but...\""},
 
     // ROAD 1
     {id: 175, url: `${foto6}`, character: `${char3}`, content: "VEX: \"...Have you ever thought of asking RogueWisp?\""},
