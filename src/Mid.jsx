@@ -680,7 +680,7 @@ export default function Mid() {
                   </div>}
 
                   {dialogIndex === 145 && <div className="simply-btn">
-                    <button className='simply-btn' style={{backgroundColor: 'crimson', color: 'black'}}><Link to="/the_end">CONTINUE</Link></button>
+                    <button className='simply-btn' style={{backgroundColor: 'crimson', color: 'black'}}><Link to="/jS1F4xW9c3oDQYnPqzLbgh6EKRTU7vtwXaM2">CONTINUE</Link></button>
                   </div>}
 
                   {dialogIndex === 349 && <div className="simply-btn">

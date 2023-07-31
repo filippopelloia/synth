@@ -52,8 +52,8 @@ export default function App() {
           <Routes>
             {/* <Route path="/" element={<Home/>}/> */}
             <Route path="/" element={<Begin/>}/>
-            <Route path="/start" element={<Start/>}/>
-            <Route path="past" element={<Past/>}/>
+            <Route path="/qWu8rF5yT3VpM7sGzXk2eYcE9iN0lA1oH6jB" element={<Start/>}/>
+            <Route path="7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ" element={<Past/>}/>
             <Route path="/mid" element={<Mid/>}/>
             <Route path="/the_end" element={<End/>}/>
           </Routes>

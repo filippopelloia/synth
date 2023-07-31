@@ -36,7 +36,7 @@ export default function Begin() {
       
       <div className="app">
         <h3 className={`btn ${fadeIn ? 'fadeIn' : ''}`} onClick={startGame}>
-          <Link to="/start">合成音</Link>
+          <Link to="/qWu8rF5yT3VpM7sGzXk2eYcE9iN0lA1oH6jB">合成音</Link>
         </h3>
         <div className={`sub-btn ${fadeIn ? 'fadeIn' : ''}`}>SYNTH</div>
       </div>

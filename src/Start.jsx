@@ -85,7 +85,7 @@ useEffect(() => {
         {backup === text && (
           <>
             {dataIndexTotal === dialogIndex + 1 && (
-              <div className="showMore"><Link to="/past">CHOOSE YOUR PAST</Link></div>
+              <div className="showMore"><Link to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></div>
             )}
 
             {/* LIMITE DI COMPARSA DEL BUTTON CONTINUE */}

@@ -34,7 +34,7 @@ export default function Home() {
       {remainingTime > 0 ? (
         <h3 className='countdown'>{formatTime(remainingTime)}</h3>
       ) : (
-        <div className='showMore'><Link to="/start">START</Link></div>
+        <div className='showMore'><Link to="/qWu8rF5yT3VpM7sGzXk2eYcE9iN0lA1oH6jB">START</Link></div>
       )}
     </div>
     </>
