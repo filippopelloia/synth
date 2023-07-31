@@ -50,8 +50,8 @@ export default function App() {
       <PastProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/begin" element={<Begin/>}/>
+            {/* <Route path="/" element={<Home/>}/> */}
+            <Route path="/" element={<Begin/>}/>
             <Route path="/start" element={<Start/>}/>
             <Route path="past" element={<Past/>}/>
             <Route path="/mid" element={<Mid/>}/>
