@@ -2,6 +2,7 @@ import React, {useState, useEffect, useContext} from 'react'
 import {Link} from 'react-router-dom'
 import { PastContext } from './PastContext'; 
 
+
 export default function Past() {
     const [firstFadeIn, setFirstFadeIn] = useState(false);
     const [secondFadeIn, setSecondFadeIn] = useState(false);
@@ -25,7 +26,6 @@ export default function Past() {
   //END EFFECT
 
 
-
   //fadeIn EFFECT
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -36,7 +36,6 @@ export default function Past() {
 
   }, []);
   //END EFFECT
-
 
 
   return (
@@ -62,7 +61,7 @@ export default function Past() {
 
         <div className='go-section'>
         {/* {clicked !== null && <button><Link to="/mid">Mid</Link></button>} */}
-          {clicked !== null && <div className='showMore'><Link to="/9tHfBp3KsE7UcR2LnvXgq1dD4TzNmW0aPjIyO5e">START</Link></div>}
+          {clicked !== null && <div className='showMore'><Link to="/mid">START</Link></div>}
         </div>
     </div>
     // </PastProvider>

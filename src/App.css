@@ -674,4 +674,14 @@ h3.btn:hover a::after {
     word-spacing: 0.75vh;
   }
 
+  .cover{
+    height: 100vh;
+    width: 100%;
+    background-color: #00CED1;
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999; */
+  }
+
 }

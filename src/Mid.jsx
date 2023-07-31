@@ -39,10 +39,15 @@ export default function Mid() {
   const { clicked } = useContext(PastContext);
 
 
+  //REDIRECT TO HOME
+  // if (clicked === null) {
+  //   return <Redirect to="/" />;
+  // }
+
   useEffect(() => {
     const getContent = dialoghi3.find(item => item.id === dialogIndex)
 
-    //CONTENUTO 
+    //CONTENT
     setText(getContent?.content);
 
     //IMMAGINE DIALOGHI
@@ -53,7 +58,7 @@ export default function Mid() {
 
   }, [dialogIndex])
 
-  console.log(text);
+  // console.log(text);
 
 
     //FUNZIONE DEFAULT INDEX BUTTON
@@ -407,7 +412,7 @@ export default function Mid() {
     setDialog(getContent?.content);
   }, [dialogIndex]);
 
-  console.log(dialogIndex);
+  // console.log(dialogIndex);
 
 
   //HIDE CONTINUE BUTTON 
@@ -415,11 +420,14 @@ export default function Mid() {
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
-  console.log(avvertimento);
+  // console.log(avvertimento);
 
   
   return (
     <>
+      {clicked === null ? 
+      <div className='cover'></div> :    //METTI RESET BUTTON
+      <>
       <div className='header'>
         <Settings />
       </div>
@@ -732,6 +740,8 @@ export default function Mid() {
                   
         </div>
       </div>
+      </>
+      }
     </>
   )
 }
