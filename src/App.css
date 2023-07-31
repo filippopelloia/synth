@@ -693,3 +693,7 @@ h3.btn:hover a::after {
   margin-left: auto;
   margin-right: auto;
 }
+
+.cover > .setting-btn a{
+  color: #000000;
+}

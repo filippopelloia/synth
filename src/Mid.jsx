@@ -428,8 +428,9 @@ export default function Mid() {
     <>
       {clicked === null ? 
       <div className='cover'>
-        <h5>YOU TRIED TO CHEAT. I SAW YOU.</h5>
-        <div className="setting-btn"><Reset/></div>
+        <h5>YOU TRIED TO CHEAT. VEX HAS SEEN YOU.</h5>
+        {/* <div className="setting-btn"><Reset/></div> */}
+        <div className="setting-btn"><a href="https://synth-56483.web.app/">RESTART</a></div>
       </div> :    
       <>
       <div className='header'>
