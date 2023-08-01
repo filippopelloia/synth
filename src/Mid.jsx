@@ -637,7 +637,7 @@ export default function Mid() {
                   </div>}
 
                   {dialogIndex === 240 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnToNova}>RETURN TO NOVA</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnToNova}>RETURN TO VEX</a>
                   </div>}
 
                   {dialogIndex === 244 && <div className="simply-btn">
