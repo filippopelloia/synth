@@ -227,7 +227,8 @@ h2 a{
 }
 
 .character-image img{
-  height: auto;
+  /* height: auto; */
+  height: 100%;
   display: block;
   filter: none!important;
   opacity: 1!important;
