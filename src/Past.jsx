@@ -61,7 +61,13 @@ export default function Past() {
 
         <div className='go-section'>
         {/* {clicked !== null && <button><Link to="/mid">Mid</Link></button>} */}
-          {clicked !== null && <div className='showMore'><Link to="/mid">START</Link></div>}
+          {/* {clicked !== null && <div className='showMore'><Link to="/mid">START</Link></div>} */}
+          {clicked !== null && 
+            <button className='btn-standard'>
+              <h5><Link className="btn__content" to="/mid">START</Link></h5>
+              <span class="btn__label">PPL7VQ26</span>
+            </button>
+          }
         </div>
     </div>
     // </PastProvider>

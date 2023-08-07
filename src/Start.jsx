@@ -85,16 +85,20 @@ useEffect(() => {
         {backup === text && (
           <>
             {dataIndexTotal === dialogIndex + 1 && (
-              <div className="showMore"><Link to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></div>
+              // <div className="showMore"><Link to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></div>
+              <button className="btn">
+                <h5><Link className="btn__content" to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></h5>
+                <span class="btn__label">ACY8K0RR</span>
+              </button>
             )}
 
             {/* LIMITE DI COMPARSA DEL BUTTON CONTINUE */}
             {/* {dialogIndex < 7 && <div className="showMore showMore-start" onClick={showText}><h5>CONTINUE</h5></div>} */}
             {dialogIndex < 7 && 
-              <div className="btn" onClick={showText}>
+              <button className="btn-standard" onClick={showText}>
                 <h5 class="btn__content">CONTINUE</h5>
                 <span class="btn__label">08735AH</span>
-              </div>
+              </button>
             }
           </>
         )}

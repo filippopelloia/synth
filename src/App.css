@@ -427,11 +427,11 @@ color: crimson;
 }
 
 .past:hover{
-  border: 2.5px solid #00CED1;
+  border: 2.5px solid #46BCDA;
 }
 
 .selected {
-  border: 2.5px solid #00CED1;
+  border: 2.5px solid #46BCDA;
 }
 
 
@@ -702,10 +702,11 @@ h3.btn:hover a::after {
 
 /* NEW BTN */
 
-.btn {
+.btn-standard {
   margin-top: 3.2vh;
-  width: 160px;
-  height: 40px; 
+  /* width: 160px;
+  height: 40px;  */
+  padding: 22px 90px;
   border: 0;
   outline: none;
   background-color: #46BCDA;
@@ -723,6 +724,7 @@ h3.btn:hover a::after {
 }
 
 .btn__content {
+  color: #46BCDA;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -755,23 +757,6 @@ h3.btn:hover a::after {
   background-color: #1a1a1a;
   z-index: 3;
 }
-
-/* @keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 rgba(0, 240, 255, 0.8);
-    }
-    50% {
-      box-shadow: 0 0 10px 10px rgba(0, 240, 255, 0.2);
-    }
-    100% {
-      box-shadow: 0 0 0 rgba(0, 240, 255, 0.8);
-    }
-  }
-  
-  .btn:hover {
-    animation: pulse 1s infinite;
-  } */
-
 
   @keyframes fadeIn {
     from {
