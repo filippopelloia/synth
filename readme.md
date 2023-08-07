@@ -1,4 +1,6 @@
 
+<h1><b>V 0.1.1</b></h1>
+
 Initial page: 
 ![preview1](https://github.com/filippopelloia/synth/assets/116798172/91f707c3-927e-45ec-8d46-22b03b287576)
 
