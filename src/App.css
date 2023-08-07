@@ -698,3 +698,86 @@ h3.btn:hover a::after {
 .cover > .setting-btn a{
   color: #000000;
 }
+
+
+/* NEW BTN */
+
+.btn {
+  margin-top: 3.2vh;
+  width: 160px;
+  height: 40px; 
+  border: 0;
+  outline: none;
+  background-color: #46BCDA;
+  cursor: pointer;
+  position: relative;
+  font-family: Tomorrow, sans-serif;
+  font-size: .85rem;
+  text-transform: uppercase;
+  color: #46BCDA;
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  z-index: 1;
+  border-radius: 0!important;
+  animation: fadeIn 0.75s ease-in-out 0.25s forwards; 
+  opacity: 0; 
+}
+
+.btn__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #1a1a1a;
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  z-index: 2;
+}
+
+.btn--secondary {
+  background-color: #fafafa;
+}
+
+.btn--secondary .btn__content {
+  background-color: #ff003c;
+  color: #fafafa;
+}
+
+.btn__label {
+  height: 10px;
+  font-size: .40rem;
+  position: absolute;
+  bottom: -4.2px;
+  right: 8%;
+  padding: 0 5px;
+  background-color: #1a1a1a;
+  z-index: 3;
+}
+
+/* @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 rgba(0, 240, 255, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 10px 10px rgba(0, 240, 255, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(0, 240, 255, 0.8);
+    }
+  }
+  
+  .btn:hover {
+    animation: pulse 1s infinite;
+  } */
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
