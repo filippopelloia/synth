@@ -10,5 +10,6 @@ Beginning of the Game:
 The Game:
 ![screen](https://github.com/filippopelloia/synth/assets/116798172/04ff4178-01c6-4421-8be5-b5bd98130041)
 
+![button idea](https://github.com/filippopelloia/synth/assets/116798172/7aefa0f9-52b3-41ca-a080-f527dd3fb2f6)
 
 
