@@ -64,7 +64,10 @@ export default function App() {
           <Fullscreen/>
           {/* <h6 className="donate"><a href="https://ko-fi.com/?gad=1" target="_blank"><span>ドナ・オラ</span> <br/>SUPPORT US</a></h6> */}
           {/* <h5 className='unSelect'>PRE<br/>ALPHA <br/>VERSION <br/> <span>バージョン0.1.0</span></h5> */}
-          <h5 className='unSelect'>バージョン 0.1.2</h5>
+          <div>
+            <h5 className='unSelect'>バージョン 0.1.2</h5>
+            <h6>Copyright 2023, All Rights Reserved</h6>
+          </div>
     </div>
     </>
   )

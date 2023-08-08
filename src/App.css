@@ -120,24 +120,45 @@ h2 a{
   font-size: 1.35em;
 }
 
-.footer > h5, .donate a{
-  color: crimson;
+.footer > div{
+  margin-right: 1.75vh;
   filter: blur(0.35px);
-  text-shadow: 0 0 5px rgba(220, 20, 60, 0.95);
 }
 
-.footer > h5 span{
+.footer > div > h5, .donate a{
+  color: crimson;
+  /* color: #46BCDA; */
+  /* filter: blur(0.35px); */
+  text-shadow: 0 0 5px rgba(220, 20, 60, 0.95);
+  /* text-shadow: 0 0 5px rgba(70, 188, 218, 0.95); */
+}
+
+.footer > div > h5 span{
   font-size: 1.9em;
 }
 
-.footer > h5{
+.footer > div > h5{
   font-size: 0.55em;
   text-align: right;
   font-weight: 600;
-  letter-spacing: 0.55vh;
+  letter-spacing: 0.15vh;
   word-spacing: 0.6875vh;
   text-shadow: 0 0 1px rgba(220, 20, 60, 1);
+  /* text-shadow: 0 0 1px rgba(70, 188, 218, 1); */
   opacity: 0.7;
+}
+
+.footer > div > h6{
+  color: crimson;
+  /* color: #46BCDA; */
+  font-weight: 300;
+  text-shadow: 0 0 1px rgba(220, 20, 60, 1);
+  /* text-shadow: 0 0 1px rgba(70, 188, 218, 1); */
+  font-size: 0.15em;
+  word-spacing: 0.175vh;
+  letter-spacing: 0.09vh;
+  opacity: 0.7;
+  margin-top: 0.8vh;
 }
 
 .unSelect{

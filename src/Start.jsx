@@ -95,7 +95,7 @@ useEffect(() => {
             {/* LIMITE DI COMPARSA DEL BUTTON CONTINUE */}
             {/* {dialogIndex < 7 && <div className="showMore showMore-start" onClick={showText}><h5>CONTINUE</h5></div>} */}
             {dialogIndex < 7 && 
-              <button className="btn-standard" onClick={showText}>
+              <button className="btn-standard" onClick={showText} style={{marginTop: '3.5vh'}}>
                 <h5 className="btn__content">CONTINUE</h5>
                 <span className="btn__label">08735AH</span>
               </button>

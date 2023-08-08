@@ -125,8 +125,23 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    function goToEat(){
+      const risultato = dialoghi3.find(item => item.id === 346);
+      setDialogIndex(risultato.id);
+    }
+
     function showWakeUp(){
       const risultato = dialoghi3.find(item => item.id === 153);
+      setDialogIndex(risultato.id);
+    }
+
+    function letsSmoke(){
+      const risultato = dialoghi3.find(item => item.id === 378);
+      setDialogIndex(risultato.id);
+    }
+
+    function letsDrink(){
+      const risultato = dialoghi3.find(item => item.id === 372);
       setDialogIndex(risultato.id);
     }
 
@@ -367,6 +382,11 @@ export default function Mid() {
       setDialogIndex(risultato.id);
     }
 
+    function returnFromHappyness(){
+      const risultato = dialoghi3.find(item => item.id === 255)
+      setDialogIndex(risultato.id);
+    }
+
     //END TRAPPOLA
 
 
@@ -417,7 +437,7 @@ export default function Mid() {
 
 
   //HIDE CONTINUE BUTTON 
-  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 135, 139, 145, 148, 159, 172, 174, 181, 184, 188, 192, 194, 240, 244, 255, 307, 321, 326, 331, 335, 344, 349, 358, 360, 370];
+  const excludedDialogIndexes = [5, 10, 13, 20, 22, 28, 30, 37, 39, 40, 48, 50, 66, 87, 97, 105, 115, 118, 119, 123, 135, 139, 145, 148, 159, 172, 174, 181, 184, 188, 192, 194, 240, 244, 255, 307, 321, 326, 331, 335, 344, 349, 358, 360, 370, 375, 383];
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
@@ -637,7 +657,7 @@ export default function Mid() {
                   </div>}
 
                   {dialogIndex === 240 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>EAT</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={goToEat}>EAT</a>
                   </div>}
 
                   {dialogIndex === 240 && <div className="simply-btn">
@@ -649,15 +669,15 @@ export default function Mid() {
                   </div>}
                   
                   {dialogIndex === 255 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>SMOKE</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={letsSmoke}>SMOKE</a>
                   </div>}
 
                   {dialogIndex === 255 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>TAKE SOMETHING TO DRINK</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={letsDrink}>TAKE SOMETHING TO DRINK</a>
                   </div>}
 
                   {dialogIndex === 255 && <div className="simply-btn">
-                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick>RETURN TO THE APARTMENT</a>
+                    <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showReturnToNova}>RETURN TO THE APARTMENT</a>
                   </div>}
 
                   {dialogIndex === 255 && <div className="simply-btn">
@@ -749,6 +769,14 @@ export default function Mid() {
 
                     {dialogIndex === 370 && <button className="btn-standard">
                       <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUE</a>
+                    </button>}
+
+                    {dialogIndex === 375 && <button className="btn-standard">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnFromHappyness}>CONTINUE</a>
+                    </button>}
+
+                    {dialogIndex === 383 && <button className="btn-standard">
+                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={returnFromHappyness}>CONTINUE</a>
                     </button>}
 
 

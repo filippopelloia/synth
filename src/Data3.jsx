@@ -353,6 +353,23 @@ const dialoghi3 = [
     {id: 370, url: `${vexLiving}`, character: `${char4}`, content: "YOU: \"I know well who TechNex Corp is... and who Maximillian Wolfe is...\""},
 
 
+     //YOU DRINK ON THE ROOF
+     {id: 372, url: `${kitchen}`, character: `${char4}`, content: "[You open the rusty small fridge.]"},
+     {id: 373, url: `${kitchen}`, character: `${char4}`, content: "[Among the bottles of beer there is a bottle of imported iridescent vodka that you bought the last week.]"},
+     {id: 374, url: `${kitchen}`, character: `${char4}`, content: "[You uncork the bottle and drink it.]"},
+     {id: 375, url: `${kitchen}`, character: `${char4}`, content: "[The taste in the mouth is sublime. Take two more sips of vodka and put the bottle back in the fridge.]"},
+
+     
+     //YOU SMOKE ON THE ROOF
+     {id: 378, url: `${kitchen}`, character: `${char4}`, content: "[You take a pack of Blue Havana cigarettes out of your pocket.]"},
+     {id: 379, url: `${kitchen}`, character: `${char4}`, content: "[The cigarette is lit and you look up at the starlit sky.]"},
+     {id: 380, url: `${kitchen}`, character: `${char4}`, content: "[Smoke drifts into the air of the illuminated city.]"},
+     {id: 381, url: `${kitchen}`, character: `${char4}`, content: "[You feel relaxed.]"},
+     {id: 382, url: `${kitchen}`, character: `${char4}`, content: "[YOU: \"Who knows how Shioli is doing right now... I should write to her one of these days.\"]"},
+     {id: 383, url: `${kitchen}`, character: `${char4}`, content: "[You throw the cigarette butt off the building.]"},
+
+
+
 ]
 
 
