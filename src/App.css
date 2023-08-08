@@ -86,7 +86,7 @@ h2 a{
 
 
 .app{
-  height: 100vh;
+  height: calc(100vh - 10vh);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,12 +95,13 @@ h2 a{
 }
 
 .footer{
-  position: absolute;
+  position: relative;
   z-index: 2;
   left: 0;
   bottom: 0;
   display: flex;
   /* justify-content: end; */
+  /* background-color: pink; */
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -154,12 +155,12 @@ h2 a{
 .mid-container{
   display: grid;
   grid-template: auto auto / repeat(1, 1fr);
-  margin-top: 2.5vh;
+  margin-top: 5vh;
 }
 
 .mid {
   border: 5px solid crimson;
-  height: 77vh;
+  height: 72vh;
   width: 120vh;
   border-radius: 7.5px;
   background-color: darkgrey;
@@ -263,18 +264,18 @@ h2 a{
 
 
 
-.simply-btn {
+/* .simply-btn {
   opacity: 0;
 }
 
 .simply-btn.animate {
   animation: fadeIn 1s ease-in-out 1s forwards;
-}
+} */
 
 
 
 
-.simply-btn a{
+/* .simply-btn a{
   position: relative;
   font-size: 0.95em;
   font-weight: 500;
@@ -285,7 +286,7 @@ h2 a{
   filter: blur(0.75px);
   opacity: 0.835;
   color: #000000;
-}
+} */
 
 .cube{
   height: 100px;
@@ -340,7 +341,7 @@ color: crimson;
 /* BTN CONTAINERS */
 .btn-section, .go-section, .btn-container{
   width: 100%;
-  height: 14vh;
+  height: 12vh;
 }
 
 .go-section{
@@ -703,7 +704,7 @@ h3.btn:hover a::after {
 /* NEW BTN */
 
 .btn-standard {
-  margin-top: 3.2vh;
+  margin-top: 0.75vh;
   /* width: 160px;
   height: 40px;  */
   padding: 22px 90px;
@@ -717,10 +718,11 @@ h3.btn:hover a::after {
   text-transform: uppercase;
   color: #46BCDA;
   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
-  z-index: 1;
+  z-index: 3;
   border-radius: 0!important;
-  animation: fadeIn 0.75s ease-in-out 0.25s forwards; 
-  opacity: 0; 
+  /* animation: fadeIn 0.75s ease-in-out 0.25s forwards;  */
+  /* opacity: 0;  */
+  opacity: 1;
 }
 
 .btn__content {
@@ -729,13 +731,14 @@ h3.btn:hover a::after {
   align-items: center;
   justify-content: center;
   position: absolute;
+  cursor: pointer;
   top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
   background-color: #1a1a1a;
   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
-  z-index: 2;
+  z-index: 4;
 }
 
 .btn--secondary {
@@ -755,9 +758,9 @@ h3.btn:hover a::after {
   right: 8%;
   padding: 0 5px;
   background-color: #1a1a1a;
-  z-index: 3;
+  z-index: 5;
 }
-
+/* 
   @keyframes fadeIn {
     from {
       opacity: 0; 
@@ -765,4 +768,4 @@ h3.btn:hover a::after {
     to {
       opacity: 1; 
     }
-  }
+  } */

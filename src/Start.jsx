@@ -86,9 +86,9 @@ useEffect(() => {
           <>
             {dataIndexTotal === dialogIndex + 1 && (
               // <div className="showMore"><Link to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></div>
-              <button className="btn">
+              <button className="btn-standard">
                 <h5><Link className="btn__content" to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></h5>
-                <span class="btn__label">ACY8K0RR</span>
+                <span className="btn__label">ACY8K0RR</span>
               </button>
             )}
 
@@ -96,8 +96,8 @@ useEffect(() => {
             {/* {dialogIndex < 7 && <div className="showMore showMore-start" onClick={showText}><h5>CONTINUE</h5></div>} */}
             {dialogIndex < 7 && 
               <button className="btn-standard" onClick={showText}>
-                <h5 class="btn__content">CONTINUE</h5>
-                <span class="btn__label">08735AH</span>
+                <h5 className="btn__content">CONTINUE</h5>
+                <span className="btn__label">08735AH</span>
               </button>
             }
           </>

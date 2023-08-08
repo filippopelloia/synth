@@ -421,7 +421,7 @@ export default function Mid() {
   const isDialogIndexValid = !excludedDialogIndexes.includes(dialogIndex);
 
 
-  // console.log(avvertimento);
+  console.log(dialogIndex);
 
   
   return (
@@ -450,12 +450,16 @@ export default function Mid() {
 
 
         <div className="btn-container">
-          {isDialogIndexValid && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showText}>CONTINUE</a>
+          {isDialogIndexValid &&                     
+          <div className="btn-standard" onClick={showText}>
+            <h5 className="btn__content">CONTINUE</h5>
+            <span className="btn__label">XC4KJJ81</span>
           </div>}
 
-          {dialogIndex === 5 && <div className="simply-btn">
-            <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showFive}>I DON'T REMEMBER</a>
+          {dialogIndex === 5 && 
+          <div className="btn-standard">
+            <h5 className='btn__content' onClick={showFive}>I DON'T REMEMBER</h5>
+            <span className="btn__label">08735AH</span>
           </div>}
 
           {/* CHI SEI */}
