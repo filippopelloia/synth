@@ -781,6 +781,35 @@ h3.btn:hover a::after {
   background-color: #1a1a1a;
   z-index: 5;
 }
+
+.dark-standard{
+  padding: 16px 55px;
+  margin-right: 3vh;
+  margin-top: 0;
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-standard > a{
+  color: #fff;
+  opacity: 0.835;
+  filter: blur(0.45px);
+}
+
+.dark-standard > span{
+  opacity: 0.835;
+  filter: blur(0.25px);
+}
+
+.red-standard{
+  padding: 22px 90px;
+  background-color: crimson;
+}
+
+.red-standard > h5, .red-standard > span{
+  color: crimson!important;
+}
+
 /* 
   @keyframes fadeIn {
     from {

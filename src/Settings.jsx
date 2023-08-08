@@ -44,7 +44,11 @@ export default function Settings() {
             <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><Reset/></div>
           </div>
           <div className='setting-row' style={{justifyContent: 'center'}}>
-            <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}} onClick={handleClose}>CLOSE</div>
+            {/* <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}} onClick={handleClose}>CLOSE</div> */}
+            <button className="btn-standard red-standard" onClick={handleClose}>
+              <h5 className='btn__content'>CLOSE</h5>
+              <span className="btn__label">08735AH</span>
+            </button>
           </div>
         </Box>
       </Modal>

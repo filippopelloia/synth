@@ -34,7 +34,18 @@ export default function Reset() {
         <Box sx={style}>
           <h5 className="setting-voice" style={{ color: 'white'}}>Do you want to restart the game?</h5>
           <div className="setting-row" style={{width: '32vh'}}>
-            <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'black', cursor: 'pointer'}}><a href="https://synth-56483.web.app/">RESET</a></div>
+
+            {/* <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'black', cursor: 'pointer'}}><a href="https://synth-56483.web.app/">RESET</a></div> */}
+
+            <button className="btn-standard dark-standard">
+              <a href="https://synth-56483.web.app/">RESET</a>
+              <span className="btn__label">08735AH</span>
+            </button>
+
+            {/* <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'black', cursor: 'pointer'}}><a href="https://synth-56483.web.app/">RESET</a></div> */}
+
+
+
             <div className="soundtrack setting-btn" style={{backgroundColor: 'transparent', cursor: 'pointer'}} onClick={handleClose}>RETURN</div>
           </div>
         </Box>
