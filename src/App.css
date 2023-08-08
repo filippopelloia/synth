@@ -794,6 +794,7 @@ h3.btn:hover a::after {
   color: #fff;
   opacity: 0.835;
   filter: blur(0.45px);
+  letter-spacing: 0.1em;
 }
 
 .dark-standard > span{
@@ -802,12 +803,25 @@ h3.btn:hover a::after {
 }
 
 .red-standard{
-  padding: 22px 90px;
+  padding: 16px 70px;
   background-color: crimson;
 }
 
 .red-standard > h5, .red-standard > span{
-  color: crimson!important;
+  color: crimson;
+}
+
+.red-special{
+  padding: 16px 55px;
+  background-color: crimson;
+}
+
+.red-special > .btn__content, .red-special > span{
+  background-color: crimson;
+}
+
+.red-special > .btn__content, .red-special > span, .red-special > a{
+  color: #1a1a1a;
 }
 
 /* 

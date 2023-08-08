@@ -37,11 +37,21 @@ export default function Settings() {
         <Box sx={style}>
           <div className="setting-row">
             <h5 className="setting-voice" style={{color: 'white'}}>Soundtrack</h5>
-            <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><a href="https://www.youtube.com/watch?v=W5KJsQMKbwM" target='_blank'>PLAY MUSIC FROM YouTube</a></div>
+            {/* <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><a href="https://www.youtube.com/watch?v=W5KJsQMKbwM" target='_blank'>PLAY MUSIC FROM YouTube</a></div> */}
+            <button className="btn-standard red-special">
+              <a className='btn__content' href="https://www.youtube.com/watch?v=W5KJsQMKbwM" target='_blank'>
+                <h5>PLAY MUSIC FROM YouTube</h5>
+              </a>
+            </button>
           </div>
           <div className='setting-row'>
             <h5 className="setting-voice" style={{color: 'white'}}>Restart the Game</h5>
-            <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><Reset/></div>
+
+            {/* <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><Reset/></div> */}
+            <button className="btn-standard red-special">
+              <h5 className='btn__content'><Reset/></h5>
+            </button>
+
           </div>
           <div className='setting-row' style={{justifyContent: 'center'}}>
             {/* <div className="soundtrack setting-btn" style={{backgroundColor: 'crimson', cursor: 'pointer'}} onClick={handleClose}>CLOSE</div> */}
