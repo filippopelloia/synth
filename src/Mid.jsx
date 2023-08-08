@@ -721,25 +721,31 @@ export default function Mid() {
                       <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoadName}>CONTINUE</a>
                     </div>}
 
-                    {(dialogIndex === 184 && (clicked === 1)) && <div className="simply-btn">
-                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showCorporateName}>CONTINUE</a>
+                    {(dialogIndex === 184 && (clicked === 1)) && 
+                    <div className="simply-btn">
+                      <h5 className="btn__content" onClick={showCorporateName}>CONTINUE</h5>
+                      <span className="btn__label">XC4KJJ81</span>
                     </div>}
 
-                    {dialogIndex === 360 && <div className="simply-btn">
-                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={exitCorporateName}>CONTINUE</a>
+                    {dialogIndex === 360 && 
+                    <div className="simply-btn">
+                      <h5 className="btn__content" onClick={exitCorporateName}>CONTINUE</h5>
+                      <span className="btn__label">33H8LMX0</span>
                     </div>}
 
-                    {(dialogIndex === 335 && (clicked === 0)) && <div className="simply-btn">
-                      <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showRoad2}>CONTINUE</a>
+                    {(dialogIndex === 335 && (clicked === 0)) && 
+                    <div className="simply-btn">
+                      <h5 className="btn__content" onClick={showRoad2}>CONTINUE</h5>
+                      <span className="btn__label">XC4KJJ81</span>
                     </div>}
 
                     {(dialogIndex === 335 && (clicked === 1)) && <div className="simply-btn">
                       <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showCorporate2}>CONTINUE</a>
                     </div>}
 
-                    {dialogIndex === 370 && <div className="simply-btn">
+                    {dialogIndex === 370 && <button className="btn-standard">
                       <a style={{backgroundColor: 'crimson', color: 'black'}} href="#" onClick={showMainMenu}>CONTINUE</a>
-                    </div>}
+                    </button>}
 
 
                   

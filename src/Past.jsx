@@ -65,7 +65,7 @@ export default function Past() {
           {clicked !== null && 
             <button className='btn-standard'>
               <h5><Link className="btn__content" to="/mid">START</Link></h5>
-              <span class="btn__label">PPL7VQ26</span>
+              <span className="btn__label">P3LO8O26</span>
             </button>
           }
         </div>
