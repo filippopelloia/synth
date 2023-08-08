@@ -66,7 +66,7 @@ export default function App() {
           {/* <h5 className='unSelect'>PRE<br/>ALPHA <br/>VERSION <br/> <span>バージョン0.1.0</span></h5> */}
           <div>
             <h5 className='unSelect'>バージョン 0.1.2</h5>
-            <h6>Copyright 2023, All Rights Reserved</h6>
+            <h6>©Copyrights 2023 - All Rights Reserved</h6>
           </div>
     </div>
     </>
