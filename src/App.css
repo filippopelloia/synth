@@ -797,9 +797,17 @@ h3.btn:hover a::after {
   letter-spacing: 0.1em;
 }
 
-.dark-standard > span{
-  opacity: 0.835;
+.dark-standard > span, #restart > button > a >h5, .red-standard > h5{
   filter: blur(0.25px);
+}
+
+.dark-standard > span, #restart > button > a >h5{
+  opacity: 0.835;
+}
+
+#restart > button > span, .red-standard > span{
+  /* opacity: 0.835; */
+  filter: blur(0.35px);
 }
 
 .red-standard{
@@ -807,7 +815,7 @@ h3.btn:hover a::after {
   background-color: crimson;
 }
 
-.red-standard > h5, .red-standard > span{
+.red-standard > h5, .red-standard > span, #restart > button > a{
   color: crimson;
 }
 
@@ -829,6 +837,11 @@ h3.btn:hover a::after {
 
 .red-special > .btn__content, .red-special > span, .red-special > a{
   color: #1a1a1a;
+}
+
+#restart{
+  display: flex;
+  justify-content: center;
 }
 
 /* 

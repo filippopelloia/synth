@@ -450,7 +450,17 @@ export default function Mid() {
       <div className='cover'>
         <h5>YOU TRIED TO CHEAT. VEX HAS SEEN YOU.</h5>
         {/* <div className="setting-btn"><Reset/></div> */}
-        <div className="setting-btn"><a href="https://synth-56483.web.app/">RESTART</a></div>
+
+        {/* <div className="setting-btn"><a href="https://synth-56483.web.app/">RESTART</a></div> */}
+        <div id="restart">
+          <button className="btn-standard red-standard">
+            <a className='btn__content' href="https://synth-56483.web.app/">
+              <h5>RESTART</h5>
+            </a>
+            <span className="btn__label">08735AH</span>
+          </button>
+        </div>
+
       </div> :    
       <>
       <div className='header'>
