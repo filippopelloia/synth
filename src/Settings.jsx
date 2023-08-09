@@ -35,6 +35,7 @@ export default function Settings() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+          <div className='modal__content'>
           <div className="setting-row">
             <h5 className="setting-voice" style={{color: 'white'}}>Soundtrack from Youtube</h5>
             {/* <div className="soundtrack setting-btn btn-white" style={{backgroundColor: 'crimson', cursor: 'pointer'}}><a href="https://www.youtube.com/watch?v=W5KJsQMKbwM" target='_blank'>PLAY MUSIC FROM YouTube</a></div> */}
@@ -59,6 +60,7 @@ export default function Settings() {
               <h5 className='btn__content'>CLOSE</h5>
               <span className="btn__label">08735AH</span>
             </button>
+          </div>
           </div>
         </Box>
       </Modal>

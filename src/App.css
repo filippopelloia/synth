@@ -844,12 +844,46 @@ h3.btn:hover a::after {
   justify-content: center;
 }
 
-/* 
-  @keyframes fadeIn {
-    from {
-      opacity: 0; 
-    }
-    to {
-      opacity: 1; 
-    }
-  } */
+.css-wsml2c{
+  width: 700px;
+  /* height: 44vh; */
+  height: 340px;
+  padding: 32px;
+  border: 0;
+  outline: none;
+  /* background-color: #46BCDA; */
+  background-color: crimson;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-family: Tomorrow, sans-serif;
+  font-size: .85rem;
+  text-transform: uppercase;
+  color: #46BCDA;
+  clip-path: polygon(0 0, 87% 0, 100% 17%, 100% 100%, 13% 100%, 0 84%);
+  z-index: 3;
+  opacity: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content{
+  color: #46BCDA;
+  padding: 32px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #1a1a1a;
+  clip-path: polygon(0 0, 87% 0, 100% 17%, 100% 100%, 13% 100%, 0 84%);
+  z-index: 4;
+}
