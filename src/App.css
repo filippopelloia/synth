@@ -816,7 +816,14 @@ h3.btn:hover a::after {
   background-color: crimson;
 }
 
-.red-special > .btn__content, .red-special > span{
+.red-special > h5, .red-special > a > h5{
+  font-size: .65rem;
+  opacity: 0.835;
+  filter: blur(0.40px);
+  font-weight: 600;
+}
+
+.red-special > .btn__content{
   background-color: crimson;
 }
 

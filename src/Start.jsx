@@ -86,7 +86,7 @@ useEffect(() => {
           <>
             {dataIndexTotal === dialogIndex + 1 && (
               // <div className="showMore"><Link to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></div>
-              <button className="btn-standard">
+              <button className="btn-standard" style={{marginTop: '3.5vh'}}>
                 <h5><Link className="btn__content" to="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ">CHOOSE YOUR PAST</Link></h5>
                 <span className="btn__label">ACY8K0RR</span>
               </button>
