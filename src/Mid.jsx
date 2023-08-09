@@ -485,21 +485,21 @@ export default function Mid() {
           {/* CHI SEI */}
           {(dialogIndex === 10 || (dialogIndex === 30 && (second.one === false && second.two === true))) && 
           <button className="btn-standard" onClick={showEleven}>
-            <h5>WHO ARE YOU?</h5>
+            <h5 className="btn__content">WHO ARE YOU?</h5>
             <span className="btn__label">08735AH</span>
           </button>}
 
           {/* DOVE MI TROVO? */}
           {(dialogIndex === 10 || (dialogIndex === 28 && (second.one === true && second.two === false))) && 
           <button className="btn-standard" onClick={showTwelve}>
-            <h5>WHERE AM I?</h5>
+            <h5 className="btn__content">WHERE AM I?</h5>
             <span className="btn__label">08735AH</span>
           </button>}
 
           {/* RETURN TO 11 */}
           {((dialogIndex === 28 || dialogIndex === 30) && (second.one === true && second.two === true)) && 
           <button className="btn-standard" onClick={showReturnToEleven}>
-            <h5>CONTINUE</h5>
+            <h5 className="btn__content">CONTINUE</h5>
             <span className="btn__label">08735AH</span>
           </button>}
 
@@ -509,19 +509,19 @@ export default function Mid() {
 
           {(dialogIndex === 13 || dialogIndex === 194) && 
           <button className="btn-standard" onClick={showNews}>
-            <h5>NEWS</h5>
+            <h5 className="btn__content">NEWS</h5>
             <span className="btn__label">08735AH</span>
           </button>}
 
           {(dialogIndex === 13 || dialogIndex === 194) && 
           <button className="btn-standard" onClick={showAdvice}>
-            <h5>MAY I ASK YOU A QUESTION?</h5>
+            <h5 className="btn__content">MAY I ASK YOU A QUESTION?</h5>
             <span className="btn__label">08735AH</span>
           </button>}
 
           {(dialogIndex === 13 || dialogIndex === 194) && 
           <button className="btn-standard" onClick={endDialog}>
-            <h5>END DIALOG</h5>
+            <h5 className="btn__content">END DIALOG</h5>
             <span className="btn__label">08735AH</span>
           </button>}
 
@@ -531,50 +531,50 @@ export default function Mid() {
 
                   {dialogIndex === 37 && 
                   <button className="btn-standard" onClick={showSynthicoin}>
-                    <h5>SYNTHICOIN</h5>
+                    <h5 className="btn__content">SYNTHICOIN</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                         {(dialogIndex === 50 || dialogIndex === 58) && 
                         <button className="btn-standard" onClick={returnToNews}>
-                          <h5>RETURN TO NEWS SECTION</h5>
+                          <h5 className="btn__content">RETURN TO NEWS SECTION</h5>
                           <span className="btn__label">XC4KJJ81</span>
                         </button>}
 
 
                   {dialogIndex === 37 && 
                   <button className="btn-standard" onClick={showVote}>
-                    <h5>VOTE</h5>
+                    <h5 className="btn__content">VOTE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 39 && (third.one === true && third.two === false)) && 
                   <button className="btn-standard" onClick={showVote}>
-                    <h5>VOTE</h5>
+                    <h5 className="btn__content">VOTE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 38 && (third.one === false && third.two === true)) && 
                   <button className="btn-standard" onClick={showSynthicoin}>
-                    <h5>SYNTHICOIN</h5>
+                    <h5 className="btn__content">SYNTHICOIN</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 37 || dialogIndex === 40) && 
                   <button className="btn-standard" onClick={returnToBlockTwo}>
-                    <h5>RETURN</h5>
+                    <h5 className="btn__content">RETURN</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 48 && 
                   <button className="btn-standard" onClick={youVoted}>
-                    <h5>VOTE FOR MAYOR SATO</h5>
+                    <h5 className="btn__content">VOTE FOR MAYOR SATO</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 48 && 
                   <button className="btn-standard" onClick={youVoted}>
-                    <h5>VOTE FOR MATSUDA TAKAHASHI</h5>
+                    <h5 className="btn__content">VOTE FOR MATSUDA TAKAHASHI</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
@@ -583,104 +583,104 @@ export default function Mid() {
 
                   {(dialogIndex === 66 && fourth.one === true) && 
                   <button className="btn-standard" onClick={showError}>
-                    <h5>I MADE A MISTAKE</h5>
+                    <h5 className="btn__content">I MADE A MISTAKE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 66 && fourth.two === true) && 
                   <button className="btn-standard" onClick={showTrapped}>
-                    <h5>I FEEL TRAPPED</h5>
+                    <h5 className="btn__content">I FEEL TRAPPED</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 87 && 
                   <button className="btn-standard" onClick={showSpies}>
-                    <h5>TELL HER WHAT YOU KNOW</h5>
+                    <h5 className="btn__content">TELL HER WHAT YOU KNOW</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 87 && 
                   <button className="btn-standard" onClick={showNothing}>
-                    <h5>DON'T TELL</h5>
+                    <h5 className="btn__content">DON'T TELL</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {/* AGG./MODIFICA STATE PER DIRE SE HAI AVVISATO NOVA O NO DI MONITORARE PIANO 34 */}
                   {dialogIndex === 97 && 
                   <button className="btn-standard" onClick={showAvvertimento}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 148 && 
                   <button className="btn-standard" onClick={returnToNinetyThree}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 105 && 
                   <button className="btn-standard" onClick={showEntertainment}>
-                    <h5>OK</h5>
+                    <h5 className="btn__content">OK</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 105 && 
                   <button className="btn-standard" onClick={showNoEntertainment}>
-                    <h5>DECLINE</h5>
+                    <h5 className="btn__content">DECLINE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 110 && 
                   <button className="btn-standard" onClick={showGirlSyncro}>
-                    <h5>SYNCHRONIZATION</h5>
+                    <h5 className="btn__content">SYNCHRONIZATION</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 110 && 
                   <button className="btn-standard" onClick={noShowGirlSyncro}>
-                    <h5>NO</h5>
+                    <h5 className="btn__content">NO</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 115 && 
                   <button className="btn-standard" onClick={showSplittedGirl}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 118 || dialogIndex === 119) && 
                   <button className="btn-standard" onClick={endGirl}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 123 && 
                   <button className="btn-standard" onClick={showNotification}>
-                    <h5>VIEW NOTIFICATION</h5>
+                    <h5 className="btn__content">VIEW NOTIFICATION</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 139 && 
                   <button className="btn-standard" onClick={showGun}>
-                    <h5>TAKE THE GUN</h5>
+                    <h5 className="btn__content">TAKE THE GUN</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 139 && 
                   <button className="btn-standard" onClick={showGun}>
-                    <h5>TAKE THE RIFLE</h5>
+                    <h5 className="btn__content">TAKE THE RIFLE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 139 && 
                   <button className="btn-standard" onClick={showGun}>
-                    <h5>NIENTE</h5>
+                    <h5 className="btn__content">NIENTE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 159 && 
                   <button className="btn-standard" onClick={showEnd}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
@@ -689,31 +689,31 @@ export default function Mid() {
 
                   {dialogIndex === 172 && 
                   <button className="btn-standard" onClick={showTicket}>
-                    <h5>YES</h5>
+                    <h5 className="btn__content">YES</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 172 && 
                   <button className="btn-standard" onClick={showNoTicket}>
-                    <h5>NO</h5>
+                    <h5 className="btn__content">NO</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 181 && 
                   <button className="btn-standard" onClick={showThinkIt}>
-                    <h5>I'LL THINK ABOUT IT</h5>
+                    <h5 className="btn__content">I'LL THINK ABOUT IT</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 181 && 
                   <button className="btn-standard" onClick={showDoIt}>
-                    <h5>I'LL DO IT</h5>
+                    <h5 className="btn__content">I'LL DO IT</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 188 || dialogIndex === 192) && 
                   <button className="btn-standard"  onClick={showMainMenu}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
@@ -722,115 +722,115 @@ export default function Mid() {
 
                   {dialogIndex === 240 && 
                   <button className="btn-standard" onClick={showRoof}>
-                    <h5>GO TO THE ROOF</h5>
+                    <h5 className="btn__content">GO TO THE ROOF</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 240 && 
                   <button className="btn-standard" onClick={showSleep}>
-                    <h5>GO TO SLEEP</h5>
+                    <h5 className="btn__content">GO TO SLEEP</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 240 && 
                   <button className="btn-standard" onClick={goToEat}>
-                    <h5>EAT</h5>
+                    <h5 className="btn__content">EAT</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 240 && 
                   <button className="btn-standard" onClick={showReturnToNova}>
-                    <h5>RETURN TO VEX</h5>
+                    <h5 className="btn__content">RETURN TO VEX</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 244 && 
                   <button className="btn-standard" onClick={showWakeUp}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
                   
                   {dialogIndex === 255 && 
                   <button className="btn-standard" onClick={letsSmoke}>
-                    <h5>SMOKE</h5>
+                    <h5 className="btn__content">SMOKE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 255 && 
                   <button className="btn-standard" onClick={letsDrink}>
-                    <h5>TAKE SOMETHING TO DRINK</h5>
+                    <h5 className="btn__content">TAKE SOMETHING TO DRINK</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 255 && 
                   <button className="btn-standard" onClick={showReturnToNova}>
-                    <h5>RETURN TO THE APARTMENT</h5>
+                    <h5 className="btn__content">RETURN TO THE APARTMENT</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 255 && 
                   <button className="btn-standard" onClick={showDontTake}>
-                    <h5>NOTHING</h5>
+                    <h5 className="btn__content">NOTHING</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 326 && 
                   <button className="btn-standard"  onClick={showEndFromRoof}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 307 && 
                   <button className="btn-standard" onClick={showNotAdvice}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 321 && avvertimento) && 
                   <button className="btn-standard" onClick={showGoAhead}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 321 && !avvertimento) && 
                   <button className="btn-standard" onClick={showNotGoAhead}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 331 && 
                   <button className="btn-standard" onClick={showReturnAdvice}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 135 && avvertimento) && 
                   <button className="btn-standard" onClick={showThirtySix}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {(dialogIndex === 135 && !avvertimento) && 
                   <button className="btn-standard" onClick={showFourty}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 344 && 
                   <button className="btn-standard" onClick={showMainMenu}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 145 && 
                   <button className="btn-standard">
-                    <h5><Link to="/jS1F4xW9c3oDQYnPqzLbgh6EKRTU7vtwXaM2">CONTINUE</Link></h5>
+                    <h5 className="btn__content"><Link to="/jS1F4xW9c3oDQYnPqzLbgh6EKRTU7vtwXaM2">CONTINUE</Link></h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
                   {dialogIndex === 349 && 
                   <button className="btn-standard" onClick={endDialog}>
-                    <h5>CONTINUE</h5>
+                    <h5 className="btn__content">CONTINUE</h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 
@@ -840,26 +840,26 @@ export default function Mid() {
                     {/* ROAD */}
                     {(dialogIndex === 174 && (clicked === 0)) && 
                     <button className="btn-standard" onClick={showRoad1}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">XC4KJJ81</span>
                     </button>}
 
                     {/* CORPORATE */}
                     {(dialogIndex === 174 && (clicked === 0)) && 
                     <button className="btn-standard" onClick={showCorporate1}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">XC4KJJ81</span>
                     </button>}
 
                     {dialogIndex === 358 && 
                     <button className="btn-standard" onClick={exitCorporate1}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">XC4KJJ81</span>
                     </button>}
 
                     {(dialogIndex === 184 && (clicked === 0)) && 
                     <button className="btn-standard" onClick={showRoadName}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">XC4KJJ81</span>
                     </button>}
 
@@ -883,25 +883,25 @@ export default function Mid() {
 
                     {(dialogIndex === 335 && (clicked === 1)) && 
                     <button className="btn-standard" onClick={showCorporate2}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">FCT91MLL</span>
                     </button>}
 
                     {dialogIndex === 370 && 
                     <button className="btn-standard" onClick={showMainMenu}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">FCT91MLL</span>
                     </button>}
 
                     {dialogIndex === 375 && 
                     <button className="btn-standard" onClick={returnFromHappyness}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">GQEV17399</span>
                     </button>}
 
                     {dialogIndex === 383 && 
                     <button className="btn-standard" onClick={returnFromHappyness}>
-                      <h5>CONTINUE</h5>
+                      <h5 className="btn__content">CONTINUE</h5>
                       <span className="btn__label">4HMS88OPX</span>
                     </button>}
 

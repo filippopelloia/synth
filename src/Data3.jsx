@@ -164,7 +164,7 @@ const dialoghi3 = [
     {id: 130, url: `${womanNews}`, character: `${news}`, content: "NEWS: \"...As of now, the corporation's top officials have not made any statements, but a press conference has been scheduled for tomorrow morning.\""},
     {id: 131, url: `${womanNews}`, character: `${news}`, content: "NEWS: \"These sensitive data concern alleged military operations initiated by MiraiTech itself to suppress rebellions in colonies of tiers 3, 4, 5, and 9.\""},
     {id: 132, url: `${womanNews}`, character: `${news}`, content: "NEWS: \"At the moment, the authenticity of these thousands of documents is uncertain...\""},
-    {id: 133, url: `${vexLiving}`, character: `${char4}`, content: "YOU: \"It's the end for me.\""},
+    {id: 133, url: `${vexLiving}`, character: `${char4}`, content: "YOU: \"It's over for me.\""},
     {id: 134, url: `${vexLiving}`, character: `${char5}`, content: "VEX: \"Do you think they'll come looking for you immediately? It could have been anyone... and you no longer have access to satellite databases since you were expelled...\""},
     {id: 135, url: `${vexLiving}`, character: `${char4}`, content: "YOU: \"Still, that information is from 2 or more years ago. I could have accessed that data. They'll think of me right away since I've done something similar before...\""},
     {id: 136, url: `${vexThink}`, character: `${char5}`, content: "VEX: \"I detect movements on the 34th floor! Counting 7, 8... 9 people!\""},
