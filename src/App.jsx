@@ -54,8 +54,8 @@ export default function App() {
             <Route path="/" element={<Begin/>}/>
             <Route path="/qWu8rF5yT3VpM7sGzXk2eYcE9iN0lA1oH6jB" element={<Start/>}/>
             <Route path="/7sXGzLk3cP4A9jFV6pEoD2nRmKwYbQyNqH1aZ" element={<Past/>}/>
-            <Route path="/mid" element={<Mid/>}/>
-            <Route path="/the_end" element={<End/>}/>
+            <Route path="/8rMnVhUcP3dKqXzB6oWpT9sA2fJyGjEeL5iR7vN" element={<Mid/>}/>
+            <Route path="/2wJnGkRzF5cQsB8vHmYpT4qXeL6uE9rW1aD3oN" element={<End/>}/>
           </Routes>
         </Router>   
       </PastProvider>

@@ -47,15 +47,19 @@ export default function Past() {
                 className={`past ${clicked === 0 ? 'selected' : ''} ${firstFadeIn ? 'fadeIn' : ''}`}
                 onClick={() => getClicked(0)}
             >
+              <div className='past__content'>
                 <h3 className="standard-h3">BOY OF THE ROAD</h3>
                 <h4>You grew up among the fiercest gangs of Tsukimachi City. As a teenager, you sought refuge in one of them, gaining experience with firearms, heists, and cyberHacking. <br/><br/>One day, weary of the violence and darkness around your existance, you decided to turn the page and forge a new life. <br/><br/>The friendships you formed during those years helped you do so, allowing you to live like an ordinary person. However... </h4>
+              </div>
             </div>
             <div
                 className={`past ${clicked === 1 ? 'selected' : ''} ${secondFadeIn ? 'fadeIn' : ''}`}
                 onClick={() => getClicked(1)}
             >
+              <div className='past__content'>
                 <h3 className="standard-h3">SON OF THE CORPORATIONS</h3>
                 <h4>You were raised among the most powerful families of Tsukimachi City, and you have never known the words 'hunger' or 'poverty.' Like almost everyone in this city, you have gained some experience in defending yourself with common weapons.<br/><br/> However, one day, you decided to turn the page and not follow the corporate life like the people around you. <br/><br/>The friendships you had formed helped you break away from the circle and lead a normal life, until...</h4>
+              </div>
             </div>
         </div>
 
