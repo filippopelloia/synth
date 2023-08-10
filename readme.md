@@ -21,7 +21,9 @@
 ![Screenshot 2023-08-10 104257](https://github.com/filippopelloia/synth/assets/116798172/303601aa-1e9a-4d59-880e-f74e96ea4339)
 
 
+
 <hr/>
+
 
 
 <h1><b>V 0.1.2</b></h1>
