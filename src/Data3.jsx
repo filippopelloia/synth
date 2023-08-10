@@ -331,7 +331,7 @@ const dialoghi3 = [
 
 
     //CORPORATE 1
-    {id: 352, url: `${vexStandard}`, character: `${char5}`, content: "VEX: \"...Have you ever thought of asking the Marchese Nero?\""},
+    {id: 352, url: `${vexStandard}`, character: `${char5}`, content: "VEX: \"...Have you ever thought of asking the Black Marquis?\""},
     {id: 353, url: `${vexStandard}`, character: `${char4}`, content: "YOU: \"You mean Maximillian Wolfe?\""},
     {id: 354, url: `${vexStandard}`, character: `${char4}`, content: "YOU: \"You know well what it entails to ask him for something. If you ask a big favor from a high-level corporate of TechNex Corp...\""},
     {id: 355, url: `${vexStandard}`, character: `${char4}`, content: "YOU: \"I'll be dragged back into that world I escaped from.\""},
