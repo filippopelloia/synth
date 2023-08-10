@@ -32,7 +32,7 @@ export default function Begin() {
     <>
       <div className='header'>
         <Settings />
-        <h5 className='unSelect'>バージョン 0.1.2</h5>
+        <h5 className='unSelect'>バージョン 0.1.9</h5>
       </div>
       
       <div className="app">
