@@ -834,7 +834,7 @@ export default function Mid() {
 
                   {dialogIndex === 145 && 
                   <button className="btn-standard">
-                    <h5 className="btn__content"><Link to="/2wJnGkRzF5cQsB8vHmYpT4qXeL6uE9rW1aD3oN">CONTINUE</Link></h5>
+                    <h5><Link className="btn__content" to="/2wJnGkRzF5cQsB8vHmYpT4qXeL6uE9rW1aD3oN">CONTINUE</Link></h5>
                     <span className="btn__label">XC4KJJ81</span>
                   </button>}
 

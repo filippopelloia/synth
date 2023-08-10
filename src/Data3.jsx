@@ -247,9 +247,9 @@ const dialoghi3 = [
 
     // SLEEP
     {id: 241, url: `${vexLiving}`, character: `${char4}`, content: "YOU: \"Vex, I'm tired... See you later.\""},
-    {id: 242, url: `${living}`, character: `${char5}`, content: "VEX: \"Again? Alright, Asher.\""},
-    {id: 243, url: `${living}`, character: `${char4}`, content: "[You lie down and fall asleep]"},
-    {id: 244, url: `${living}`, character: `${char4}`, content: "[After a few hours]"},
+    {id: 242, url: `${bedroom}`, character: `${char5}`, content: "VEX: \"Again? Alright, Asher.\""},
+    {id: 243, url: `${bedroom}`, character: `${char4}`, content: "[You lie down and fall asleep]"},
+    {id: 244, url: `${bedroom}`, character: `${char4}`, content: "[After a few hours]"},
 
 
     //ROOF
