@@ -281,7 +281,7 @@ const dialoghi3 = [
     {id: 308, url: `${buildings}`, character: `${char4}`, content: "YOU: \"Did anyone pass by the 34th floor?\""},
     {id: 309, url: `${buildings}`, character: `${char5}`, content: "VEX: \"No, it's the news...\""},
     {id: 310, url: `${buildings}`, character: `${char4}`, content: "YOU: \"I'll be right back.\""},
-    {id: 311, url: `${sky}`, character: `${char4}`, content: "[After a few minutes]"},
+    {id: 311, url: `${city2}`, character: `${char4}`, content: "[After a few minutes]"},
     {id: 312, url: `${vexLiving}`, character: `${char4}`, content: "YOU: \"What happened?\""},
     {id: 313, url: `${vexLiving}`, character: `${char5}`, content: "VEX: \"See for yourself, Asher. Sensitive data from MiraiTech is all over the internet. The gravity level of this is much higher than when you leaked those documents.\""},
     {id: 314, url: `${womanNews}`, character: `${news}`, content: "NEWS: \"Hundreds of thousands of classified documents from the multi-billionaire corporation MiraiTech, with its terrestrial headquarters in Tsukimachi City, have been stolen by an anonymous source and leaked online...\""},
