@@ -32,6 +32,19 @@ h2 a{
   top: 0;
   z-index: 2;
   padding: 1.5vh;
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > h5{
+  text-shadow: 0 0 5px rgba(220, 20, 60, 0.95);
+  color: crimson;
+  margin: 1.75vh;
+  filter: blur(0.35px);
+  opacity: 0.7;
+  font-size: 0.55em;
 }
 
 .setting-icon > svg{
