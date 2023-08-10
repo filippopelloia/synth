@@ -905,7 +905,7 @@ h3.btn:hover a::after {
   font-size: .85rem;
   text-transform: uppercase;
   color: #46BCDA;
-  clip-path: polygon(0 0, 87% 0, 100% 17%, 100% 100%, 13% 100%, 0 84%);
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 9% 100%, 0 90%);
   z-index: 3;
   opacity: 1;
 
@@ -928,6 +928,6 @@ h3.btn:hover a::after {
   right: 2px;
   bottom: 2px;
   background-color: #1a1a1a;
-  clip-path: polygon(0 0, 87% 0, 100% 17%, 100% 100%, 13% 100%, 0 84%);
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 9% 100%, 0 90%);
   z-index: 4;
 }
